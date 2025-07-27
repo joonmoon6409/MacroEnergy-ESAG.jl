@@ -1,0 +1,83 @@
+{
+    "TradCementPlant": [
+        {
+            "type": "CementPlant",
+            "global_data": {
+                "fuel_commodity": "NaturalGas",
+                "nodes": {},
+                "transforms": {
+                    "id": "traditional_cement",
+                    "timedata": "Cement",
+                    "fuel_consumption_rate": 0.9311,
+                    "elec_consumption_rate": 0.07,
+                    "fuel_emission_rate": 0.296,
+                    "process_emission_rate": 0.536,
+                    "emission_capture_rate": 0,
+                    "sox_rate": 1.0,
+                    "nox_rate": 0.0,
+                    "pm_rate": 0.0,
+                    "constraints": {
+                        "BalanceConstraint": true
+                    }
+                },
+                "edges":{
+                    "elec_edge":{
+                        "commodity": "Electricity"
+                    },
+                    "cement_edge":{
+                        "commodity": "Cement",
+                        "has_capacity": true,
+                        "can_retire": true,
+                        "can_expand": true,
+                        "capacity_size": 125,
+                        "investment_cost": 220939,
+                        "fixed_om_cost": 38,
+                        "variable_om_cost": 0,
+                        "end_vertex": "cement_produced"
+                    },
+                    "fuel_edge": {
+                        "commodity": "NaturalGas",
+                        "start_vertex": "ng_source"
+                    },
+                    "co2_emissions_edge": {
+                        "commodity": "CO2",
+                        "end_vertex": "cement_co2_sink"
+                    },
+                    "co2_captured_edge": {
+                        "commodity": "CO2Captured",
+                        "end_vertex": "co2_captured_sink"
+                    },
+                    "sox_edge": {
+                        "commodity": "Pollution",
+                        "end_vertex": "sox_sink"
+                    },
+                    "nox_edge": {
+                        "commodity": "Pollution",
+                        "end_vertex": "nox_sink"
+                    },
+                    "pm_edge": {
+                        "commodity": "Pollution",
+                        "end_vertex": "pm_sink"
+                    }
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "traditional_cement_MA",
+                    "location": "MA",
+                    "existing_capacity": 100
+                },
+                {
+                    "id": "traditional_cement_CT",
+                    "location": "CT",
+                    "existing_capacity": 100
+                },
+                {
+                    "id": "traditional_cement_ME",
+                    "location": "ME",
+                    "existing_capacity": 100
+                }
+            ]
+        }
+    ]
+}

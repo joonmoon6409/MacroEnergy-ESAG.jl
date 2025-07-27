@@ -6,6 +6,9 @@ struct AluminumSmelting <: AbstractAsset
     graphite_edge::Edge{<:Graphite} # graphite input
     aluminum_edge::Union{Edge{<:Aluminum},EdgeWithUC{<:Aluminum}} # aluminum output
     co2_edge::Edge{<:CO2} # co2 output
+    sox_edge::Edge{<:Pollution} # SOx emissions
+    nox_edge::Edge{<:Pollution} # NOx emissions
+    pm_edge::Edge{<:Pollution} # PM emissions
 end
 
 function default_data(t::Type{AluminumSmelting}, id=missing, style="full")
@@ -25,6 +28,9 @@ function full_default_data(::Type{AluminumSmelting}, id=missing)
             :alumina_aluminum_rate => 1.0,
             :graphite_aluminum_rate => 1.0,
             :graphite_emissions_rate => 1.0,
+            :sox_rate => 0.0,
+            :nox_rate => 0.0,
+            :pm_rate => 0.0,
             :constraints => Dict{Symbol, Bool}(
                 :BalanceConstraint => true,
             ),
@@ -53,6 +59,15 @@ function full_default_data(::Type{AluminumSmelting}, id=missing)
                 :commodity => "CO2",
                 :co2_sink => missing,
             ),
+            :sox_edge => @edge_data(
+                :commodity=>"Pollution"
+            ),
+            :nox_edge => @edge_data(
+                :commodity=>"Pollution"
+            ),
+            :pm_edge => @edge_data(
+                :commodity=>"Pollution"
+            ),
         ),
     )
 end
@@ -80,6 +95,9 @@ function simple_default_data(::Type{AluminumSmelting}, id=missing)
         :min_down_time => 0,
         :ramp_up_fraction => 0.0,
         :ramp_down_fraction => 0.0,
+        :sox_rate => 0.0,
+        :nox_rate => 0.0,
+        :pm_rate => 0.0,
     )
 end
 
@@ -271,6 +289,87 @@ function make(asset_type::Type{AluminumSmelting}, data::AbstractDict{Symbol,Any}
         co2_end_node,
     )
 
+    # SOx emissions edge
+    sox_edge_key = :sox_edge
+    @process_data(
+        sox_edge_data, 
+        data[:edges][sox_edge_key], 
+        [
+            (data[:edges][sox_edge_key], key),
+            (data[:edges][sox_edge_key], Symbol("sox_", key)),
+            (data, Symbol("sox_", key)),
+        ]
+    )
+    sox_start_node = aluminumsmelting_transform
+    @end_vertex(
+        sox_end_node,
+        sox_edge_data,
+        Pollution,
+        [(sox_edge_data, :end_vertex), (data, :sox_sink), (data, :location)],
+    )
+    sox_edge = Edge(
+        Symbol(id, "_", sox_edge_key),
+        sox_edge_data,
+        system.time_data[:Pollution],
+        Pollution,
+        sox_start_node,
+        sox_end_node,
+    )
+
+    # NOx emissions edge
+    nox_edge_key = :nox_edge
+    @process_data(
+        nox_edge_data, 
+        data[:edges][nox_edge_key], 
+        [
+            (data[:edges][nox_edge_key], key),
+            (data[:edges][nox_edge_key], Symbol("nox_", key)),
+            (data, Symbol("nox_", key)),
+        ]
+    )
+    nox_start_node = aluminumsmelting_transform
+    @end_vertex(
+        nox_end_node,
+        nox_edge_data,
+        Pollution,
+        [(nox_edge_data, :end_vertex), (data, :nox_sink), (data, :location)],
+    )
+    nox_edge = Edge(
+        Symbol(id, "_", nox_edge_key),
+        nox_edge_data,
+        system.time_data[:Pollution],
+        Pollution,
+        nox_start_node,
+        nox_end_node,
+    )
+
+    # PM emissions edge
+    pm_edge_key = :pm_edge
+    @process_data(
+        pm_edge_data, 
+        data[:edges][pm_edge_key], 
+        [
+            (data[:edges][pm_edge_key], key),
+            (data[:edges][pm_edge_key], Symbol("pm_", key)),
+            (data, Symbol("pm_", key)),
+        ]
+    )
+    pm_start_node = aluminumsmelting_transform
+    @end_vertex(
+        pm_end_node,
+        pm_edge_data,
+        Pollution,
+        [(pm_edge_data, :end_vertex), (data, :pm_sink), (data, :location)],
+    )
+    pm_edge = Edge(
+        Symbol(id, "_", pm_edge_key),
+        pm_edge_data,
+        system.time_data[:Pollution],
+        Pollution,
+        pm_start_node,
+        pm_end_node,
+    )
+
     # Balance Constraint Values
     aluminumsmelting_transform.balance_data = Dict(
         :elec_to_aluminum => Dict(
@@ -294,7 +393,20 @@ function make(asset_type::Type{AluminumSmelting}, data::AbstractDict{Symbol,Any}
         :emissions => Dict(
             graphite_edge.id => get(transform_data, :graphite_emissions_rate, 1.0),
             co2_edge.id => 1.0
+        ),
+        :sox_rate => Dict(
+            sox_edge.id => -1.0,
+            aluminum_edge.id => get(transform_data, :sox_rate, 1.0),
+        ),
+        :nox_rate => Dict(
+            nox_edge.id => -1.0,
+            aluminum_edge.id => get(transform_data, :nox_rate, 1.0),
+        ),
+        :pm_rate => Dict(
+            pm_edge.id => -1.0,
+            aluminum_edge.id => get(transform_data, :pm_rate, 1.0),
         )
     )
-    return AluminumSmelting(id, aluminumsmelting_transform, elec_edge, alumina_edge, graphite_edge, aluminum_edge, co2_edge)
+
+    return AluminumSmelting(id, aluminumsmelting_transform, elec_edge, alumina_edge, graphite_edge, aluminum_edge, co2_edge, sox_edge, nox_edge, pm_edge)
 end

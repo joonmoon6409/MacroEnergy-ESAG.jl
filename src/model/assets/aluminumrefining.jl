@@ -5,7 +5,10 @@ struct AluminumRefining <: AbstractAsset
     aluminum_transform::Transformation             # Transformation process that converts inputs to outputs
     elec_edge::Edge{<:Electricity}                  # Edge representing electricity input
     aluminumscrap_edge::Edge{<:AluminumScrap}       # Edge representing aluminum scrap input
-    aluminum_edge::Edge{<:Aluminum}                 # Edge representing aluminum output
+    aluminum_edge::Edge{<:Aluminum}                  # Edge representing aluminum output
+    sox_edge::Edge{<:Pollution} # SOx emissions
+    nox_edge::Edge{<:Pollution} # NOx emissions
+    pm_edge::Edge{<:Pollution} # PM emissions             
 end
 
 # Factory function to create default data for AluminumRefining
@@ -27,8 +30,12 @@ function full_default_data(::Type{AluminumRefining}, id=missing)
             :timedata => "Aluminum",              # Time series data identifier
             :elec_aluminum_rate => 1.0,           # Rate of electricity needed per unit of aluminum
             :aluminumscrap_aluminum_rate => 1.05, # Rate of aluminum scrap needed per unit of aluminum (includes 5% loss)
-            :aluminum_emissions_rate => 0.0,      # Emissions rate for aluminum production
-            :constraints => Dict{Symbol, Bool}(
+            :aluminum_emissions_rate => 0.0,  
+                # Emissions rate for aluminum production
+            :sox_rate => 0.0,
+            :nox_rate => 0.0,
+            :pm_rate => 0.0,
+                :constraints => Dict{Symbol, Bool}(
                 :BalanceConstraint => true,       # Enforces material balance constraints
             ),
         ),
@@ -51,6 +58,15 @@ function full_default_data(::Type{AluminumRefining}, id=missing)
             :aluminumscrap_edge => @edge_data(
                 :commodity => "AluminumScrap"
             ),
+            :sox_edge => @edge_data(
+                :commodity=>"Pollution"
+            ),
+            :nox_edge => @edge_data(
+                :commodity=>"Pollution"
+            ),
+            :pm_edge => @edge_data(
+                :commodity=>"Pollution"
+            ),
         ),
     )
 end
@@ -71,7 +87,10 @@ function simple_default_data(::Type{AluminumRefining}, id=missing)
         :aluminum_emissions_rate => 0.0,          # Emissions rate for aluminum production
         :investment_cost => 0.0,                  # Cost to build new capacity
         :fixed_om_cost => 0.0,                    # Fixed operating and maintenance cost
-        :variable_om_cost => 0.0,                 # Variable operating and maintenance cost
+        :variable_om_cost => 0.0, 
+        :sox_rate => 0.0,
+        :nox_rate => 0.0,
+        :pm_rate => 0.0,                # Variable operating and maintenance cost
     )
 end
 
@@ -189,6 +208,87 @@ function make(asset_type::Type{AluminumRefining}, data::AbstractDict{Symbol,Any}
         aluminum_end_node,
     )
 
+    # SOx emissions edge
+    sox_edge_key = :sox_edge
+    @process_data(
+        sox_edge_data, 
+        data[:edges][sox_edge_key], 
+        [
+            (data[:edges][sox_edge_key], key),
+            (data[:edges][sox_edge_key], Symbol("sox_", key)),
+            (data, Symbol("sox_", key)),
+        ]
+    )
+    sox_start_node = aluminumrefining_transform
+    @end_vertex(
+        sox_end_node,
+        sox_edge_data,
+        Pollution,
+        [(sox_edge_data, :end_vertex), (data, :sox_sink), (data, :location)],
+    )
+    sox_edge = Edge(
+        Symbol(id, "_", sox_edge_key),
+        sox_edge_data,
+        system.time_data[:Pollution],
+        Pollution,
+        sox_start_node,
+        sox_end_node,
+    )
+
+    # NOx emissions edge
+    nox_edge_key = :nox_edge
+    @process_data(
+        nox_edge_data, 
+        data[:edges][nox_edge_key], 
+        [
+            (data[:edges][nox_edge_key], key),
+            (data[:edges][nox_edge_key], Symbol("nox_", key)),
+            (data, Symbol("nox_", key)),
+        ]
+    )
+    nox_start_node = aluminumrefining_transform
+    @end_vertex(
+        nox_end_node,
+        nox_edge_data,
+        Pollution,
+        [(nox_edge_data, :end_vertex), (data, :nox_sink), (data, :location)],
+    )
+    nox_edge = Edge(
+        Symbol(id, "_", nox_edge_key),
+        nox_edge_data,
+        system.time_data[:Pollution],
+        Pollution,
+        nox_start_node,
+        nox_end_node,
+    )
+
+    # PM emissions edge
+    pm_edge_key = :pm_edge
+    @process_data(
+        pm_edge_data, 
+        data[:edges][pm_edge_key], 
+        [
+            (data[:edges][pm_edge_key], key),
+            (data[:edges][pm_edge_key], Symbol("pm_", key)),
+            (data, Symbol("pm_", key)),
+        ]
+    )
+    pm_start_node = aluminumrefining_transform
+    @end_vertex(
+        pm_end_node,
+        pm_edge_data,
+        Pollution,
+        [(pm_edge_data, :end_vertex), (data, :pm_sink), (data, :location)],
+    )
+    pm_edge = Edge(
+        Symbol(id, "_", pm_edge_key),
+        pm_edge_data,
+        system.time_data[:Pollution],
+        Pollution,
+        pm_start_node,
+        pm_end_node,
+    )
+
     # Set up balance constraints for the transformation process
     # These define how inputs (electricity and aluminum scrap) are converted to outputs (aluminum)
     aluminumrefining_transform.balance_data = Dict(
@@ -201,7 +301,19 @@ function make(asset_type::Type{AluminumRefining}, data::AbstractDict{Symbol,Any}
             elec_edge.id => 0.0,                  # No direct conversion from aluminum scrap to electricity
             aluminumscrap_edge.id => 1.0,         # Aluminum scrap input coefficient
             aluminum_edge.id => get(transform_data, :aluminumscrap_aluminum_rate, 1.0)  # Aluminum scrap needed per unit of aluminum
+        ),
+        :sox_rate => Dict(
+            sox_edge.id => -1.0,
+            aluminum_edge.id => get(transform_data, :sox_rate, 1.0),
+        ),
+        :nox_rate => Dict(
+            nox_edge.id => -1.0,
+            aluminum_edge.id => get(transform_data, :nox_rate, 1.0),
+        ),
+        :pm_rate => Dict(
+            pm_edge.id => -1.0,
+            aluminum_edge.id => get(transform_data, :pm_rate, 1.0),
         )
     )
-    return AluminumRefining(id, aluminumrefining_transform, elec_edge, aluminumscrap_edge, aluminum_edge)
+    return AluminumRefining(id, aluminumrefining_transform, elec_edge, aluminumscrap_edge, aluminum_edge, sox_edge, nox_edge, pm_edge)
 end

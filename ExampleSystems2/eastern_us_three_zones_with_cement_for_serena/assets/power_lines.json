@@ -1,0 +1,34 @@
+{
+    "line": [
+        {
+            "type": "TransmissionLink",
+            "global_data": {
+                "elec_constraints": {
+                    "MaxCapacityConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "MA_to_CT",
+                    "commodity": "Electricity",
+                    "transmission_origin": "MA",
+                    "transmission_dest": "CT",
+                    "distance": 123.0584,
+                    "existing_capacity": 2950.0,
+                    "max_capacity": 5900,
+                    "investment_cost": 12060
+                },
+                {
+                    "id": "MA_to_ME",
+                    "commodity": "Electricity",
+                    "transmission_origin": "MA",
+                    "transmission_dest": "ME",
+                    "distance": 196.5385,
+                    "existing_capacity": 2000,
+                    "max_capacity": 4000,
+                    "investment_cost": 19261
+                }
+            ]
+        }
+    ]
+}

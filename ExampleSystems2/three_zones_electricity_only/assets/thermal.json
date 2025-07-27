@@ -1,0 +1,232 @@
+{
+    "ThermalPower": {
+        "global_data": {
+            "transforms": {
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "edges": {
+                "co2_edge": {
+                    "unidirectional": true,
+                    "has_capacity": false
+                },
+                "elec_edge": {
+                    "unidirectional": true,
+                    "has_capacity": true
+                },
+                "fuel_edge": {
+                    "unidirectional": true,
+                    "has_capacity": false
+                },
+                "sox_edge": {
+                    "unidirectional": true,
+                    "has_capacity": false
+                },
+                "nox_edge": {
+                    "unidirectional": true,
+                    "has_capacity": false
+                },
+                "pm_edge": {
+                    "unidirectional": true,
+                    "has_capacity": false
+                }
+            }
+        },
+        "instance_data": [
+            {
+                "transforms": {
+                    "timedata": "NaturalGas",
+                    "fuel_consumption": 2.18,
+                    "emission_rate": 0.181,
+                    "sox_rate": 1.0,
+                    "nox_rate": 0.0,
+                    "pm_rate": 0.0
+                },
+                "id": "MA_NGCC",
+                "edges": {
+                    "co2_edge": {
+                        "end_vertex": "co2_sink_MA",
+                        "commodity": "CO2"
+                    },
+                    "elec_edge": {
+                        "commodity": "Electricity",
+                        "can_retire": true,
+                        "can_expand": true,
+                        "integer_decisions": true,
+                        "constraints": {
+                            "MinFlowConstraint": true,
+                            "RampingLimitConstraint": true,
+                            "CapacityConstraint": true,
+                            "MinDownTimeConstraint": true,
+                            "MinUpTimeConstraint": true
+                        },
+                        "existing_capacity": 0,
+                        "investment_cost": 65400,                        
+                        "fixed_om_cost": 10287,
+                        "variable_om_cost": 3.55,
+                        "capacity_size": 250,
+                        "availability": [
+                            1
+                        ],                        
+                        "uc": true,
+                        "ramp_up_fraction": 0.64,
+                        "ramp_down_fraction": 0.64,
+                        "min_up_time": 6,
+                        "min_down_time": 6,
+                        "min_flow_fraction": 0.468,
+                        "startup_cost": 91,
+                        "startup_fuel_consumption": 0.586,                        
+                        "end_vertex": "elec_MA"
+                    },
+                    "fuel_edge": {
+                        "start_vertex": "MA_NG",
+                        "commodity": "NaturalGas"
+                    },
+                    "sox_edge": {
+                        "commodity": "Pollution",
+                        "end_vertex": "sox_sink"
+                    },
+                    "nox_edge": {
+                        "commodity": "Pollution",
+                        "end_vertex": "nox_sink"
+                    },
+                    "pm_edge": {
+                        "commodity": "Pollution",
+                        "end_vertex": "pm_sink"
+                    }
+                }
+            },
+{
+                "transforms": {
+                    "timedata": "NaturalGas",
+                    "fuel_consumption": 2.08,
+                    "emission_rate": 0.181,
+                    "sox_rate": 0.0,
+                    "nox_rate": 0.0,
+                    "pm_rate": 0.0
+                },
+                "id": "CT_NGCC",
+                "edges": {
+                    "co2_edge": {
+                        "end_vertex": "co2_sink_CT",
+                        "commodity": "CO2"
+                    },
+                    "elec_edge": {
+                        "commodity": "Electricity",
+                        "can_retire": true,
+                        "can_expand": true,
+                        "integer_decisions": true,
+                        "constraints": {
+                            "MinFlowConstraint": true,
+                            "RampingLimitConstraint": true,
+                            "CapacityConstraint": true,
+                            "MinDownTimeConstraint": true,
+                            "MinUpTimeConstraint": true
+                        },
+                        "existing_capacity": 0,
+                        "investment_cost": 65400,                        
+                        "fixed_om_cost": 10287,
+                        "variable_om_cost": 3.55,
+                        "capacity_size": 250,
+                        "availability": [
+                            1
+                        ],                        
+                        "uc": true,
+                        "ramp_up_fraction": 0.64,
+                        "ramp_down_fraction": 0.64,
+                        "min_up_time": 6,
+                        "min_down_time": 6,
+                        "min_flow_fraction": 0.468,
+                        "startup_cost": 91,
+                        "startup_fuel_consumption": 0.586,                        
+                        "end_vertex": "elec_CT"
+                    },
+                    "fuel_edge": {
+                        "start_vertex": "CT_NG",
+                        "commodity": "NaturalGas"
+                    },
+                    "sox_edge": {
+
+                        "commodity": "Pollution",
+                        "end_vertex": "sox_sink"
+                    },
+                    "nox_edge": {
+
+                        "commodity": "Pollution",
+                        "end_vertex": "nox_sink"
+                    },
+                    "pm_edge": {
+
+                        "commodity": "Pollution",
+                        "end_vertex": "pm_sink"
+                    }
+                }
+            },
+            {
+                "transforms": {
+                    "timedata": "NaturalGas",
+                    "fuel_consumption": 1.98,
+                    "emission_rate": 0.181,
+                    "sox_rate": 1.0,
+                    "nox_rate": 0.0,
+                    "pm_rate": 0.0
+                },
+                "id": "ME_NGCC",
+                "edges": {
+                    "co2_edge": {
+                        "end_vertex": "co2_sink_ME",
+                        "commodity": "CO2"
+                    },
+                    "elec_edge": {
+                        "commodity": "Electricity",
+                        "can_retire": true,
+                        "can_expand": true,
+                        "integer_decisions": true,
+                        "constraints": {
+                            "MinFlowConstraint": true,
+                            "RampingLimitConstraint": true,
+                            "CapacityConstraint": true,
+                            "MinDownTimeConstraint": true,
+                            "MinUpTimeConstraint": true
+                        },
+                        "existing_capacity": 0,
+                        "investment_cost": 65400,                        
+                        "fixed_om_cost": 10287,
+                        "variable_om_cost": 3.55,
+                        "capacity_size": 250,
+                        "availability": [
+                            1
+                        ],                        
+                        "uc": true,
+                        "ramp_up_fraction": 0.64,
+                        "ramp_down_fraction": 0.64,
+                        "min_up_time": 6,
+                        "min_down_time": 6,
+                        "min_flow_fraction": 0.468,
+                        "startup_cost": 91,
+                        "startup_fuel_consumption": 0.586,                        
+                        "end_vertex": "elec_ME"
+                    },
+                    "fuel_edge": {
+                        "start_vertex": "ME_NG",
+                        "commodity": "NaturalGas"
+                    },
+                    "sox_edge": {
+                        "commodity": "Pollution",
+                        "end_vertex": "sox_sink"
+                    },
+                    "nox_edge": {
+                        "commodity": "Pollution",
+                        "end_vertex": "nox_sink"
+                    },
+                    "pm_edge": {
+                        "commodity": "Pollution",
+                        "end_vertex": "pm_sink"
+                    }
+                }
+            }
+        ],
+        "type": "ThermalPower"
+    }
+}

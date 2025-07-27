@@ -1,0 +1,12 @@
+{
+    "commodities": [
+        "Electricity",
+        "NaturalGas",
+        "CO2",
+        "CO2Captured",
+        "Pollution",
+        {"name": "SOx", "acts_like": "Pollution"},
+        {"name": "NOx", "acts_like": "Pollution"},
+        {"name": "PM", "acts_like": "Pollution"}
+    ]
+}

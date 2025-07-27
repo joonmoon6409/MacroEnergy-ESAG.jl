@@ -1,0 +1,181 @@
+{
+    "VRE": {
+        "global_data": {
+            "transforms": {
+                "timedata": "Electricity"
+            },
+            "edges": {
+                "edge": {
+                    "unidirectional": true,
+                    "has_capacity": true,
+                    "commodity": "Electricity"
+                }
+            }
+        },
+        "instance_data": [
+                {
+                "id": "Region1Beijing_Wind_Onshore",
+                "edges": {
+                    "edge": {
+                        "commodity": "Electricity",
+                        "can_expand": true,
+                        "can_retire": true,
+                        "integer_decisions": true,                        
+                        "constraints": {
+                            "CapacityConstraint": true
+                        },
+                        "existing_capacity": 240,
+                        "max_capacity": 2400,
+                        "investment_cost": 58549.23691,
+                        "fixed_om_cost": 20277.77778,
+                        "variable_om_cost": 0,
+                        "capacity_size": 1,
+                        "end_vertex": "elec_Region1Beijing",
+                        "availability": {
+                            "timeseries": {
+                                "header": "Region1Beijing_Wind_Onshore",
+                                "path": "system/vre_availability.csv"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "id": "Region1Beijing_PV_Central",
+                "edges": {
+                    "edge": {
+                        "commodity": "Electricity",
+                        "can_expand": true,
+                        "can_retire": true,
+                        "integer_decisions": true,
+                        "constraints": {
+                            "CapacityConstraint": true
+                        },
+                        "existing_capacity": 81,
+                        "max_capacity": 827.07025,
+                        "investment_cost": 50742.67199,
+                        "fixed_om_cost": 9236.111111,
+                        "variable_om_cost": 0,
+                        "capacity_size": 1,
+                        "end_vertex": "elec_Region1Beijing",
+                        "availability": {
+                            "timeseries": {
+                                "header": "Region1Beijing_PV_Central",
+                                "path": "system/vre_availability.csv"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "id": "Region2Tianjin_Wind_Onshore",
+                "edges": {
+                    "edge": {
+                        "commodity": "Electricity",
+                        "can_expand": true,
+                        "can_retire": true,
+                        "integer_decisions": true,                        
+                        "constraints": {
+                            "CapacityConstraint": true
+                        },
+                        "existing_capacity": 2073,
+                        "max_capacity": 20730,
+                        "investment_cost": 58549.23691,
+                        "fixed_om_cost": 20277.77778,
+                        "variable_om_cost": 0,
+                        "capacity_size": 1,
+                        "end_vertex": "elec_Region2Tianjin",
+                        "availability": {
+                            "timeseries": {
+                                "header": "Region2Tianjin_Wind_Onshore",
+                                "path": "system/vre_availability.csv"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "id": "Region2Tianjin_PV_Central",
+                "edges": {
+                    "edge": {
+                        "commodity": "Electricity",
+                        "can_expand": true,
+                        "can_retire": true,
+                        "integer_decisions": true,                        
+                        "constraints": {
+                            "CapacityConstraint": true
+                        },
+                        "existing_capacity": 3513,
+                        "max_capacity": 35130,
+                        "investment_cost": 50742.67199,
+                        "fixed_om_cost": 9236.111111,
+                        "variable_om_cost": 0,
+                        "capacity_size": 1,
+                        "end_vertex": "elec_Region2Tianjin",
+                        "availability": {
+                            "timeseries": {
+                                "header": "Region2Tianjin_PV_Central",
+                                "path": "system/vre_availability.csv"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "id": "Region3Hebei_Wind_Onshore",
+                "edges": {
+                    "edge": {
+                        "commodity": "Electricity",
+                        "can_expand": true,
+                        "can_retire": true,
+                        "integer_decisions": true,                        
+                        "constraints": {
+                            "CapacityConstraint": true
+                        },
+                        "existing_capacity": 37790,
+                        "max_capacity": 377900,
+                        "investment_cost": 58549.23691,
+                        "fixed_om_cost": 20277.77778,
+                        "variable_om_cost": 0,
+                        "capacity_size": 1,
+                        "end_vertex": "elec_Region3Hebei",
+                        "availability": {
+                            "timeseries": {
+                                "header": "Region3Hebei_Wind_Onshore",
+                                "path": "system/vre_availability.csv"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "id": "Region3Hebei_PV_Central",
+                "edges": {
+                    "edge": {
+                        "commodity": "Electricity",
+                        "can_expand": true,
+                        "can_retire": true,
+                        "integer_decisions": true,                        
+                        "constraints": {
+                            "CapacityConstraint": true
+                        },
+                        "existing_capacity": 42941,
+                        "max_capacity": 429410,
+                        "investment_cost": 50742.67199,
+                        "fixed_om_cost": 9236.111111,
+                        "variable_om_cost": 0,
+                        "capacity_size": 1,
+                        "end_vertex": "elec_Region3Hebei",
+                        "availability": {
+                            "timeseries": {
+                                "header": "Region3Hebei_PV_Central",
+                                "path": "system/vre_availability.csv"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "type": "VRE"
+    }
+}

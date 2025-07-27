@@ -1,0 +1,26 @@
+{
+    "HoursPerSubperiod":{
+    "Hydrogen":168,
+    "NaturalGas":168,
+    "CO2":168,
+    "Electricity":168,
+    "Uranium":168,
+    "CO2Captured":168,
+	"Coal":168},
+    
+    "HoursPerTimeStep":{
+        "Hydrogen":1,
+        "NaturalGas":1,
+		"CO2":1,
+        "Electricity":1,
+		"Uranium":1,
+        "CO2Captured":1,
+		"Coal":1
+		},
+		
+    "NumberOfSubperiods": 52,
+    "PeriodMap": {
+        "path": "system/Period_map.csv"
+    },
+    "TotalHoursModeled": 8760
+}

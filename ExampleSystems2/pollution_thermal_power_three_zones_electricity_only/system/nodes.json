@@ -1,0 +1,168 @@
+{
+    "nodes": [
+        {
+            "global_data": {
+                "constraints": {
+                    "MaxNonServedDemandConstraint": true,
+                    "MaxNonServedDemandPerSegmentConstraint": true,
+                    "BalanceConstraint": true
+                },
+                "max_nsd": [
+                    1,
+                    0.04,
+                    0.024,
+                    0.003
+                ],
+                "time_interval": "Electricity",
+                "price_nsd": [
+                    50000,
+                    45000,
+                    27500,
+                    10000
+                ]
+            },
+            "instance_data": [
+                {
+                    "demand": {
+                        "timeseries": {
+                            "header": "Demand_MW_Region1Beijing",
+                            "path": "system/demand.csv"
+                        }
+                    },
+                    "id": "elec_Region1Beijing"
+                },
+                {
+                    "demand": {
+                        "timeseries": {
+                            "header": "Demand_MW_Region2Tianjin",
+                            "path": "system/demand.csv"
+                        }
+                    },
+                    "id": "elec_Region2Tianjin"
+                },
+                {
+                    "demand": {
+                        "timeseries": {
+                            "header": "Demand_MW_Region3Hebei",
+                            "path": "system/demand.csv"
+                        }
+                    },
+                    "id": "elec_Region3Hebei"
+                }
+            ],
+            "type": "Electricity"
+        },
+        {
+            "global_data": {
+                "time_interval": "NaturalGas"
+            },
+            "instance_data": [
+                {
+                    "price": {
+                        "timeseries": {
+                            "header": "natgas_Region1Beijing",
+                            "path": "system/fuel_prices.csv"
+                        }
+                    },
+                    "id": "natgas_Region1Beijing"
+                },
+                {
+                    "price": {
+                        "timeseries": {
+                            "header": "natgas_Region2Tianjin",
+                            "path": "system/fuel_prices.csv"
+                        }
+                    },
+                    "id": "natgas_Region2Tianjin"
+                },
+                {
+                    "price": {
+                        "timeseries": {
+                            "header": "natgas_Region3Hebei",
+                            "path": "system/fuel_prices.csv"
+                        }
+                    },
+                    "id": "natgas_Region3Hebei"
+                }
+            ],
+            "type": "NaturalGas"
+        },
+        {
+            "global_data": {
+                "time_interval": "CO2"
+            },
+            "instance_data": [
+                {
+                    "id": "co2_sink_Beijing",
+                    "constraints": {
+                        "CO2CapConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2CapConstraint": 0
+                    },
+                    "price_unmet_policy": {
+                        "CO2CapConstraint": 200
+                    }
+                },
+                {
+                    "id": "co2_sink_Tianjin",
+                    "constraints": {
+                        "CO2CapConstraint": false
+                    },
+                    "rhs_policy": {
+                        "CO2CapConstraint": 0
+                    },
+                    "price_unmet_policy": {
+                        "CO2CapConstraint": 200
+                    }
+                },
+                {
+                    "id": "co2_sink_Hebei",
+                    "constraints": {
+                        "CO2CapConstraint": false
+                    },
+                    "rhs_policy": {
+                        "CO2CapConstraint": 0
+                    },
+                    "price_unmet_policy": {
+                        "CO2CapConstraint": 200
+                    }
+                }
+            ],
+            "type": "CO2"
+        },
+        {
+            "type": "Pollution",
+            "global_data": {
+                "time_interval": "Pollution"
+            },
+            "instance_data": [
+                {
+                    "id": "sox_sink"
+                }
+            ]
+        },
+        {
+            "type": "Pollution",
+            "global_data": {
+                "time_interval": "Pollution"
+            },
+            "instance_data": [
+                {
+                    "id": "nox_sink"
+                }
+            ]
+        },
+        {
+            "type": "Pollution",
+            "global_data": {
+                "time_interval": "Pollution"
+            },
+            "instance_data": [
+                {
+                    "id": "pm_sink"
+                }
+            ]
+        }
+    ]
+}

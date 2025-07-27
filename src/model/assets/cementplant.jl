@@ -6,10 +6,13 @@ struct CementPlant{T} <: AbstractAsset
     cement_edge::Edge{<:Cement} # Cement produced
     co2_emissions_edge::Edge{<:CO2} # CO2 emissions
     co2_captured_edge::Edge{<:CO2Captured} # CO2 captured
+    sox_edge::Edge{<:Pollution} # SOx emissions
+    nox_edge::Edge{<:Pollution} # NOx emissions
+    pm_edge::Edge{<:Pollution} # PM emissions
 end
 
-CementPlant(id::AssetId, cement_transform::Transformation, elec_edge::Union{Edge{Electricity},EdgeWithUC{Electricity}}, fuel_edge::Edge{T}, cement_edge::Edge{Cement}, co2_emissions_edge::Edge{CO2}, co2_captured_edge::Edge{CO2Captured}) where T<:Commodity =
-    CementPlant{T}(id, cement_transform, elec_edge, fuel_edge, cement_edge, co2_emissions_edge, co2_captured_edge)
+CementPlant(id::AssetId, cement_transform::Transformation, elec_edge::Union{Edge{Electricity},EdgeWithUC{Electricity}}, fuel_edge::Edge{T}, cement_edge::Edge{Cement}, co2_emissions_edge::Edge{CO2}, co2_captured_edge::Edge{CO2Captured}, sox_edge::Edge{<:Pollution}, nox_edge::Edge{<:Pollution}, pm_edge::Edge{<:Pollution}) where T<:Commodity =
+    CementPlant{T}(id, cement_transform, elec_edge, fuel_edge, cement_edge, co2_emissions_edge, co2_captured_edge, sox_edge, nox_edge, pm_edge)
 
 function default_data(t::Type{CementPlant}, id=missing, style="full")
     if style == "full"
@@ -24,11 +27,14 @@ function full_default_data(::Type{CementPlant}, id=missing)
         :id => id,
         :transforms => @transform_data(
             :timedata => "Cement",
-            :fuel_consumption => 1.0,
-            :elec_consumption => 1.0,
+            :fuel_consumption_rate => 0.0,
+            :elec_consumption_rate => 0.0,
             :fuel_emission_rate => 0.0,
-            :process_emission_rate => 0.536,
-            :emission_capture_rate => 0.0,
+            :process_emission_rate => 0.0,
+            :co2_capture_rate => 0.0,
+            :sox_rate => 0.0,
+            :nox_rate => 0.0,
+            :pm_rate => 0.0,
             :constraints => Dict{Symbol, Bool}(
                 :BalanceConstraint => true,
             ),
@@ -57,6 +63,15 @@ function full_default_data(::Type{CementPlant}, id=missing)
             :co2_captured_edge => @edge_data(
                 :commodity=>"CO2Captured",
             ),
+            :sox_edge => @edge_data(
+                :commodity=>"Pollution"
+            ),
+            :nox_edge => @edge_data(
+                :commodity=>"Pollution"
+            ),
+            :pm_edge => @edge_data(
+                :commodity=>"Pollution"
+            ),
         ),
     )
 end
@@ -76,11 +91,14 @@ function simple_default_data(::Type{CementPlant}, id=missing)
         :investment_cost => 0.0,
         :fixed_om_cost => 0.0,
         :variable_om_cost => 0.0,
-        :fuel_consumption => 1.0,
-        :elec_consumption => 1.0,
+        :fuel_consumption_rate => 0.0,
+        :elec_consumption_rate => 0.0,
         :fuel_emission_rate => 0.0,
         :process_emission_rate => 0.0,
-        :emission_capture_rate => 0.0,
+        :co2_capture_rate => 0.0,
+        :sox_rate => 0.0,
+        :nox_rate => 0.0,
+        :pm_rate => 0.0,
     )
 end
 
@@ -101,6 +119,7 @@ function make(asset_type::Type{CementPlant}, data::AbstractDict{Symbol,Any}, sys
             (data, key),
         ]
     )
+
     cement_transform = Transformation(;
         id = Symbol(id, "_", cement_key),
         timedata = system.time_data[Symbol(transform_data[:timedata])],
@@ -145,6 +164,7 @@ function make(asset_type::Type{CementPlant}, data::AbstractDict{Symbol,Any}, sys
             (data[:edges][fuel_edge_key], key),
             (data[:edges][fuel_edge_key], Symbol("fuel_", key)),
             (data, Symbol("fuel_", key)),
+            (data, key),
         ]
     )
 
@@ -168,6 +188,7 @@ function make(asset_type::Type{CementPlant}, data::AbstractDict{Symbol,Any}, sys
 
     # Cement Edge
     cement_edge_key = :cement_edge
+
     @process_data(
         cement_edge_data, 
         data[:edges][cement_edge_key], 
@@ -178,6 +199,7 @@ function make(asset_type::Type{CementPlant}, data::AbstractDict{Symbol,Any}, sys
             (data, key),
         ]
     )
+
     cement_start_node = cement_transform
     @end_vertex(
         cement_end_node,
@@ -203,6 +225,7 @@ function make(asset_type::Type{CementPlant}, data::AbstractDict{Symbol,Any}, sys
             (data[:edges][co2_emissions_edge_key], key),
             (data[:edges][co2_emissions_edge_key], Symbol("co2_", key)),
             (data, Symbol("co2_", key)),
+            (data, key),
         ]
     )
     co2_emissions_start_node = cement_transform
@@ -210,7 +233,7 @@ function make(asset_type::Type{CementPlant}, data::AbstractDict{Symbol,Any}, sys
         co2_emissions_end_node,
         co2_emissions_edge_data,
         CO2,
-        [(co2_emissions_edge_data, :end_vertex), (data, :co2_sink), (data, :location)],
+        [(co2_emissions_edge_data, :end_vertex), (data, :location)],
     )
     co2_emissions_edge = Edge(
         Symbol(id, "_", co2_emissions_edge_key),
@@ -248,19 +271,100 @@ function make(asset_type::Type{CementPlant}, data::AbstractDict{Symbol,Any}, sys
         co2_captured_end_node,
     )
 
+    # SOx emissions edge
+    sox_edge_key = :sox_edge
+    @process_data(
+        sox_edge_data, 
+        data[:edges][sox_edge_key], 
+        [
+            (data[:edges][sox_edge_key], key),
+            (data[:edges][sox_edge_key], Symbol("sox_", key)),
+            (data, Symbol("sox_", key)),
+        ]
+    )
+    sox_start_node = cement_transform
+    @end_vertex(
+        sox_end_node,
+        sox_edge_data,
+        Pollution,
+        [(sox_edge_data, :end_vertex), (data, :sox_sink), (data, :location)],
+    )
+    sox_edge = Edge(
+        Symbol(id, "_", sox_edge_key),
+        sox_edge_data,
+        system.time_data[:Pollution],
+        Pollution,
+        sox_start_node,
+        sox_end_node,
+    )
+
+    # NOx emissions edge
+    nox_edge_key = :nox_edge
+    @process_data(
+        nox_edge_data, 
+        data[:edges][nox_edge_key], 
+        [
+            (data[:edges][nox_edge_key], key),
+            (data[:edges][nox_edge_key], Symbol("nox_", key)),
+            (data, Symbol("nox_", key)),
+        ]
+    )
+    nox_start_node = cement_transform
+    @end_vertex(
+        nox_end_node,
+        nox_edge_data,
+        Pollution,
+        [(nox_edge_data, :end_vertex), (data, :nox_sink), (data, :location)],
+    )
+    nox_edge = Edge(
+        Symbol(id, "_", nox_edge_key),
+        nox_edge_data,
+        system.time_data[:Pollution],
+        Pollution,
+        nox_start_node,
+        nox_end_node,
+    )
+
+    # PM emissions edge
+    pm_edge_key = :pm_edge
+    @process_data(
+        pm_edge_data, 
+        data[:edges][pm_edge_key], 
+        [
+            (data[:edges][pm_edge_key], key),
+            (data[:edges][pm_edge_key], Symbol("pm_", key)),
+            (data, Symbol("pm_", key)),
+        ]
+    )
+    pm_start_node = cement_transform
+    @end_vertex(
+        pm_end_node,
+        pm_edge_data,
+        Pollution,
+        [(pm_edge_data, :end_vertex), (data, :pm_sink), (data, :location)],
+    )
+    pm_edge = Edge(
+        Symbol(id, "_", pm_edge_key),
+        pm_edge_data,
+        system.time_data[:Pollution],
+        Pollution,
+        pm_start_node,
+        pm_end_node,
+    )
+
     # Balance Constraint Values
     cement_transform.balance_data = Dict(
         :elec_to_cement => Dict(
             elec_edge.id => 1.0,
             fuel_edge.id => 0,
-            cement_edge.id => get(transform_data, :elec_cement_rate, 1.0),
+            cement_edge.id => get(transform_data, :elec_consumption_rate, 1.0),
             co2_emissions_edge.id => 0,
             co2_captured_edge.id => 0,
         ),
         :fuel_to_cement => Dict(
             elec_edge.id => 0,
             fuel_edge.id => 1.0,
-            cement_edge.id => get(transform_data, :fuel_cement_rate, 1.0),
+            cement_edge.id => get(transform_data, :fuel_consumption_rate, 1.0),
             co2_emissions_edge.id => 0,
             co2_captured_edge.id => 0,
         ),
@@ -277,8 +381,20 @@ function make(asset_type::Type{CementPlant}, data::AbstractDict{Symbol,Any}, sys
             cement_edge.id => get(transform_data, :co2_capture_rate, 1.0) * (get(transform_data, :fuel_emission_rate, 1.0) + get(transform_data, :process_emission_rate, 1.0)),
             co2_emissions_edge.id => 0,
             co2_captured_edge.id => -1.0,
+        ),
+        :sox_rate => Dict(
+            sox_edge.id => -1.0,
+            cement_edge.id => get(transform_data, :sox_rate, 1.0),
+        ),
+        :nox_rate => Dict(
+            nox_edge.id => -1.0,
+            cement_edge.id => get(transform_data, :nox_rate, 1.0),
+        ),
+        :pm_rate => Dict(
+            pm_edge.id => -1.0,
+            cement_edge.id => get(transform_data, :pm_rate, 1.0),
         )
     )
-
-    return CementPlant(id, cement_transform, elec_edge, fuel_edge, cement_edge, co2_emissions_edge, co2_captured_edge)
+    
+    return CementPlant(id, cement_transform, elec_edge, fuel_edge, cement_edge, co2_emissions_edge, co2_captured_edge, sox_edge, nox_edge, pm_edge)
 end

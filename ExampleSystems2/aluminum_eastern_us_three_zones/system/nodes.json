@@ -1,0 +1,279 @@
+{
+    "nodes": [
+        {
+            "type": "NaturalGas",
+            "global_data": {
+                "time_interval": "NaturalGas"
+            },
+            "instance_data": [
+                {
+                    "id": "ng_source"
+                }
+            ]
+        },
+        {
+            "type": "Electricity",
+            "global_data": {
+                "time_interval": "Electricity",
+                "max_nsd": [
+                    1,
+                    0.04,
+                    0.024,
+                    0.003
+                ],
+                "price_nsd": [
+                    50000.0,
+                    45000.0,
+                    27500.0,
+                    10000.0
+                ],
+                "constraints": {
+                    "BalanceConstraint": true,
+                    "MaxNonServedDemandConstraint": true,
+                    "MaxNonServedDemandPerSegmentConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "elec_MA",
+                    "location": "MA",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_MW_z1"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_CT",
+                    "location": "CT",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_MW_z2"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_ME",
+                    "location": "ME",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_MW_z3"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Aluminum",
+            "global_data": {
+                "time_interval": "Aluminum",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "aluminum_produced",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/hourly_aluminum_demand.csv",
+                            "header": "Aluminum_Demand_Tons"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Alumina",
+            "global_data": {
+                "time_interval": "Alumina",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "alumina_produced"
+                }
+            ]
+        },
+        {
+            "type": "CO2",
+            "global_data": {
+                "time_interval": "CO2"
+            },
+            "instance_data": [
+                {
+                    "id": "co2_sink",
+                    "constraints": {
+                        "CO2CapConstraint": false
+                    },
+                    "rhs_policy": {
+                        "CO2CapConstraint": 2.295e7
+                        }
+                }
+            ]
+        },
+        {
+            "type": "CO2Captured",
+            "global_data": {
+                "time_interval": "CO2Captured"
+            },
+            "instance_data": [
+                {
+                    "id": "co2_captured_sink"
+                }
+            ]
+        },
+        {
+            "type": "AluminumScrap",
+            "global_data": {
+                "time_interval": "AluminumScrap",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "aluminumscrap_source_MA",
+                    "max_supply": [
+                        100
+                    ],
+                    "price_supply": [
+                        220
+                    ]
+                },
+                {
+                    "id": "aluminumscrap_source_CT",
+                    "max_supply": [
+                        0
+                    ],
+                    "price_supply": [
+                        220
+                    ]
+                },
+                {
+                    "id": "aluminumscrap_source_ME",
+                    "max_supply": [
+                        0
+                    ],
+                    "price_supply": [
+                        220
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Bauxite",
+            "global_data": {
+                "time_interval": "Bauxite",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "bauxite_source_MA",
+                    "max_supply": [
+                        100000
+                    ],
+                    "price_supply": [
+                        90
+                    ]
+                },
+                {
+                    "id": "bauxite_source_CT",
+                    "max_supply": [
+                        100000
+                    ],
+                    "price_supply": [
+                        90
+                    ]
+                },
+                {
+                    "id": "bauxite_source_ME",
+                    "max_supply": [
+                        100000
+                    ],
+                    "price_supply": [
+                        90
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Graphite",
+            "global_data": {
+                "time_interval": "Graphite",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "graphite_source_MA",
+                    "max_supply": [
+                        100000
+                    ],
+                    "price_supply": [
+                        800
+                    ]
+                },
+                {
+                    "id": "graphite_source_CT",
+                    "max_supply": [
+                        100000
+                    ],
+                    "price_supply": [
+                        800
+                    ]
+                },
+                {
+                    "id": "graphite_source_ME",
+                    "max_supply": [
+                        100000
+                    ],
+                    "price_supply": [
+                        800
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Pollution",
+            "global_data": {
+                "time_interval": "Pollution"
+            },
+            "instance_data": [
+                {
+                    "id": "sox_sink"
+                }
+            ]
+        },
+        {
+            "type": "Pollution",
+            "global_data": {
+                "time_interval": "Pollution"
+            },
+            "instance_data": [
+                {
+                    "id": "nox_sink"
+                }
+            ]
+        },
+        {
+            "type": "Pollution",
+            "global_data": {
+                "time_interval": "Pollution"
+            },
+            "instance_data": [
+                {
+                    "id": "pm_sink"
+                }
+            ]
+        }
+    ]
+}
