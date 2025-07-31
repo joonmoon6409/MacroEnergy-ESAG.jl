@@ -29,8 +29,6 @@ import Base: /, push!, merge!
 
 ## Commodity types
 abstract type Commodity end
-abstract type Ammonia <: Commodity end
-abstract type Biomethane <: Commodity end ## M
 abstract type Electricity <: Commodity end ## MWh
 abstract type Hydrogen <: Commodity end ## MWh
 abstract type NaturalGas <: Commodity end ## MWh
