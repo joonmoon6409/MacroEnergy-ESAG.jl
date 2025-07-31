@@ -29,6 +29,8 @@ import Base: /, push!, merge!
 
 ## Commodity types
 abstract type Commodity end
+abstract type Ammonia <: Commodity end
+abstract type Biomethane <: Commodity end ## M
 abstract type Electricity <: Commodity end ## MWh
 abstract type Hydrogen <: Commodity end ## MWh
 abstract type NaturalGas <: Commodity end ## MWh
@@ -169,6 +171,11 @@ include("model/assets/cementplant.jl")
 include("model/assets/aluminumrefining.jl")
 include("model/assets/aluminumsmelting.jl")
 include("model/assets/aluminaplant.jl")
+include("model/assets/beccsammonia.jl")
+include("model/assets/beccsbiomethane.jl")
+include("model/assets/cropethanol.jl")
+include("model/assets/biomasstransformation.jl")
+include("model/assets/fischertropsch.jl")
 
 include("config/configure_settings.jl")
 include("config/case_settings.jl")
@@ -189,8 +196,12 @@ export AbstractAsset,
     BalanceConstraint,
     Battery,
     Biomass,
+    BiomassTransformation,
+    CropEthanol,
     Coal,
     Cement,
+    BECCSAmmonia, 
+    BECCSBiomethane,
     BECCSElectricity,
     BECCSHydrogen,
     BECCSGasoline,
@@ -210,6 +221,7 @@ export AbstractAsset,
     Electrolyzer,
     ElectricDAC,
     FossilFuelsUpstream,
+    FischerTropsch,
     FuelCell,
     FuelsEndUse,
     GasStorage,
