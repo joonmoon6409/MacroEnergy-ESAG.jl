@@ -1,0 +1,48 @@
+{
+    "HydrogenEndUse": [
+        {
+            "type": "FuelsEndUse",
+            "global_data": {
+                "co2_sink": "co2_sink",
+                "edges" :{
+                    "fuel_edge": {
+                        "commodity": "Hydrogen",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "co2_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "end_vertex": "co2_sink"
+                    },
+                    "fuel_demand_edge": {
+                        "commodity": "Hydrogen",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    }
+                }
+            },
+
+            "instance_data": [
+                {
+                    "id": "NE_Hydrogen_Use",
+                    "transforms": {
+                        "emission_rate": 0.241238471
+                    },
+                    "edges":{
+                            "fuel_edge": {
+                                "commodity": "Hydrogen",
+                                "start_vertex": "h2_NE"
+                            },
+                            "fuel_demand_edge": {
+                                "commodity": "Hydrogen",
+                                "end_vertex": "h2_demand_NE"
+                            }
+                        }
+
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "GasolineEndUse": [
+        {
+            "type": "FuelsEndUse",
+            "global_data": {
+                "co2_sink": "co2_sink",
+                "edges" :{
+                    "fuel_edge": {
+                        "commodity": "Gasoline",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "co2_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "end_vertex": "co2_sink"
+                    },
+                    "fuel_demand_edge": {
+                        "commodity": "Gasoline",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    }
+                }
+            },
+
+            "instance_data": [
+                {
+                    "id": "NE_Gasoline_Use",
+                    "transforms": {
+                        "emission_rate": 0.241238471
+                    },
+                    "edges":{
+                            "fuel_edge": {
+                                "commodity": "Gasoline",
+                                "start_vertex": "gasoline_NE"
+                            },
+                            "fuel_demand_edge": {
+                                "commodity": "Gasoline",
+                                "end_vertex": "gasoline_demand_NE"
+                            }
+                        }
+
+                }
+            ]
+        }
+    ]
+}

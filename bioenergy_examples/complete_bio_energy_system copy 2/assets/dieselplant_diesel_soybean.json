@@ -1,0 +1,198 @@
+{
+  "SoybeanBiodiesel": [
+    {
+      "type": "FischerTropsch",
+      "global_data": {
+        "transforms": {
+          "timedata": "Biomass",
+          "constraints": {
+            "BalanceConstraint": true
+          }
+        },
+        "edges": {
+          "elec_consumption_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "elec_production_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "greendiesel_edge": {
+            "commodity": "GreenDiesel",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "gasoline_edge": {
+            "commodity": "Gasoline",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+
+          "biomass_edge": {
+            "commodity": "Biomass",
+            "unidirectional": true,
+            "has_capacity": true,
+            "can_expand": true,
+            "can_retire": true,
+            "integer_decisions": false,
+            "constraints": {
+              "CapacityConstraint": true
+            }
+          },
+          "co2_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "start_vertex": "co2_sink"
+          },
+          "co2_emission_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "end_vertex": "co2_sink"
+          },
+          "co2_captured_edge": {
+            "commodity": "CO2Captured",
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "id": "NE_Soybean_Biodiesel_small",
+          "transforms": {
+            "greendiesel_production": 0.303,
+            "gasoline_production": 0,
+            "electricity_production": 0,
+            "capture_rate": 0.8,
+            "co2_content": 1.7,
+            "emission_rate": 0.9
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Soybean",
+              "start_vertex": "soybean_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 1300000.0,
+              "fixed_om_cost": 95000.0,
+              "variable_om_cost": 1300.0,
+              "existing_capacity": 20.0
+            },
+            "elec_consumption_edge": {
+              "start_vertex": "elec_NE"
+            },
+            "elec_production_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "greendiesel_edge": {
+              "end_vertex": "greendiesel_NE"
+            },
+            "gasoline_edge": {
+              "end_vertex": "gasoline_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        },
+
+        {
+          "id": "NE_Soybean_Biodiesel_mid",
+          "transforms": {
+            "greendiesel_production": 0.303,
+            "gasoline_production": 0,
+            "electricity_production": 0,
+            "capture_rate": 0.8,
+            "co2_content": 1.7,
+            "emission_rate": 0.9
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Soybean",
+              "start_vertex": "soybean_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 1100000.0,
+              "fixed_om_cost": 80000.0,
+              "variable_om_cost": 1170.0,
+              "existing_capacity": 45.0
+            },
+            "elec_consumption_edge": {
+              "start_vertex": "elec_NE"
+            },
+            "elec_production_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "greendiesel_edge": {
+              "end_vertex": "greendiesel_NE"
+            },
+            "gasoline_edge": {
+              "end_vertex": "gasoline_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        },
+
+        {
+          "id": "NE_Soybean_Biodiesel_large",
+          "transforms": {
+            "transforms": {
+              "greendiesel_production": 0.303,
+              "gasoline_production": 0,
+              "electricity_production": 0,
+              "capture_rate": 0.8,
+              "co2_content": 1.7,
+              "emission_rate": 0.9
+            }
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Soybean",
+              "start_vertex": "soybean_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 950000.0,
+              "fixed_om_cost": 60000.0,
+              "variable_om_cost": 1110.0,
+              "existing_capacity": 90.0
+            },
+            "elec_consumption_edge": {
+              "start_vertex": "elec_NE"
+            },
+            "elec_production_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "greendiesel_edge": {
+              "end_vertex": "greendiesel_NE"
+            },
+            "gasoline_edge": {
+              "end_vertex": "gasoline_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

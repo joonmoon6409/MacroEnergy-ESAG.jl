@@ -1,0 +1,115 @@
+{
+    "sugarcaneethanol": [
+        {
+            "type": "sugarcaneethanol",
+            "global_data":{
+                "transforms": {
+                    "timedata": "Biomass",
+                    "constraints": {
+                            "BalanceConstraint": true
+                    }
+                },
+                "edges":{
+                    "elec_consumption_edge":{
+                        "commodity": "Electricity",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "elec_production_edge":{
+                        "commodity": "Electricity",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "ethanol_edge":{
+                        "commodity": "Ethanol",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "bagasse_edge":{
+                        "commodity": "Bagasse",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "sugarcane_edge":{
+                        "commodity": "Sugarcane",
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "can_expand": true,
+                        "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_One"
+                                    }
+                                },
+                        "can_retire": true,
+                        "integer_decisions": false,
+                        "constraints": {
+                            "CapacityConstraint": true
+                        }
+                    },
+                    "co2_edge":{
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "start_vertex": "co2_sink"
+                    },
+                    "co2_emission_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "end_vertex": "co2_sink"
+                    },
+                    "co2_captured_edge": {
+                        "commodity": "CO2Captured",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    }
+                }
+            },
+            "instance_data":[
+                {
+                    "id": "NE_sugarcaneethanol",
+                    "transforms":{
+                        "ethanol_production": 0.65997315,
+                        "bagasse_production": 0.68040409,
+                        "electricity_production": 0,
+                        "electricity_consumption": 0,
+                        "capture_rate": 0,
+                        "co2_content": 1.717,
+                        "emission_rate": 1.049363163
+                    },
+                    "edges": {
+                        "sugarcane_edge": {
+                            "commodity": "Sugarcane",
+                            "start_vertex": "sugarcane_NE",
+                            "investment_cost": 492864.96,
+                            "fixed_om_cost": 547339.52,
+                            "variable_om_cost": 0
+                        },
+                        "elec_consumption_edge": {
+                            "start_vertex": "elec_NE"
+                        },
+                        "elec_production_edge": {
+                            "end_vertex": "elec_NE"
+                        },
+                        "ethanol_edge":{
+                            "end_vertex": "ethanol_NE"
+                        },
+                        "bagasse_edge":{
+                            "end_vertex": "bagasse_NE"
+                        },
+                        "co2_captured_edge": {
+                            "end_vertex": "co2_captured_NE"
+                        },
+                        "co2_emission_edge": {
+                            "end_vertex": "co2_sink"
+                        },
+                        "co2_edge": {
+                            "end_vertex": "co2_sink"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

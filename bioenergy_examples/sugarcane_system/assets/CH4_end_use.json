@@ -1,0 +1,48 @@
+{
+    "BiomethaneEndUse": [
+        {
+            "type": "FuelsEndUse",
+            "global_data": {
+                "co2_sink": "co2_sink",
+                "edges" :{
+                    "fuel_edge": {
+                        "commodity": "Biomethane",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "co2_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "end_vertex": "co2_sink"
+                    },
+                    "fuel_demand_edge": {
+                        "commodity": "Biomethane",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    }
+                }
+            },
+
+            "instance_data": [
+                {
+                    "id": "NE_Biomethane_Use",
+                    "transforms": {
+                        "emission_rate": 0.241238471
+                    },
+                    "edges":{
+                            "fuel_edge": {
+                                "commodity": "Biomethane",
+                                "start_vertex": "ch4_NE"
+                            },
+                            "fuel_demand_edge": {
+                                "commodity": "Biomethane",
+                                "end_vertex": "ch4_demand_NE"
+                            }
+                        }
+
+                }
+            ]
+        }
+    ]
+}

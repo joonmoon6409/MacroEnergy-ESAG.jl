@@ -1,0 +1,419 @@
+{
+    "nodes": [
+        {
+            "type": "CornStover",
+            "global_data": {
+                "time_interval": "Biomass",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "cornstover_NE",
+                    "location": "NE",
+                    "max_supply": [
+                        8200.85,
+                        12002.51,
+                        1200055.77,
+                        33000070.4,
+                        450000011.23
+                    ],
+                    "price_supply": [
+                        49.38,
+                        61.73,
+                        66.66,
+                        86.42,
+                        86.55
+                    ]
+                }
+                
+            ]
+            
+        },
+
+          {
+            "type": "Residue",
+            "global_data": {
+                "time_interval": "Biomass",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "residue_NE",
+                    "location": "NE",
+                    "demand": "Demand_Ethanol"
+                }
+            ]
+        },
+
+        {
+            "type": "Sugarcane",
+            "global_data": {
+                "time_interval": "Biomass",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "sugarcane_NE",
+                    "location": "NE",
+                    "max_supply": [
+                        8200.85,
+                        12002.51,
+                        1200055.77,
+                        33000070.4,
+                        450000011.23
+                    ],
+                    "price_supply": [
+                        49.38,
+                        61.73,
+                        66.66,
+                        86.42,
+                        86.55
+                    ]
+                }
+                
+            ]
+            
+        },
+
+        {
+            "type": "Bagasse",
+            "global_data": {
+                "time_interval": "Biomass",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "bagasse_NE",
+                    "location": "NE"
+                }
+            ]
+        },
+
+        {
+            "type": "NaturalGas",
+            "global_data": {
+                "time_interval": "NaturalGas",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "natgas_NE",
+                    "location": "NE",
+                    "max_supply": [
+                        820000.85,
+                        1200002.51,
+                        12000055.77,
+                        33000070.4,
+                        45000011.23
+                    ],
+                    "price_supply": [
+                        490000.38,
+                        6100000.73,
+                        60000006.66,
+                        80000006.42,
+                        800000006.55
+                    ]
+                }
+            ]
+        },
+
+        {
+            "type": "Electricity",
+            "global_data": {
+                "time_interval": "Electricity",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "elec_NE",
+                    "location": "NE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_Electricity"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "CO2",
+            "global_data": {
+                "time_interval": "CO2"
+            },
+            "instance_data": [
+                {
+                    "id": "co2_sink",
+                    "constraints": {
+                        "CO2CapConstraint": false
+                    },
+                    "rhs_policy": {
+                        "CO2CapConstraint": 0
+                    },
+                    "price_unmet_policy": {
+                        "CO2CapConstraint": 200
+                    }
+                }
+            ]
+        },
+        
+        {
+            "type": "CO2Captured",
+            "global_data": {
+                "time_interval": "CO2Captured"
+            },
+            "instance_data": [
+                {
+                    "id": "co2_captured_NE",
+                    "location": "NE"
+                }
+            ]
+        },
+
+        {
+            "type": "Ethanol",
+            "global_data":{
+                "time_interval": "LiquidFuels",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            }, 
+
+            "instance_data":[
+                {
+                    "id" : "ethanol_NE",
+                    "location": "NE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_Zero"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "type": "Ethanol",
+            "global_data": {
+                "time_interval": "LiquidFuels",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "ethanol_demand_NE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_Ethanol"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "type": "Hydrogen",
+            "global_data": {
+                "time_interval": "Hydrogen",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "h2_NE",
+                    "location": "NE",
+                    "demand": [0]
+                }
+            ]
+        },
+
+        {
+            "type": "Hydrogen",
+            "global_data": {
+                "time_interval": "Hydrogen",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "h2_demand_NE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_Hydrogen"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "type": "Ammonia",
+            "global_data": {
+                "time_interval": "Ammonia",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "nh3_NE",
+                    "location": "NE",
+                    "demand": [0]
+                }
+            ]
+        },
+
+        {
+            "type": "Ammonia",
+            "global_data": {
+                "time_interval": "Ammonia",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "nh3_demand_NE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_Ammonia"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "type": "Biomethane",
+            "global_data": {
+                "time_interval": "Biomethane",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "ch4_NE",
+                    "location": "NE",
+                    "demand": [0]
+                }
+            ]
+        },
+
+        {
+            "type": "Biomethane",
+            "global_data": {
+                "time_interval": "Biomethane",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "ch4_demand_NE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_Biomethane"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "type": "Gasoline",
+            "global_data": {
+                "time_interval": "LiquidFuels",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "gasoline_NE",
+                    "location": "NE",
+                    "demand": [0]
+                }
+            ]
+        },
+
+        {
+            "type": "Gasoline",
+            "global_data": {
+                "time_interval": "LiquidFuels",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "gasoline_demand_NE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_Gasoline"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "type": "GreenDiesel",
+            "global_data": {
+                "time_interval": "GreenDiesel",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "greendiesel_NE",
+                    "location": "NE",
+                    "demand": [0]
+                }
+            ]
+        },
+
+        {
+            "type": "GreenDiesel",
+            "global_data": {
+                "time_interval": "GreenDiesel",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "greendiesel_demand_NE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/demand.csv",
+                            "header": "Demand_GreenDiesel"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

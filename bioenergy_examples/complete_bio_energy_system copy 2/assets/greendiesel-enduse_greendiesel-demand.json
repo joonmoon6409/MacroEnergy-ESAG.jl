@@ -1,0 +1,47 @@
+{
+    "GreenDieselEndUse": [
+        {
+            "type": "FuelsEndUse",
+            "global_data": {
+                "co2_sink": "co2_sink",
+                "edges" :{
+                    "fuel_edge": {
+                        "commodity": "GreenDiesel",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "co2_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "end_vertex": "co2_sink"
+                    },
+                    "fuel_demand_edge": {
+                        "commodity": "GreenDiesel",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    }
+                }
+            },
+
+            "instance_data": [
+                {
+                    "id": "NE_GreenDiesel_Use",
+                    "transforms": {
+                        "emission_rate": 0.241238471
+                    },
+                    "edges":{
+                            "fuel_edge": {
+                                "commodity": "GreenDiesel",
+                                "start_vertex": "greendiesel_NE"
+                            },
+                            "fuel_demand_edge": {
+                                "commodity": "GreenDiesel",
+                                "end_vertex": "greendiesel_demand_NE"
+                            }
+                        }
+                }
+            ]
+        }
+    ]
+}

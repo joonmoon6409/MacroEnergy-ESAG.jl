@@ -1,0 +1,113 @@
+{
+  "bagasse_power_plant": [
+    {
+      "type": "BECCSElectricity",
+      "global_data": {
+        "transforms": {
+          "timedata": "Biomass",
+          "constraints": {
+            "BalanceConstraint": true
+          }
+        },
+        "edges": {
+          "elec_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "biomass_edge": {
+            "commodity": "Bagasse",
+            "unidirectional": true,
+            "has_capacity": true,
+            "can_expand": true,
+            "can_retire": true,
+            "integer_decisions": false,
+            "constraints": {
+              "CapacityConstraint": true
+            }
+          },
+          "co2_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "start_vertex": "co2_sink"
+          },
+          "co2_emission_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "end_vertex": "co2_sink"
+          },
+          "co2_captured_edge": {
+            "commodity": "CO2Captured",
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "id": "NE_BECCS_bagasse_power_plant",
+          "transforms": {
+            "electricity_production": 0.25,
+            "capture_rate": 1.334,
+            "co2_content": 1.45,
+            "emission_rate": 0.116
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Bagasse",
+              "start_vertex": "bagasse_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 2000000.0,
+              "fixed_om_cost": 125000.0,
+              "variable_om_cost": 1050.0,
+              "existing_capacity": 40.0
+            },
+            "elec_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        },
+        {
+          "id": "NE_bagasse_power_plant",
+          "transforms": {
+            "electricity_production": 0.25,
+            "co2_content": 1.45,
+            "emission_rate": 1.45
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Bagasse",
+              "start_vertex": "bagasse_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 1600000.0,
+              "fixed_om_cost": 100000.0,
+              "variable_om_cost": 950.0,
+              "existing_capacity": 40.0
+            },
+            "elec_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
