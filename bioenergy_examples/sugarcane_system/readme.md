@@ -1,3 +1,3 @@
-# 1 zone, electricity-only example
+# 1 zone, sugarcane-only example
 
-This is a simple example of a single zone with electricity-only generation and load. It is intended to demonstrate the basic structure of a model in this repository. More details will be added in the future.
+This is a simple example of a single zone with only bioenergy supply and demand. It is intended to demonstrate the basic structure of a bioenergy pathway in this repository. 
