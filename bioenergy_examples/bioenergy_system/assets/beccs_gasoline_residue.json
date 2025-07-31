@@ -1,0 +1,324 @@
+{
+  "BECCS_FT": [
+    {
+      "type": "FischerTropsch",
+      "global_data": {
+        "transforms": {
+          "timedata": "Biomass",
+          "constraints": {
+            "BalanceConstraint": true
+          }
+        },
+        "edges": {
+          "elec_consumption_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "elec_production_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "gasoline_edge": {
+            "commodity": "Gasoline",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "greendiesel_edge": {
+            "commodity": "GreenDiesel",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "biomass_edge": {
+            "commodity": "Biomass",
+            "unidirectional": true,
+            "has_capacity": true,
+            "can_expand": true,
+            "can_retire": true,
+            "integer_decisions": false,
+            "constraints": {
+              "CapacityConstraint": true
+            }
+          },
+          "co2_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "start_vertex": "co2_sink"
+          },
+          "co2_emission_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "end_vertex": "co2_sink"
+          },
+          "co2_captured_edge": {
+            "commodity": "CO2Captured",
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "id": "NE_BECCS_FT_small",
+          "transforms": {
+            "gasoline_production": 0.425,
+            "greendiesel_production": 0.092,
+            "electricity_production": 0,
+            "capture_rate": 0.883,
+            "co2_content": 1.55,
+            "emission_rate": 0.667
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Residue",
+              "start_vertex": "residue_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 4400000.0,
+              "fixed_om_cost": 170000.0,
+              "variable_om_cost": 1800.0,
+              "existing_capacity": 20.0
+            },
+            "elec_consumption_edge": {
+              "start_vertex": "elec_NE"
+            },
+            "elec_production_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "gasoline_edge": {
+              "end_vertex": "gasoline_NE"
+            },
+            "greendiesel_edge": {
+              "end_vertex": "greendiesel_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        },
+        {
+          "id": "NE_BECCS_FT_mid",
+          "transforms": {
+            "gasoline_production": 0.425,
+            "greendiesel_production": 0.092,
+            "electricity_production": 0,
+            "capture_rate": 0.883,
+            "co2_content": 1.55,
+            "emission_rate": 0.667
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Residue",
+              "start_vertex": "residue_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 3700000.0,
+              "fixed_om_cost": 145000.0,
+              "variable_om_cost": 1650.0,
+              "existing_capacity": 45.0
+            },
+            "elec_consumption_edge": {
+              "start_vertex": "elec_NE"
+            },
+            "elec_production_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "gasoline_edge": {
+              "end_vertex": "gasoline_NE"
+            },
+            "greendiesel_edge": {
+              "end_vertex": "greendiesel_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        },
+        {
+          "id": "NE_BECCS_FT_large",
+          "transforms": {
+            "transforms": {
+              "gasoline_production": 0.425,
+              "greendiesel_production": 0.092,
+              "electricity_production": 0,
+              "capture_rate": 0.883,
+              "co2_content": 1.55,
+              "emission_rate": 0.667
+            }
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Residue",
+              "start_vertex": "residue_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+
+              "investment_cost": 3000000.0,
+              "fixed_om_cost": 120000.0,
+              "variable_om_cost": 1580.0,
+              "existing_capacity": 90.0
+            },
+            "elec_consumption_edge": {
+              "start_vertex": "elec_NE"
+            },
+            "elec_production_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "gasoline_edge": {
+              "end_vertex": "gasoline_NE"
+            },
+            "greendiesel_edge": {
+              "end_vertex": "greendiesel_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        },
+        {
+          "id": "NE_FT_small",
+          "transforms": {
+            "gasoline_production": 0.425,
+            "greendiesel_production": 0.092,
+            "electricity_production": 0,
+            "capture_rate": 0,
+            "co2_content": 1.55,
+            "emission_rate": 1.2
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Residue",
+              "start_vertex": "residue_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 3400000.0,
+              "fixed_om_cost": 155000.0,
+              "variable_om_cost": 1600.0,
+              "existing_capacity": 22.0
+            },
+            "elec_consumption_edge": {
+              "start_vertex": "elec_NE"
+            },
+            "elec_production_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "gasoline_edge": {
+              "end_vertex": "gasoline_NE"
+            },
+            "greendiesel_edge": {
+              "end_vertex": "greendiesel_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        },
+        {
+          "id": "NE_FT_mid",
+          "transforms": {
+            "gasoline_production": 0.425,
+            "greendiesel_production": 0.092,
+            "electricity_production": 0,
+            "capture_rate": 0,
+            "co2_content": 1.55,
+            "emission_rate": 1.2
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Residue",
+              "start_vertex": "residue_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 2900000.0,
+              "fixed_om_cost": 130000.0,
+              "variable_om_cost": 1480.0,
+              "existing_capacity": 49.0
+            },
+            "elec_consumption_edge": {
+              "start_vertex": "elec_NE"
+            },
+            "elec_production_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "gasoline_edge": {
+              "end_vertex": "gasoline_NE"
+            },
+            "greendiesel_edge": {
+              "end_vertex": "greendiesel_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        },
+        {
+          "id": "NE_FT_large",
+          "transforms": {
+            "transforms": {
+              "gasoline_production": 0.425,
+              "greendiesel_production": 0.092,
+              "electricity_production": 0,
+              "capture_rate": 0,
+              "co2_content": 1.55,
+              "emission_rate": 1.2
+            }
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Residue",
+              "start_vertex": "residue_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 2500000.0,
+              "fixed_om_cost": 110000.0,
+              "variable_om_cost": 1410.0,
+              "existing_capacity": 98.0
+            },
+            "elec_consumption_edge": {
+              "start_vertex": "elec_NE"
+            },
+            "elec_production_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "gasoline_edge": {
+              "end_vertex": "gasoline_NE"
+            },
+            "greendiesel_edge": {
+              "end_vertex": "greendiesel_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

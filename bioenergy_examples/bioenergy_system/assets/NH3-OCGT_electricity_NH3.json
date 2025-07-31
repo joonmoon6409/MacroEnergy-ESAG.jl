@@ -1,0 +1,87 @@
+{
+  "NH3sGasPowerOCGT": [
+    {
+      "type": "ThermalPower",
+      "global_data": {
+        "nodes": {},
+        "transforms": {
+          "timedata": "Ammonia",
+          "constraints": {
+            "BalanceConstraint": true
+          }
+        },
+        "edges": {
+          "elec_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": true,
+            "can_retire": true,
+            "can_expand": true,
+            "uc": true,
+            "constraints": {
+              "CapacityConstraint": true
+            }
+          },
+          "fuel_edge": {
+            "commodity": "Ammonia",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "co2_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "end_vertex": "co2_sink"
+          },
+          "sox_edge": {
+            "commodity": "Pollution",
+            "end_vertex": "sox_sink",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "nox_edge": {
+            "commodity": "Pollution",
+            "end_vertex": "nox_sink",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "pm_edge": {
+            "commodity": "Pollution",
+            "end_vertex": "pm_sink",
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "id": "NE_OCGT-NH3",
+          "transforms": {
+            "emission_rate": 0,
+            "fuel_consumption": 2.5,
+            "electricity_production": 0.35
+          },
+          "edges": {
+            "elec_edge": {
+              "end_vertex": "elec_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "existing_capacity": 50000,
+              "investment_cost": 3424.41,
+              "fixed_om_cost": 7084273.78,
+              "variable_om_cost": 38.02,
+              "integer_decisions": false
+            },
+            "fuel_edge": {
+              "start_vertex": "nh3_NE"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

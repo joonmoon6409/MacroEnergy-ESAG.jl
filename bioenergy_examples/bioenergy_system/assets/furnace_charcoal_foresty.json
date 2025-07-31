@@ -1,0 +1,109 @@
+{
+  "Charcoal_Furnace": [
+    {
+      "type": "FischerTropsch",
+      "global_data": {
+        "transforms": {
+          "timedata": "Biomass",
+          "constraints": {
+            "BalanceConstraint": true
+          }
+        },
+        "edges": {
+          "elec_consumption_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "elec_production_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "gasoline_edge": {
+            "commodity": "Charcoal",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "greendiesel_edge": {
+            "commodity": "GreenDiesel",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "biomass_edge": {
+            "commodity": "Biomass",
+            "unidirectional": true,
+            "has_capacity": true,
+            "can_expand": true,
+            "can_retire": true,
+            "integer_decisions": false,
+            "constraints": {
+              "CapacityConstraint": true
+            }
+          },
+          "co2_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "start_vertex": "co2_sink"
+          },
+          "co2_emission_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "end_vertex": "co2_sink"
+          },
+          "co2_captured_edge": {
+            "commodity": "CO2Captured",
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "id": "NE_charcoal_furnace",
+          "transforms": {
+            "gasoline_production": 0.47,
+            "greendiesel_production": 0,
+            "electricity_production": 0,
+            "capture_rate": 0,
+            "co2_content": 1.717,
+            "emission_rate": 1.049363163
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "Biomass_Wood",
+              "start_vertex": "biomass_wood_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "investment_cost": 900000.0,
+              "fixed_om_cost": 60000.0,
+              "variable_om_cost": 780.0,
+              "existing_capacity": 30.0
+            },
+            "elec_consumption_edge": {
+              "start_vertex": "elec_NE"
+            },
+            "elec_production_edge": {
+              "end_vertex": "elec_NE"
+            },
+            "gasoline_edge": {
+              "end_vertex": "charcoal_NE"
+            },
+            "greendiesel_edge": {
+              "end_vertex": "greendiesel_NE"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_NE"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
