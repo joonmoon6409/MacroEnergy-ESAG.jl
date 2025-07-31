@@ -36,6 +36,8 @@ abstract type CO2 <: Commodity end ## tonnes
 abstract type CO2Captured <: CO2 end ## tonnes
 abstract type Coal <: Commodity end ## MWh
 abstract type Biomass <: Commodity end ## tonnes
+abstract type Ammonia <: Commodity end ## MWh
+abstract type Biomethane <: Commodity end ## MWh        
 abstract type Uranium <: Commodity end ## MWh
 abstract type LiquidFuels <: Commodity end ## MWh
 abstract type Pollution <: Commodity end ## tonnes
@@ -169,6 +171,11 @@ include("model/assets/cementplant.jl")
 include("model/assets/aluminumrefining.jl")
 include("model/assets/aluminumsmelting.jl")
 include("model/assets/aluminaplant.jl")
+include("model/assets/beccsammonia.jl")
+include("model/assets/beccsbiomethane.jl")
+include("model/assets/cropethanol.jl")
+include("model/assets/biomasstransformation.jl")
+include("model/assets/fischertropsch.jl")
 
 include("config/configure_settings.jl")
 include("config/case_settings.jl")
@@ -189,8 +196,12 @@ export AbstractAsset,
     BalanceConstraint,
     Battery,
     Biomass,
+    BiomassTransformation,
+    CropEthanol,
     Coal,
     Cement,
+    BECCSAmmonia, 
+    BECCSBiomethane,
     BECCSElectricity,
     BECCSHydrogen,
     BECCSGasoline,
@@ -210,6 +221,7 @@ export AbstractAsset,
     Electrolyzer,
     ElectricDAC,
     FossilFuelsUpstream,
+    FischerTropsch,
     FuelCell,
     FuelsEndUse,
     GasStorage,
