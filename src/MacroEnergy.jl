@@ -38,6 +38,8 @@ abstract type CO2 <: Commodity end ## tonnes
 abstract type CO2Captured <: CO2 end ## tonnes
 abstract type Coal <: Commodity end ## MWh
 abstract type Biomass <: Commodity end ## tonnes
+abstract type Ammonia <: Commodity end ## MWh
+abstract type Biomethane <: Commodity end ## MWh        
 abstract type Uranium <: Commodity end ## MWh
 abstract type LiquidFuels <: Commodity end ## MWh
 abstract type Pollution <: Commodity end ## tonnes
