@@ -1,0 +1,95 @@
+{
+    "BECCSATJ": [
+        {
+            "type": "BECCSATJ",
+            "global_data": {
+                "transforms": {
+                    "timedata": "LiquidFuels",
+                    "constraints": {
+                        "BalanceConstraint": true
+                    }
+                },
+                "edges": {
+                    "ethanol_edge": {
+                        "commodity": "LiquidFuels",
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "can_expand": true,
+                        "can_retire": true,
+                        "integer_decisions": false,
+                        "constraints": {
+                            "CapacityConstraint": true
+                        }
+                    },
+                    "jetfuel_edge": {
+                        "commodity": "LiquidFuels",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "elec_consumption_edge": {
+                        "commodity": "Electricity",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "co2_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "start_vertex": "co2_sink"
+                    },
+                    "co2_emission_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "end_vertex": "co2_sink"
+                    },
+                    "co2_captured_edge": {
+                        "commodity": "CO2Captured",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    }
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "BR_BECCS_ATJ",
+                    "transforms": {
+                        "jetfuel_production": 0.917,
+                        "ethanol_consumption": 1.0,
+                        "electricity_consumption": 0.15,
+                        "co2_content": 0.8,
+                        "emission_rate": 0.25,
+                        "capture_rate": 0
+                    },
+                    "edges": {
+                        "ethanol_edge": {
+                            "commodity": "Ethanol",
+                            "start_vertex": "ethanol_BR",
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_One"
+                                }
+                            },
+                            "capacity_size": 237.2,
+                            "investment_cost": 1433333,
+                            "fixed_om_cost": 144444.44,
+                            "variable_om_cost": 43,
+                            "existing_capacity" : 0
+                        },
+                        "jetfuel_edge": {
+                            "commodity": "JetFuel",
+                            "end_vertex": "jetfuel_BR"
+                        },
+                        "elec_consumption_edge": {
+                            "start_vertex": "elec_BR"
+                        },
+                        "co2_captured_edge": {
+                            "end_vertex": "co2_captured_BR"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

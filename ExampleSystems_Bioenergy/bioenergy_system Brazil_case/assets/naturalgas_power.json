@@ -1,11 +1,11 @@
 {
-  "NH3sGasPowerOCGT": [
+  "NaturalGaPower": [
     {
       "type": "ThermalPower",
       "global_data": {
         "nodes": {},
         "transforms": {
-          "timedata": "Ammonia",
+          "timedata": "NaturalGas",
           "constraints": {
             "BalanceConstraint": true
           }
@@ -15,15 +15,18 @@
             "commodity": "Electricity",
             "unidirectional": true,
             "has_capacity": true,
-            "can_retire": true,
-            "can_expand": true,
             "uc": true,
+            "integer_decisions": false,
             "constraints": {
-              "CapacityConstraint": true
+              "CapacityConstraint": true,
+              "RampingLimitConstraint": true,
+              "MinFlowConstraint": true,
+              "MinUpTimeConstraint": true,
+              "MinDownTimeConstraint": true
             }
           },
           "fuel_edge": {
-            "commodity": "Ammonia",
+            "commodity": "NaturalGas",
             "unidirectional": true,
             "has_capacity": false
           },
@@ -55,29 +58,43 @@
       },
       "instance_data": [
         {
-          "id": "NE_OCGT-NH3",
+          "id": "BR_natgas_fired_combined_cycle",
           "transforms": {
-            "emission_rate": 0,
-            "fuel_consumption": 2.5,
-            "electricity_production": 0.35
+            "emission_rate": 0.181048235160161,
+            "fuel_consumption": 2.249613533
           },
           "edges": {
             "elec_edge": {
-              "end_vertex": "elec_NE",
-              "availability": {
-                "timeseries": {
-                  "path": "system/availability.csv",
-                  "header": "Availability_One"
-                }
-              },
-              "existing_capacity": 50000,
-              "investment_cost": 3424.41,
-              "fixed_om_cost": 7084273.78,
-              "variable_om_cost": 38.02,
-              "integer_decisions": false
+              "end_vertex": "elec_BR",
+              "can_retire": true,
+              "can_expand": true,
+              "existing_capacity": 0,
+              "investment_cost": 10000000.0,
+              "fixed_om_cost": 1600100,
+              "variable_om_cost": 4415,
+              "capacity_size": 125825,
+              "startup_cost": 89.34,
+              "startup_fuel_consumption": 0.58614214,
+              "min_up_time": 6,
+              "min_down_time": 6,
+              "ramp_up_fraction": 0.64,
+              "ramp_down_fraction": 0.64,
+              "min_flow_fraction": 0.444
             },
             "fuel_edge": {
-              "start_vertex": "nh3_NE"
+              "start_vertex": "natgas_BR"
+            },
+            "sox_edge": {
+              "commodity": "Pollution",
+              "end_vertex": "sox_sink"
+            },
+            "nox_edge": {
+              "commodity": "Pollution",
+              "end_vertex": "nox_sink"
+            },
+            "pm_edge": {
+              "commodity": "Pollution",
+              "end_vertex": "pm_sink"
             }
           }
         }

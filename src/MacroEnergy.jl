@@ -35,6 +35,7 @@ abstract type NaturalGas <: Commodity end ## MWh
 abstract type CO2 <: Commodity end ## tonnes
 abstract type CO2Captured <: CO2 end ## tonnes
 abstract type Coal <: Commodity end ## MWh
+abstract type Charcoal <: Commodity end ## Mwh
 abstract type Biomass <: Commodity end ## tonnes
 abstract type Ammonia <: Commodity end ## MWh
 abstract type Biomethane <: Commodity end ## MWh        
@@ -173,9 +174,13 @@ include("model/assets/aluminumsmelting.jl")
 include("model/assets/aluminaplant.jl")
 include("model/assets/beccsammonia.jl")
 include("model/assets/beccsbiomethane.jl")
-include("model/assets/cropethanol.jl")
+include("model/assets/beccsethanol.jl")
 include("model/assets/biomasstransformation.jl")
 include("model/assets/fischertropsch.jl")
+include("model/assets/beccsatj.jl") 
+include("model/assets/beccscharcoal.jl")
+include("model/assets/beccsdiesel.jl")
+include("model/assets/groundtransport.jl") 
 
 include("config/configure_settings.jl")
 include("config/case_settings.jl")
@@ -207,6 +212,10 @@ export AbstractAsset,
     BECCSGasoline,
     BECCSLiquidFuels,
     BECCSNaturalGas,
+    BECCSATJ,
+    BECCSCharcoal,
+    BECCSEthanol,
+    BECCSDiesel,
     CO2,
     CO2CapConstraint,
     CO2Captured,
@@ -226,6 +235,7 @@ export AbstractAsset,
     FuelsEndUse,
     GasStorage,
     Graphite,
+    GroundTransport,
     get_optimal_capacity, 
     get_optimal_discounted_costs,
     get_optimal_flow,

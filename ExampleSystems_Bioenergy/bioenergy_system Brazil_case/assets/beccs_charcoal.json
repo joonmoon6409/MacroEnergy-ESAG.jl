@@ -1,0 +1,91 @@
+{
+    "BECCS_Wood": [
+        {
+            "type": "BECCSCharcoal",
+            "global_data": {
+                "transforms": {
+                    "timedata": "Biomass",
+                    "constraints": {
+                        "BalanceConstraint": true
+                    }
+                },
+                "edges": {
+                    "elec_edge": {
+                        "commodity": "Electricity",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "charcoal_edge": {
+                        "commodity": "Charcoal",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "biomass_edge": {
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "can_expand": true,
+                        "can_retire": true,
+                        "integer_decisions": false,
+                        "constraints": {
+                            "CapacityConstraint": true
+                        }
+                    },
+                    "co2_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "start_vertex": "co2_sink"
+                    },
+                    "co2_emission_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "end_vertex": "co2_sink"
+                    },
+                    "co2_captured_edge": {
+                        "commodity": "CO2Captured",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    }
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "BR_BECCS_charcoal",
+                    "transforms": {
+                        "charcoal_production": 2.67,        
+                        "electricity_consumption": 0.1,       
+                        "capture_rate": 0.9,                   
+                        "co2_content": 1.8,                      
+                        "emission_rate": 0.2    
+                    },
+                    "edges": {
+                        "biomass_edge": {
+                                "commodity": "Biomass_Wood",
+                                "start_vertex": "biomass_wood_BR",
+                                "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_One"
+                                }
+                            },
+                            "capacity_size": 0.3,
+                            "investment_cost": 50,
+                            "fixed_om_cost": 124299.58,
+                            "variable_om_cost": 0
+                        },
+                        "elec_edge": {
+                            "start_vertex": "elec_BR"
+                        },
+                        "charcoal_edge": {
+                            "end_vertex": "charcoal_BR"
+                        },
+                        "co2_captured_edge": {
+                            "end_vertex": "co2_captured_BR"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
