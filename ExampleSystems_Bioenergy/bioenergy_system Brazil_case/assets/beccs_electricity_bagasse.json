@@ -65,9 +65,9 @@
                 }
               },
               "capacity_size": 17.100,
-              "investment_cost": 24079140,
-              "fixed_om_cost": 963164.86,
-              "variable_om_cost": 29.74,
+              "investment_cost": 28978808.0,
+              "fixed_om_cost": 1159151.4,
+              "variable_om_cost": 35.8,
               "existing_capacity": 0
             },
             "elec_edge": {
@@ -96,9 +96,9 @@
                 }
               },
               "capacity_size": 17.100,
-              "investment_cost": 24079140,
-              "fixed_om_cost": 963164.86,
-              "variable_om_cost": 29.74,
+              "investment_cost": 28978808.0,
+              "fixed_om_cost": 1159151.4,
+              "variable_om_cost": 35.8,
               "existing_capacity": 0
             },
             "elec_edge": {

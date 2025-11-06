@@ -83,9 +83,9 @@
                                 }
                             },
                             "capacity_size": 151.7,
-                            "investment_cost": 6671000,
-                            "fixed_om_cost": 424093.84,
-                            "variable_om_cost": 3.59,
+                            "investment_cost": 11727758.6,
+                            "fixed_om_cost": 745557.0,
+                            "variable_om_cost": 6.3,
                             "existing_capacity": 500000000
                         },
                         "elec_consumption_edge": {
@@ -127,9 +127,9 @@
                                 }
                             },
                             "capacity_size": 311.5,
-                            "investment_cost": 5256000,
-                            "fixed_om_cost": 333730.74,
-                            "variable_om_cost": 3.59,
+                            "investment_cost": 9240580.3,
+                            "fixed_om_cost": 586732.4,
+                            "variable_om_cost": 6.3,
                             "existing_capacity": 500000000
                         },
                         "elec_consumption_edge": {
@@ -171,9 +171,9 @@
                                 }
                             },
                             "capacity_size": 1625,
-                            "investment_cost": 3032000,
-                            "fixed_om_cost": 192523.71,
-                            "variable_om_cost": 3.59,
+                            "investment_cost": 5331108.0,
+                            "fixed_om_cost": 338476.2,
+                            "variable_om_cost": 6.3,
                             "existing_capacity": 500000000
                         },
                         "elec_consumption_edge": {
@@ -278,9 +278,9 @@
                                 }
                             },
                             "capcity_size": 151.7,
-                            "investment_cost": 14514650,
-                            "fixed_om_cost": 580648.71,
-                            "variable_om_cost": 171.69,
+                            "investment_cost": 29306612.9,
+                            "fixed_om_cost": 1172391.1,
+                            "variable_om_cost": 346.7,
                             "existing_capacity": 0
                         },
                         "elec_consumption_edge": {
@@ -322,9 +322,9 @@
                                 }
                             },
                             "capcity_size": 311.5,
-                            "investment_cost": 11428430,
-                            "fixed_om_cost": 456927.93,
-                            "variable_om_cost": 171.69,
+                            "investment_cost": 23075208.5,
+                            "fixed_om_cost": 922585.8,
+                            "variable_om_cost": 346.7,
                             "existing_capacity": 0
                         },
                         "elec_consumption_edge": {
@@ -366,9 +366,9 @@
                                 }
                             },
                             "capcity_size": 1625,
-                            "investment_cost": 6590220,
-                            "fixed_om_cost": 263594.12,
-                            "variable_om_cost": 171.69,
+                            "investment_cost": 13306350.9,
+                            "fixed_om_cost": 532224.4,
+                            "variable_om_cost": 346.7,
                             "existing_capacity": 0
                         },
                         "elec_consumption_edge": {
@@ -474,9 +474,9 @@
                                 }
                             },
                             "capacity_size": 151.7,
-                            "investment_cost": 3720000,
-                            "fixed_om_cost": 148890.40,
-                            "variable_om_cost": 267.51,
+                            "investment_cost": 7749291.2,
+                            "fixed_om_cost": 310190.8,
+                            "variable_om_cost": 557.3,
                             "existing_capacity": 500000000
                         },
                         "elec_consumption_edge": {
@@ -518,9 +518,9 @@
                                 }
                             },
                             "capacity_size": 311.5,
-                            "investment_cost": 2924000,
-                            "fixed_om_cost": 117165.82,
-                            "variable_om_cost": 267.51,
+                            "investment_cost": 6092736.2,
+                            "fixed_om_cost": 244097.4,
+                            "variable_om_cost": 557.3,
                             "existing_capacity": 500000000
                         },
                         "elec_consumption_edge": {
@@ -562,9 +562,9 @@
                                 }
                             },
                             "capacity_size": 1625,
-                            "investment_cost": 1685000,
-                            "fixed_om_cost": 67591.01,
-                            "variable_om_cost": 267.51,
+                            "investment_cost": 3509653.1,
+                            "fixed_om_cost": 140815.7,
+                            "variable_om_cost": 557.3,
                             "existing_capacity": 500000000
                         },
                         "elec_consumption_edge": {

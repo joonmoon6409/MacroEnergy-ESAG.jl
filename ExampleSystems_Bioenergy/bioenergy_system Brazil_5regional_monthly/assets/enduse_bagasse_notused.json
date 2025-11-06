@@ -1,0 +1,111 @@
+{
+  "EthanolEndUse": [
+    {
+      "type": "FuelsEndUse",
+      "global_data": {
+        "co2_sink": "co2_sink",
+        "edges": {
+          "fuel_edge": {
+            "commodity": "Bagasse",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "co2_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "end_vertex": "co2_sink"
+          },
+          "fuel_demand_edge": {
+            "commodity": "Bagasse",
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        }
+      },
+
+      "instance_data": [
+        {
+          "id": "BR_N_Bagasse_notused",
+          "transforms": {
+            "emission_rate": 0
+          },
+          "edges": {
+            "fuel_edge": {
+              "commodity": "Bagasse",
+              "start_vertex": "bagasse_BR_N"
+            },
+            "fuel_demand_edge": {
+              "commodity": "Bagasse",
+              "end_vertex": "bagasse_notused_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_NE_Bagasse_notused",
+          "transforms": {
+            "emission_rate": 0
+          },
+          "edges": {
+            "fuel_edge": {
+              "commodity": "Bagasse",
+              "start_vertex": "bagasse_BR_NE"
+            },
+            "fuel_demand_edge": {
+              "commodity": "Bagasse",
+              "end_vertex": "bagasse_notused_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_CW_Bagasse_notused",
+          "transforms": {
+            "emission_rate": 0
+          },
+          "edges": {
+            "fuel_edge": {
+              "commodity": "Bagasse",
+              "start_vertex": "bagasse_BR_CW"
+            },
+            "fuel_demand_edge": {
+              "commodity": "Bagasse",
+              "end_vertex": "bagasse_notused_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_SE_Bagasse_notused",
+          "transforms": {
+            "emission_rate": 0
+          },
+          "edges": {
+            "fuel_edge": {
+              "commodity": "Bagasse",
+              "start_vertex": "bagasse_BR_SE"
+            },
+            "fuel_demand_edge": {
+              "commodity": "Bagasse",
+              "end_vertex": "bagasse_notused_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_S_Bagasse_notused",
+          "transforms": {
+            "emission_rate": 0
+          },
+          "edges": {
+            "fuel_edge": {
+              "commodity": "Bagasse",
+              "start_vertex": "bagasse_BR_S"
+            },
+            "fuel_demand_edge": {
+              "commodity": "Bagasse",
+              "end_vertex": "bagasse_notused_BR"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

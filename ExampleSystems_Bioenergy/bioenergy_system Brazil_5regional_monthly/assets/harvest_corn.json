@@ -1,0 +1,317 @@
+{
+    "biomassharvest": [
+        {
+            "type": "BiomassHarvest",
+            "global_data": {
+                "commodity": "Corn",
+                "edges": {
+                    "discharge_edge": {
+                        "commodity": "Corn",
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "can_expand": true,
+                        "can_retire": true,
+                        "constraints": {
+                            "CapacityConstraint": true,
+                            "RampingLimitConstraint": true
+                        }
+                    },
+                    "inflow_edge": {
+                        "commodity": "Corn",
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "can_expand": true,
+                        "can_retire": true,
+                        "constraints": {
+                            "MustRunConstraint": true
+                        }
+                    },
+                    "spill_edge": {
+                        "commodity": "Corn",
+                        "unidirectional": true,
+                        "can_expand": false,
+                        "can_retire": false,
+                        "has_capacity": false,
+                        "end_vertex": "corn_wasted_BR"
+                        
+                    },
+                    "residue_edge": {
+                        "commodity": "Corn",
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "can_expand": true,
+                        "can_retire": true,
+                        "constraints": {
+                            "CapacityConstraint": true,
+                            "StorageDischargeLimitConstraint": true,
+                            "ResidueDischargeCapacitySyncConstraint": true
+                        }
+                    }
+                },
+                "storage": {
+                    "commodity": "Corn",
+                    "can_expand": true,
+                    "can_retire": true,
+                    "long_duration": true,
+                    "constraints": {
+                        "MinStorageOutflowConstraint": true,
+                        "StorageChargeDischargeRatioConstraint": true,
+                        "BalanceConstraint": true,
+                        "LongDurationStorageImplicitMinMaxConstraint": true
+                    }
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "BR_N_corn_harvest",
+                    "edges": {
+                        "discharge_edge": {
+                            "end_vertex": "corn_harvested_BR_N",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "fixed_om_cost": 1,
+                            "ramp_down_fraction": 0.85,
+                            "ramp_up_fraction": 0.85,
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_disch_corn_N"
+                                }
+                            }
+                        },
+                        "inflow_edge": {
+                            "start_vertex": "corn_BR_N",
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_ch"
+                                }
+                            }
+                        },
+                        "residue_edge": {
+                            "end_vertex": "corn_stover_processed_BR_N",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "investment_cost": 0.0,
+                            "fixed_om_cost": 0.0,
+                            "variable_om_cost": 0.0,
+                            "efficiency": 1,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_residue_corn_N"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {
+                        "min_outflow_fraction": 0,
+                        "charge_discharge_ratio": 1.0
+                    }
+                },
+
+                {
+                    "id": "BR_NE_corn_harvest",
+                    "edges": {
+                        "discharge_edge": {
+                            "end_vertex": "corn_harvested_BR_NE",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "fixed_om_cost": 1,
+                            "ramp_down_fraction": 0.85,
+                            "ramp_up_fraction": 0.85,
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_disch_corn_NE"
+                                }
+                            }
+                        },
+                        "inflow_edge": {
+                            "start_vertex": "corn_BR_NE",
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_ch"
+                                }
+                            }
+                        },
+                        "residue_edge": {
+                            "end_vertex": "corn_stover_processed_BR_NE",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "investment_cost": 0.0,
+                            "fixed_om_cost": 0.0,
+                            "variable_om_cost": 0.0,
+                            "efficiency": 1,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_residue_corn_NE"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {
+                        "min_outflow_fraction": 0,
+                        "charge_discharge_ratio": 1.0
+                    }
+                },
+
+                {
+                    "id": "BR_CW_corn_harvest",
+                    "edges": {
+                        "discharge_edge": {
+                            "end_vertex": "corn_harvested_BR_CW",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "fixed_om_cost": 0,
+                            "ramp_down_fraction": 0.85,
+                            "ramp_up_fraction": 0.85,
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_disch_corn_CW"
+                                }
+                            }
+                        },
+                        "inflow_edge": {
+                            "start_vertex": "corn_BR_CW",
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_ch"
+                                }
+                            }
+                        },
+                        "residue_edge": {
+                            "end_vertex": "corn_stover_processed_BR_CW",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "investment_cost": 0.0,
+                            "fixed_om_cost": 0.0,
+                            "variable_om_cost": 0.0,
+                            "efficiency": 1,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_residue_corn_CW"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {
+                        "min_outflow_fraction": 0,
+                        "charge_discharge_ratio": 1.0
+                    }
+                },
+
+                {
+                    "id": "BR_SE_corn_harvest",
+                    "edges": {
+                        "discharge_edge": {
+                            "end_vertex": "corn_harvested_BR_SE",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "fixed_om_cost": 1,
+                            "ramp_down_fraction": 0.85,
+                            "ramp_up_fraction": 0.85,
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_disch_corn_SE"
+                                }
+                            }
+                        },
+                        "inflow_edge": {
+                            "start_vertex": "corn_BR_SE",
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_ch"
+                                }
+                            }
+                        },
+                        "residue_edge": {
+                            "end_vertex": "corn_stover_processed_BR_SE",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "investment_cost": 0.0,
+                            "fixed_om_cost": 0.0,
+                            "variable_om_cost": 0.0,
+                            "efficiency": 1,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_residue_corn_SE"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {
+                        "min_outflow_fraction": 0,
+                        "charge_discharge_ratio": 1.0
+                    }
+                },
+
+                {
+                    "id": "BR_S_corn_harvest",
+                    "edges": {
+                        "discharge_edge": {
+                            "end_vertex": "corn_harvested_BR_S",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "fixed_om_cost": 10,
+                            "ramp_down_fraction": 0.85,
+                            "ramp_up_fraction": 0.85,
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_disch_corn_S"
+                                }
+                            }
+                        },
+                        "inflow_edge": {
+                            "start_vertex": "corn_BR_S",
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_ch"
+                                }
+                            }
+                        },
+                        "residue_edge": {
+                            "end_vertex": "corn_stover_processed_BR_S",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "investment_cost": 0.0,
+                            "fixed_om_cost": 0.0,
+                            "variable_om_cost": 0.0,
+                            "efficiency": 1,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_residue_corn_S"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {
+                        "min_outflow_fraction": 0,
+                        "charge_discharge_ratio": 1.0
+                    }
+                }
+            ]
+        }
+    ]
+}

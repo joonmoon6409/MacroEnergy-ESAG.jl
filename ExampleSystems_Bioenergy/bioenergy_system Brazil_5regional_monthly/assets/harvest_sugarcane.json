@@ -1,0 +1,317 @@
+{
+    "biomassharvest": [
+        {
+            "type": "BiomassHarvest",
+            "global_data": {
+                "commodity": "Sugarcane",
+                "edges": {
+                    "discharge_edge": {
+                        "commodity": "Sugarcane",
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "can_expand": true,
+                        "can_retire": true,
+                        "constraints": {
+                            "CapacityConstraint": true,
+                            "RampingLimitConstraint": true
+                        }
+                    },
+                    "inflow_edge": {
+                        "commodity": "Sugarcane",
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "can_expand": true,
+                        "can_retire": true,
+                        "constraints": {
+                            "MustRunConstraint": true
+                        }
+                    },
+                    "spill_edge": {
+                        "commodity": "Sugarcane",
+                        "unidirectional": true,
+                        "can_expand": false,
+                        "can_retire": false,
+                        "has_capacity": false,
+                        "end_vertex": "sugarcane_wasted_BR"
+                        
+                    },
+                    "residue_edge": {
+                        "commodity": "Sugarcane",
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "can_expand": true,
+                        "can_retire": true,
+                        "constraints": {
+                            "CapacityConstraint": true,
+                            "StorageDischargeLimitConstraint": true,
+                            "ResidueDischargeCapacitySyncConstraint": true
+                        }
+                    }
+                },
+                "storage": {
+                    "commodity": "Sugarcane",
+                    "can_expand": true,
+                    "can_retire": true,
+                    "long_duration": true,
+                    "constraints": {
+                        "MinStorageOutflowConstraint": true,
+                        "StorageChargeDischargeRatioConstraint": true,
+                        "BalanceConstraint": true,
+                        "LongDurationStorageImplicitMinMaxConstraint": true
+                    }
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "BR_N_sugarcane_harvest",
+                    "edges": {
+                        "discharge_edge": {
+                            "end_vertex": "sugarcane_harvested_BR_N",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "fixed_om_cost": 1,
+                            "ramp_down_fraction": 0.85,
+                            "ramp_up_fraction": 0.85,
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_disch_N"
+                                }
+                            }
+                        },
+                        "inflow_edge": {
+                            "start_vertex": "sugarcane_BR_N",
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_ch"
+                                }
+                            }
+                        },
+                        "residue_edge": {
+                            "end_vertex": "sugarcane_straw_processed_BR_N",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "investment_cost": 0.0,
+                            "fixed_om_cost": 0.0,
+                            "variable_om_cost": 0.0,
+                            "efficiency": 1,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_residue_N"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {
+                        "min_outflow_fraction": 0,
+                        "charge_discharge_ratio": 1.0
+                    }
+                },
+
+                {
+                    "id": "BR_NE_sugarcane_harvest",
+                    "edges": {
+                        "discharge_edge": {
+                            "end_vertex": "sugarcane_harvested_BR_NE",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "fixed_om_cost": 1,
+                            "ramp_down_fraction": 0.85,
+                            "ramp_up_fraction": 0.85,
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_disch_NE"
+                                }
+                            }
+                        },
+                        "inflow_edge": {
+                            "start_vertex": "sugarcane_BR_NE",
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_ch"
+                                }
+                            }
+                        },
+                        "residue_edge": {
+                            "end_vertex": "sugarcane_straw_processed_BR_NE",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "investment_cost": 0.0,
+                            "fixed_om_cost": 0.0,
+                            "variable_om_cost": 0.0,
+                            "efficiency": 1,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_residue_NE"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {
+                        "min_outflow_fraction": 0,
+                        "charge_discharge_ratio": 1.0
+                    }
+                },
+
+                {
+                    "id": "BR_CW_sugarcane_harvest",
+                    "edges": {
+                        "discharge_edge": {
+                            "end_vertex": "sugarcane_harvested_BR_CW",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "fixed_om_cost": 0,
+                            "ramp_down_fraction": 0.85,
+                            "ramp_up_fraction": 0.85,
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_disch_CW"
+                                }
+                            }
+                        },
+                        "inflow_edge": {
+                            "start_vertex": "sugarcane_BR_CW",
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_ch"
+                                }
+                            }
+                        },
+                        "residue_edge": {
+                            "end_vertex": "sugarcane_straw_processed_BR_CW",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "investment_cost": 0.0,
+                            "fixed_om_cost": 0.0,
+                            "variable_om_cost": 0.0,
+                            "efficiency": 1,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_residue_CW"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {
+                        "min_outflow_fraction": 0,
+                        "charge_discharge_ratio": 1.0
+                    }
+                },
+
+                {
+                    "id": "BR_SE_sugarcane_harvest",
+                    "edges": {
+                        "discharge_edge": {
+                            "end_vertex": "sugarcane_harvested_BR_SE",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "fixed_om_cost": 1,
+                            "ramp_down_fraction": 0.85,
+                            "ramp_up_fraction": 0.85,
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_disch_SE"
+                                }
+                            }
+                        },
+                        "inflow_edge": {
+                            "start_vertex": "sugarcane_BR_SE",
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_ch"
+                                }
+                            }
+                        },
+                        "residue_edge": {
+                            "end_vertex": "sugarcane_straw_processed_BR_SE",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "investment_cost": 0.0,
+                            "fixed_om_cost": 0.0,
+                            "variable_om_cost": 0.0,
+                            "efficiency": 1,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_residue_SE"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {
+                        "min_outflow_fraction": 0,
+                        "charge_discharge_ratio": 1.0
+                    }
+                },
+
+                {
+                    "id": "BR_S_sugarcane_harvest",
+                    "edges": {
+                        "discharge_edge": {
+                            "end_vertex": "sugarcane_harvested_BR_S",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "fixed_om_cost": 10,
+                            "ramp_down_fraction": 0.85,
+                            "ramp_up_fraction": 0.85,
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_disch_S"
+                                }
+                            }
+                        },
+                        "inflow_edge": {
+                            "start_vertex": "sugarcane_BR_S",
+                            "efficiency": 1.0,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_ch"
+                                }
+                            }
+                        },
+                        "residue_edge": {
+                            "end_vertex": "sugarcane_straw_processed_BR_S",
+                            "capacity_size": 1,
+                            "existing_capacity": 0,
+                            "investment_cost": 0.0,
+                            "fixed_om_cost": 0.0,
+                            "variable_om_cost": 0.0,
+                            "efficiency": 1,
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "Availability_residue_S"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {
+                        "min_outflow_fraction": 0,
+                        "charge_discharge_ratio": 1.0
+                    }
+                }
+            ]
+        }
+    ]
+}

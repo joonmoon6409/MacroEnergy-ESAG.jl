@@ -1,0 +1,231 @@
+{
+  "PoultryManure_Digester": [
+    {
+      "type": "BECCSBiomethane",
+      "global_data": {
+        "transforms": {
+          "timedata": "Biomass",
+          "constraints": {
+            "BalanceConstraint": true
+          }
+        },
+        "edges": {
+          "elec_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "ch4_edge": {
+            "commodity": "Biomethane",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "biomass_edge": {
+            "unidirectional": true,
+            "has_capacity": true,
+            "can_expand": true,
+            "can_retire": true,
+            "integer_decisions": false,
+            "constraints": {
+              "CapacityConstraint": true
+            }
+          },
+          "co2_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "start_vertex": "co2_sink"
+          },
+          "co2_emission_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "end_vertex": "co2_sink"
+          },
+          "co2_captured_edge": {
+            "commodity": "CO2Captured",
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "id": "BR_N_SwineManure_Digester",
+          "transforms": {
+            "ch4_production": 2.36,
+            "capture_rate": 1.464601,
+            "co2_content": 1.717,
+            "emission_rate": 0.252399
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "SwineManure",
+              "start_vertex": "swinemanure_BR_N",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "capacity_size" : 0.4,
+              "investment_cost": 2471670,
+              "fixed_om_cost": 98866.33,
+              "variable_om_cost": 0.28,
+              "existing_capacity": 0
+            },
+            "elec_edge": {
+              "start_vertex": "elec_BR"
+            },
+            "ch4_edge": {
+              "end_vertex": "ch4_BR"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_NE_SwineManure_Digester",
+          "transforms": {
+            "ch4_production": 2.36,
+            "capture_rate": 1.464601,
+            "co2_content": 1.717,
+            "emission_rate": 0.252399
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "SwineManure",
+              "start_vertex": "swinemanure_BR_NE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "capacity_size" : 0.4,
+              "investment_cost": 2471670,
+              "fixed_om_cost": 98866.33,
+              "variable_om_cost": 0.28,
+              "existing_capacity": 0
+            },
+            "elec_edge": {
+              "start_vertex": "elec_BR"
+            },
+            "ch4_edge": {
+              "end_vertex": "ch4_BR"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_CW_SwineManure_Digester",
+          "transforms": {
+            "ch4_production": 2.36,
+            "capture_rate": 1.464601,
+            "co2_content": 1.717,
+            "emission_rate": 0.252399
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "SwineManure",
+              "start_vertex": "swinemanure_BR_CW",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "capacity_size" : 0.4,
+              "investment_cost": 2471670,
+              "fixed_om_cost": 98866.33,
+              "variable_om_cost": 0.28,
+              "existing_capacity": 0
+            },
+            "elec_edge": {
+              "start_vertex": "elec_BR"
+            },
+            "ch4_edge": {
+              "end_vertex": "ch4_BR"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_SE_SwineManure_Digester",
+          "transforms": {
+            "ch4_production": 2.36,
+            "capture_rate": 1.464601,
+            "co2_content": 1.717,
+            "emission_rate": 0.252399
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "SwineManure",
+              "start_vertex": "swinemanure_BR_SE",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "capacity_size" : 0.4,
+              "investment_cost": 2471670,
+              "fixed_om_cost": 98866.33,
+              "variable_om_cost": 0.28,
+              "existing_capacity": 0
+            },
+            "elec_edge": {
+              "start_vertex": "elec_BR"
+            },
+            "ch4_edge": {
+              "end_vertex": "ch4_BR"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_S_SwineManure_Digester",
+          "transforms": {
+            "ch4_production": 2.36,
+            "capture_rate": 1.464601,
+            "co2_content": 1.717,
+            "emission_rate": 0.252399
+          },
+          "edges": {
+            "biomass_edge": {
+              "commodity": "SwineManure",
+              "start_vertex": "swinemanure_BR_S",
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "Availability_One"
+                }
+              },
+              "capacity_size" : 0.4,
+              "investment_cost": 2471670,
+              "fixed_om_cost": 98866.33,
+              "variable_om_cost": 0.28,
+              "existing_capacity": 0
+            },
+            "elec_edge": {
+              "start_vertex": "elec_BR"
+            },
+            "ch4_edge": {
+              "end_vertex": "ch4_BR"
+            },
+            "co2_captured_edge": {
+              "end_vertex": "co2_captured_BR"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

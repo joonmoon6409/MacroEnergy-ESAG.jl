@@ -1,0 +1,111 @@
+{
+  "EthanolEndUse": [
+    {
+      "type": "FuelsEndUse",
+      "global_data": {
+        "co2_sink": "co2_sink",
+        "edges": {
+          "fuel_edge": {
+            "commodity": "Sugarcane",
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "co2_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false,
+            "end_vertex": "co2_sink"
+          },
+          "fuel_demand_edge": {
+            "commodity": "Sugarcane",
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        }
+      },
+
+      "instance_data": [
+        {
+          "id": "BR_N_Sugarcane_notused",
+          "transforms": {
+            "emission_rate": 0
+          },
+          "edges": {
+            "fuel_edge": {
+              "commodity": "Sugarcane",
+              "start_vertex": "sugarcane_harvested_BR_N"
+            },
+            "fuel_demand_edge": {
+              "commodity": "Sugarcane",
+              "end_vertex": "sugarcane_notused_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_NE_Sugarcane_notused",
+          "transforms": {
+            "emission_rate": 0
+          },
+          "edges": {
+            "fuel_edge": {
+              "commodity": "Sugarcane",
+              "start_vertex": "sugarcane_harvested_BR_NE"
+            },
+            "fuel_demand_edge": {
+              "commodity": "Sugarcane",
+              "end_vertex": "sugarcane_notused_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_CW_Sugarcane_notused",
+          "transforms": {
+            "emission_rate": 0
+          },
+          "edges": {
+            "fuel_edge": {
+              "commodity": "Sugarcane",
+              "start_vertex": "sugarcane_harvested_BR_CW"
+            },
+            "fuel_demand_edge": {
+              "commodity": "Sugarcane",
+              "end_vertex": "sugarcane_notused_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_SE_Sugarcane_notused",
+          "transforms": {
+            "emission_rate": 0
+          },
+          "edges": {
+            "fuel_edge": {
+              "commodity": "Sugarcane",
+              "start_vertex": "sugarcane_harvested_BR_SE"
+            },
+            "fuel_demand_edge": {
+              "commodity": "Sugarcane",
+              "end_vertex": "sugarcane_notused_BR"
+            }
+          }
+        },
+        {
+          "id": "BR_S_Sugarcane_notused",
+          "transforms": {
+            "emission_rate": 0
+          },
+          "edges": {
+            "fuel_edge": {
+              "commodity": "Sugarcane",
+              "start_vertex": "sugarcane_harvested_BR_S"
+            },
+            "fuel_demand_edge": {
+              "commodity": "Sugarcane",
+              "end_vertex": "sugarcane_notused_BR"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -68,10 +68,10 @@
                   "header": "Availability_One"
                 }
               },
-              "capacity_size": 60.830,
-              "investment_cost": 58787070,
-              "fixed_om_cost": 2351612.53,
-              "variable_om_cost": 209.92,
+              "capacity_size": 60.8,
+              "investment_cost": 132730489,
+              "fixed_om_cost": 5309512,
+              "variable_om_cost": 473.96,
               "existing_capacity": 0
             },
             "elec_edge": {
@@ -104,9 +104,9 @@
                 }
               },
               "capacity_size": 243.330,
-              "investment_cost": 37050630,
-              "fixed_om_cost": 1482046.87,
-              "variable_om_cost": 209.92,
+              "investment_cost": 83653569,
+              "fixed_om_cost": 3346191,
+              "variable_om_cost": 473.96,
               "existing_capacity": 0
             },
             "elec_edge": {
@@ -139,9 +139,9 @@
                 }
               },
               "capacity_size": 425.830,
-              "investment_cost": 30751390,
-              "fixed_om_cost": 1230064.03,
-              "variable_om_cost": 209.92,
+              "investment_cost": 69431033,
+              "fixed_om_cost": 2777260,
+              "variable_om_cost": 473.96,
               "existing_capacity": 0
             },
             "elec_edge": {

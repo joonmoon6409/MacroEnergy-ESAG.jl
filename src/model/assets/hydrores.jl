@@ -21,7 +21,7 @@ function full_default_data(::Type{HydroRes}, id=missing)
             :commodity => Electricity,
             :charge_discharge_ratio => 1.0,
             :constraints => Dict{Symbol, Bool}(
-                :BalanceConstraint => true,
+                :BalanceConstraint => true, 
                 :StorageChargeDischargeRatioConstraint => true,
             ),
         ),
