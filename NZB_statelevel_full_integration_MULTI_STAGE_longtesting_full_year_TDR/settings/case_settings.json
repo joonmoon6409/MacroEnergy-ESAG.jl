@@ -4,6 +4,7 @@
   "SolutionAlgorithm": "Myopic",
   "WriteFullTimeseries": true,
   
+<<<<<<< HEAD
     "MyopicSettings": {
     "Restart": {
       "enabled": true,
@@ -11,6 +12,15 @@
       "from_period": 1
     },
     "StopAfterPeriod": 2
+=======
+    "Deactivate_MyopicSettings": {
+    "Restart": {
+      "enabled": true,
+      "folder": "results_005",
+      "from_period": 3
+    },
+    "StopAfterPeriod": 4
+>>>>>>> c9a992ba65415cd66f5bd9d5df206099e704fa67
     },
     "Myopic_note" : "Bring the proper period setting" ,
 

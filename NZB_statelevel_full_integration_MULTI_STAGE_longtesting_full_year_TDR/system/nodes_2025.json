@@ -4908,6 +4908,7 @@
                 }
             },
             "instance_data": [
+<<<<<<< HEAD
               {
                 "id": "biomass_wood_BR_AC",
                 "supply": {
@@ -5953,6 +5954,1053 @@
                   }
                 }
               }
+=======
+         {
+          "id": "biomass_wood_BR_AC",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "AC_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "AC_max1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_AL",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "AL_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "AL_max1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_AP",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "AP_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "AP_max1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_AM",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "AM_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "AM_max1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_BA",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "BA_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "BA_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "BA_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "BA_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "BA_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "BA_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_CE",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "CE_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "CE_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "CE_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "CE_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "CE_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "CE_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_DF",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "DF_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "DF_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "DF_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "DF_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "DF_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "DF_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_ES",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "ES_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "ES_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "ES_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "ES_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "ES_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "ES_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_GO",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "GO_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "GO_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "GO_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "GO_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "GO_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "GO_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_MA",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MA_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MA_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MA_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MA_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MA_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MA_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_MT",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MT_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MT_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MT_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MT_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MT_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MT_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_MS",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MS_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MS_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MS_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MS_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MS_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MS_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_MG",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MG_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MG_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MG_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MG_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MG_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "MG_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_PA",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PA_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PA_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PA_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PA_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PA_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PA_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_PB",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PB_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PB_max1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_PR",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PR_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PR_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PR_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PR_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PR_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PR_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_PE",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PE_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PE_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PE_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PE_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PE_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PE_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_PI",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PI_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PI_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PI_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PI_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PI_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "PI_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_RJ",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RJ_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RJ_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RJ_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RJ_max2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_RN",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RN_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RN_max1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_RS",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RS_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RS_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RS_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RS_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RS_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RS_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_RO",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RO_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RO_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RO_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RO_max2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_RR",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RR_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "RR_max1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_SC",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SC_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SC_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SC_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SC_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SC_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SC_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_SP",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SP_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SP_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SP_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SP_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SP_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SP_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_SE",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SE_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SE_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SE_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SE_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SE_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "SE_max3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_TO",
+          "supply": {
+            "segment1": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "TO_price1"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "TO_max1"
+                }
+              }
+            },
+            "segment2": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "TO_price2"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "TO_max2"
+                }
+              }
+            },
+            "segment3": {
+              "price": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "TO_price3"
+                }
+              },
+              "max": {
+                "timeseries": {
+                  "path": "system/planted_forest_supply_curve_remapping.csv",
+                  "header": "TO_max3"
+                }
+              }
+            }
+          }
+        }
+>>>>>>> c9a992ba65415cd66f5bd9d5df206099e704fa67
             ]
         },
         {
