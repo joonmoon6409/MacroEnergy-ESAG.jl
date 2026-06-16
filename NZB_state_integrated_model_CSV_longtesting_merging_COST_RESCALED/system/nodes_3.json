@@ -1,0 +1,4186 @@
+{
+    "nodes": [
+        {
+            "type": "Electricity",
+            "global_data": {
+                "time_interval": "Electricity",
+                "constraints": {
+                    "BalanceConstraint": true,
+                    "MaxNonServedDemandConstraint": true,
+                    "MaxNonServedDemandPerSegmentConstraint": true
+                },
+                "max_nsd": [
+                    0.01
+                ],
+                "price_nsd": [
+                    10000
+                ]
+            },
+            "instance_data": [
+                {
+                    "id": "elec_BR_AC",
+                    "location": "BR_AC",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_AC"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_AL",
+                    "location": "BR_AL",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_AL"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_AP",
+                    "location": "BR_AP",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_AP"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_AM",
+                    "location": "BR_AM",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_AM"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_BA",
+                    "location": "BR_BA",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_BA"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_CE",
+                    "location": "BR_CE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_CE"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_DF",
+                    "location": "BR_DF",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_DF"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_ES",
+                    "location": "BR_ES",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_ES"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_GO",
+                    "location": "BR_GO",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_GO"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_MA",
+                    "location": "BR_MA",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_MA"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_MT",
+                    "location": "BR_MT",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_MT"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_MS",
+                    "location": "BR_MS",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_MS"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_MG",
+                    "location": "BR_MG",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_MG"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_PA",
+                    "location": "BR_PA",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_PA"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_PB",
+                    "location": "BR_PB",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_PB"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_PR",
+                    "location": "BR_PR",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_PR"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_PE",
+                    "location": "BR_PE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_PE"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_PI",
+                    "location": "BR_PI",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_PI"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_RJ",
+                    "location": "BR_RJ",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_RJ"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_RN",
+                    "location": "BR_RN",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_RN"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_RS",
+                    "location": "BR_RS",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_RS"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_RO",
+                    "location": "BR_RO",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_RO"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_RR",
+                    "location": "BR_RR",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_RR"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_SC",
+                    "location": "BR_SC",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_SC"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_SP",
+                    "location": "BR_SP",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_SP"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_SE",
+                    "location": "BR_SE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_SE"
+                        }
+                    }
+                },
+                {
+                    "id": "elec_BR_TO",
+                    "location": "BR_TO",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/elec_demand.csv",
+                            "header": "elec_BR_TO"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Electricity",
+            "global_data": {
+                "time_interval": "Electricity",
+                "constraints": {
+                    "BalanceConstraint": false
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "hydro_source_Amazonas"
+                },
+                {
+                    "id": "hydro_source_Doce"
+                },
+                {
+                    "id": "hydro_source_Grande"
+                },
+                {
+                    "id": "hydro_source_Iguacu"
+                },
+                {
+                    "id": "hydro_source_Jacui_capivari"
+                },
+                {
+                    "id": "hydro_source_Jequitinhonha"
+                },
+                {
+                    "id": "hydro_source_Paraiba_do_sul"
+                },
+                {
+                    "id": "hydro_source_Parana"
+                },
+                {
+                    "id": "hydro_source_Paranaiba"
+                },
+                {
+                    "id": "hydro_source_Paranapanema"
+                },
+                {
+                    "id": "hydro_source_Parnaiba"
+                },
+                {
+                    "id": "hydro_source_Sao_francisco"
+                },
+                {
+                    "id": "hydro_source_Tiete"
+                },
+                {
+                    "id": "hydro_source_Tocantins"
+                },
+                {
+                    "id": "hydro_source_Uruguai"
+                }
+            ]
+        },
+        {
+            "type": "Electricity",
+            "global_data": {
+                "time_interval": "Electricity",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "elec_proxy_BM"
+                },
+                {
+                    "id": "elec_proxy_IMP"
+                },
+                {
+                    "id": "elec_proxy_ITA"
+                },
+                {
+                    "id": "elec_proxy_N"
+                },
+                {
+                    "id": "elec_proxy_NE"
+                },
+                {
+                    "id": "elec_proxy_S"
+                },
+                {
+                    "id": "elec_proxy_SE"
+                }
+            ]
+        },
+        {
+            "type": "Hydrogen",
+            "global_data": {
+                "time_interval": "Hydrogen",
+                "constraints": {
+                    "BalanceConstraint": true,
+                    "MaxNonServedDemandConstraint": true,
+                    "MaxNonServedDemandPerSegmentConstraint": true
+                },
+                "max_nsd": [
+                    0.01
+                ],
+                "price_nsd": [
+                    10000
+                ]
+            },
+            "instance_data": [
+                {
+                    "id": "h2_BR_AC",
+                    "location": "BR_AC",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_AC"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_AL",
+                    "location": "BR_AL",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_AL"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_AP",
+                    "location": "BR_AP",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_AP"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_AM",
+                    "location": "BR_AM",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_AM"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_BA",
+                    "location": "BR_BA",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_BA"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_CE",
+                    "location": "BR_CE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_CE"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_DF",
+                    "location": "BR_DF",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_DF"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_ES",
+                    "location": "BR_ES",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_ES"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_GO",
+                    "location": "BR_GO",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_GO"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_MA",
+                    "location": "BR_MA",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_MA"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_MT",
+                    "location": "BR_MT",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_MT"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_MS",
+                    "location": "BR_MS",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_MS"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_MG",
+                    "location": "BR_MG",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_MG"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_PA",
+                    "location": "BR_PA",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_PA"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_PB",
+                    "location": "BR_PB",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_PB"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_PR",
+                    "location": "BR_PR",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_PR"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_PE",
+                    "location": "BR_PE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_PE"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_PI",
+                    "location": "BR_PI",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_PI"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_RJ",
+                    "location": "BR_RJ",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_RJ"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_RN",
+                    "location": "BR_RN",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_RN"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_RS",
+                    "location": "BR_RS",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_RS"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_RO",
+                    "location": "BR_RO",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_RO"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_RR",
+                    "location": "BR_RR",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_RR"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_SC",
+                    "location": "BR_SC",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_SC"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_SP",
+                    "location": "BR_SP",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_SP"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_SE",
+                    "location": "BR_SE",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_SE"
+                        }
+                    }
+                },
+                {
+                    "id": "h2_BR_TO",
+                    "location": "BR_TO",
+                    "demand": {
+                        "timeseries": {
+                            "path": "system/h2_demand_2.csv",
+                            "header": "h2_BR_TO"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "CO2",
+            "global_data": {
+                "time_interval": "CO2",
+                "constraints": {
+                    "BalanceConstraint": false
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "co2_emitted_BR",
+                    "constraints": {
+                        "CO2CapConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2CapConstraint": 20000000
+                    }
+                }
+            ]
+        },
+        {
+            "type": "CO2Captured",
+            "global_data": {
+                "time_interval": "CO2Captured",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "co2_captured_BR_AC",
+                    "location": "BR_AC"
+                },
+                {
+                    "id": "co2_captured_BR_AL",
+                    "location": "BR_AL"
+                },
+                {
+                    "id": "co2_captured_BR_AP",
+                    "location": "BR_AP"
+                },
+                {
+                    "id": "co2_captured_BR_AM",
+                    "location": "BR_AM"
+                },
+                {
+                    "id": "co2_captured_BR_BA",
+                    "location": "BR_BA"
+                },
+                {
+                    "id": "co2_captured_BR_CE",
+                    "location": "BR_CE"
+                },
+                {
+                    "id": "co2_captured_BR_DF",
+                    "location": "BR_DF"
+                },
+                {
+                    "id": "co2_captured_BR_ES",
+                    "location": "BR_ES"
+                },
+                {
+                    "id": "co2_captured_BR_GO",
+                    "location": "BR_GO"
+                },
+                {
+                    "id": "co2_captured_BR_MA",
+                    "location": "BR_MA"
+                },
+                {
+                    "id": "co2_captured_BR_MT",
+                    "location": "BR_MT"
+                },
+                {
+                    "id": "co2_captured_BR_MS",
+                    "location": "BR_MS"
+                },
+                {
+                    "id": "co2_captured_BR_MG",
+                    "location": "BR_MG"
+                },
+                {
+                    "id": "co2_captured_BR_PA",
+                    "location": "BR_PA"
+                },
+                {
+                    "id": "co2_captured_BR_PB",
+                    "location": "BR_PB"
+                },
+                {
+                    "id": "co2_captured_BR_PR",
+                    "location": "BR_PR"
+                },
+                {
+                    "id": "co2_captured_BR_PE",
+                    "location": "BR_PE"
+                },
+                {
+                    "id": "co2_captured_BR_PI",
+                    "location": "BR_PI"
+                },
+                {
+                    "id": "co2_captured_BR_RJ",
+                    "location": "BR_RJ"
+                },
+                {
+                    "id": "co2_captured_BR_RN",
+                    "location": "BR_RN"
+                },
+                {
+                    "id": "co2_captured_BR_RS",
+                    "location": "BR_RS"
+                },
+                {
+                    "id": "co2_captured_BR_RO",
+                    "location": "BR_RO"
+                },
+                {
+                    "id": "co2_captured_BR_RR",
+                    "location": "BR_RR"
+                },
+                {
+                    "id": "co2_captured_BR_SC",
+                    "location": "BR_SC"
+                },
+                {
+                    "id": "co2_captured_BR_SP",
+                    "location": "BR_SP"
+                },
+                {
+                    "id": "co2_captured_BR_SE",
+                    "location": "BR_SE"
+                },
+                {
+                    "id": "co2_captured_BR_TO",
+                    "location": "BR_TO"
+                },
+                {
+                  "id": "co2_captured_tmp"
+                }
+            ]
+        },
+        {
+            "type": "CO2Captured",
+            "global_data": {
+                "time_interval": "CO2Captured",
+                "constraints": {
+                    "BalanceConstraint": true
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "co2_transported_BR_AC"
+                },
+                {
+                    "id": "co2_transported_BR_AL"
+                },
+                {
+                    "id": "co2_transported_BR_AP"
+                },
+                {
+                    "id": "co2_transported_BR_AM"
+                },
+                {
+                    "id": "co2_transported_BR_BA"
+                },
+                {
+                    "id": "co2_transported_BR_CE"
+                },
+                {
+                    "id": "co2_transported_BR_DF"
+                },
+                {
+                    "id": "co2_transported_BR_ES"
+                },
+                {
+                    "id": "co2_transported_BR_GO"
+                },
+                {
+                    "id": "co2_transported_BR_MA"
+                },
+                {
+                    "id": "co2_transported_BR_MT"
+                },
+                {
+                    "id": "co2_transported_BR_MS"
+                },
+                {
+                    "id": "co2_transported_BR_MG"
+                },
+                {
+                    "id": "co2_transported_BR_PA"
+                },
+                {
+                    "id": "co2_transported_BR_PB"
+                },
+                {
+                    "id": "co2_transported_BR_PR"
+                },
+                {
+                    "id": "co2_transported_BR_PE"
+                },
+                {
+                    "id": "co2_transported_BR_PI"
+                },
+                {
+                    "id": "co2_transported_BR_RJ"
+                },
+                {
+                    "id": "co2_transported_BR_RN"
+                },
+                {
+                    "id": "co2_transported_BR_RS"
+                },
+                {
+                    "id": "co2_transported_BR_RO"
+                },
+                {
+                    "id": "co2_transported_BR_RR"
+                },
+                {
+                    "id": "co2_transported_BR_SC"
+                },
+                {
+                    "id": "co2_transported_BR_SP"
+                },
+                {
+                    "id": "co2_transported_BR_SE"
+                },
+                {
+                    "id": "co2_transported_BR_TO"
+                }
+            ]
+        },
+        {
+            "type": "CO2Captured",
+            "global_data": {
+                "time_interval": "CO2Captured",
+                "constraints": {
+                    "BalanceConstraint": false
+                }
+            },
+             "instance_data": [
+                {
+                    "id": "co2_storage_Parana",
+                    "constraints": {
+                        "CO2StorageConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2StorageConstraint": 1237000000
+                    }
+                },
+                {
+                    "id": "co2_storage_Santos",
+                    "constraints": {
+                        "CO2StorageConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2StorageConstraint": 751000000
+                    }
+                },
+                {
+                    "id": "co2_storage_Campos",
+                    "constraints": {
+                        "CO2StorageConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2StorageConstraint": 14600000
+                    }
+                },
+                {
+                    "id": "co2_storage_Sao_Francisco",
+                    "constraints": {
+                        "CO2StorageConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2StorageConstraint": 30000000
+                    }
+                },
+                {
+                    "id": "co2_storage_Reconcavo",
+                    "constraints": {
+                        "CO2StorageConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2StorageConstraint": 3000000
+                    }
+                },
+                {
+                    "id": "co2_storage_Sergipe_Alagoas",
+                    "constraints": {
+                        "CO2StorageConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2StorageConstraint": 14000000
+                    }
+                },
+                {
+                    "id": "co2_storage_Potiguar",
+                    "constraints": {
+                        "CO2StorageConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2StorageConstraint": 8773000
+                    }
+                },
+                {
+                    "id": "co2_storage_Parecis",
+                    "constraints": {
+                        "CO2StorageConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2StorageConstraint": 30000000
+                    }
+                },
+                {
+                    "id": "co2_storage_Espirito_Santo",
+                    "constraints": {
+                        "CO2StorageConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2StorageConstraint": 6700000
+                    }
+                },
+                {
+                    "id": "co2_storage_Ceara",
+                    "constraints": {
+                        "CO2StorageConstraint": true
+                    },
+                    "rhs_policy": {
+                        "CO2StorageConstraint": 6700000
+                    }
+                }
+            ]
+        },
+        {
+            "type": "NaturalGas",
+            "global_data": {
+                "time_interval": "NaturalGas",
+                "constraints": {
+                    "BalanceConstraint": false
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "natgas_BR",
+                    "price": {
+                        "timeseries": {
+                            "path": "system/fuel_prices_2.csv",
+                            "header": "natgas_price_BR"
+                        }
+                    }
+                },
+                {
+                    "id": "natgas_LNG_BR",
+                    "price": {
+                        "timeseries": {
+                            "path": "system/fuel_prices_2.csv",
+                            "header": "natgas_LNG_price_BR"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Coal",
+            "global_data": {
+                "time_interval": "Coal",
+                "constraints": {
+                    "BalanceConstraint": false
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "coal_BR",
+                    "price": {
+                        "timeseries": {
+                            "path": "system/fuel_prices_2.csv",
+                            "header": "coal_price_BR"
+                        }
+                    }
+                },
+                {
+                    "id": "coal_imported",
+                    "price": {
+                        "timeseries": {
+                            "path": "system/fuel_prices_2.csv",
+                            "header": "coal_price_imported"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Uranium",
+            "global_data": {
+                "time_interval": "Uranium",
+                "constraints": {
+                    "BalanceConstraint": false
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "uranium_BR",
+                    "price": {
+                        "timeseries": {
+                            "path": "system/fuel_prices_2.csv",
+                            "header": "uranium_price_BR"
+                        }
+                    }
+                }
+            ]
+        },
+
+
+        
+
+    {
+      "type": "Sugarcane",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+       {
+          "id": "sugarcane_BR_AC",
+          "location": "BR_AC",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_AL",
+          "location": "BR_AL",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_AP",
+          "location": "BR_AP",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_AM",
+          "location": "BR_AM",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_BA",
+          "location": "BR_BA",
+          "supply": {
+            "seg1": {
+              "price": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0],
+              "max":   [198.0, 148.0, 100.0, 43.0, 48.0, 71.0, 104.0, 160.0, 279.0, 309.0, 283.0, 256.0]
+            },
+            "seg2": {
+              "price": [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
+              "max":   [22961586.0, 17171257.0, 11625340.0, 5033422.0, 5600532.0, 8189694.0, 12032291.0, 18580703.0, 32283959.0, 35821079.0, 32804208.0, 29603086.0]
+            },
+            "seg3": {
+              "price": [21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0],
+              "max":   [2804739.0, 2097455.0, 1420026.0, 614828.0, 684101.0, 1000365.0, 1469735.0, 2269618.0, 3943460.0, 4375516.0, 4007008.0, 3615993.0]
+            },
+            "seg4": {
+              "price": [26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0],
+              "max":   [29536028.0, 22087792.0, 14953948.0, 6474609.0, 7204096.0, 10534596.0, 15477419.0, 23900795.0, 41527617.0, 46077499.0, 42196826.0, 38079148.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_CE",
+          "location": "BR_CE",
+          "supply": {
+            "seg1": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [1533.0, 1146.0, 776.0, 336.0, 374.0, 547.0, 803.0, 1240.0, 2155.0, 2391.0, 2190.0, 1976.0]
+            },
+            "seg2": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [598394.0, 447494.0, 302964.0, 131174.0, 145953.0, 213429.0, 313569.0, 484225.0, 841341.0, 933520.0, 854899.0, 771475.0]
+            },
+            "seg3": {
+              "price": [19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0],
+              "max":   [46.0, 35.0, 24.0, 10.0, 11.0, 17.0, 24.0, 38.0, 65.0, 72.0, 66.0, 60.0]
+            },
+            "seg4": {
+              "price": [24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0],
+              "max":   [1084.0, 811.0, 549.0, 238.0, 264.0, 387.0, 568.0, 877.0, 1524.0, 1691.0, 1548.0, 1397.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_DF",
+          "location": "BR_DF",
+          "supply": {
+            "seg1": {
+              "price": [13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0],
+              "max":   [0.0, 0.0, 5.0, 29.0, 75.0, 79.0, 79.0, 74.0, 68.0, 51.0, 30.0, 9.0]
+            },
+            "seg2": {
+              "price": [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
+              "max":   [32.0, 31.0, 380.0, 2028.0, 5303.0, 5568.0, 5582.0, 5245.0, 4809.0, 3593.0, 2155.0, 619.0]
+            },
+            "seg3": {
+              "price": [19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0],
+              "max":   [24.0, 23.0, 282.0, 1506.0, 3939.0, 4135.0, 4146.0, 3896.0, 3571.0, 2668.0, 1601.0, 459.0]
+            },
+            "seg4": {
+              "price": [24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0],
+              "max":   [7.0, 7.0, 80.0, 427.0, 1116.0, 1172.0, 1175.0, 1104.0, 1012.0, 756.0, 453.0, 130.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_ES",
+          "location": "BR_ES",
+          "supply": {
+            "seg1": {
+              "price": [14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0],
+              "max":   [1.0, 1.0, 5.0, 36.0, 66.0, 73.0, 75.0, 74.0, 75.0, 56.0, 29.0, 9.0]
+            },
+            "seg2": {
+              "price": [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
+              "max":   [20833.0, 13449.0, 75812.0, 514930.0, 938409.0, 1038547.0, 1069536.0, 1064068.0, 1079233.0, 800876.0, 414414.0, 125236.0]
+            },
+            "seg3": {
+              "price": [18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0],
+              "max":   [53241.0, 34369.0, 193742.0, 1315938.0, 2398164.0, 2654073.0, 2733267.0, 2719295.0, 2758048.0, 2046690.0, 1059060.0, 320050.0]
+            },
+            "seg4": {
+              "price": [26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0],
+              "max":   [9.0, 6.0, 33.0, 223.0, 406.0, 449.0, 462.0, 460.0, 467.0, 346.0, 179.0, 54.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_GO",
+          "location": "BR_GO",
+          "supply": {
+            "seg1": {
+              "price": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0],
+              "max":   [1.0, 1.0, 16.0, 86.0, 225.0, 236.0, 237.0, 223.0, 204.0, 152.0, 91.0, 26.0]
+            },
+            "seg2": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [188872.0, 184289.0, 2257664.0, 12064128.0, 31540476.0, 33116286.0, 33201881.0, 31196036.0, 28599748.0, 21368482.0, 12817212.0, 3679709.0]
+            },
+            "seg3": {
+              "price": [22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0],
+              "max":   [46432.0, 45305.0, 555020.0, 2965821.0, 7753848.0, 8141241.0, 8162284.0, 7669171.0, 7030905.0, 5253185.0, 3150958.0, 904612.0]
+            },
+            "seg4": {
+              "price": [27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0],
+              "max":   [242923.0, 237028.0, 2903758.0, 15516619.0, 40566676.0, 42593447.0, 42703538.0, 40123664.0, 36784375.0, 27483677.0, 16485220.0, 4732762.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_MA",
+          "location": "BR_MA",
+          "supply": {
+            "seg1": {
+              "price": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0],
+              "max":   [99.0, 74.0, 50.0, 22.0, 24.0, 35.0, 52.0, 80.0, 139.0, 155.0, 142.0, 128.0]
+            },
+            "seg2": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [5624232.0, 4205943.0, 2847521.0, 1232891.0, 1371799.0, 2005991.0, 2947200.0, 4551174.0, 7907662.0, 8774048.0, 8035093.0, 7251007.0]
+            },
+            "seg3": {
+              "price": [21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0],
+              "max":   [1799761.0, 1345907.0, 911210.0, 394527.0, 438978.0, 641920.0, 943108.0, 1456381.0, 2530462.0, 2807706.0, 2571240.0, 2320331.0]
+            },
+            "seg4": {
+              "price": [26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0],
+              "max":   [16085967.0, 12029495.0, 8144247.0, 3526214.0, 3923508.0, 5737371.0, 8429341.0, 13016896.0, 22616848.0, 25094813.0, 22981314.0, 20738736.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_MT",
+          "location": "BR_MT",
+          "supply": {
+            "seg1": {
+              "price": [11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0],
+              "max":   [1.0, 1.0, 11.0, 57.0, 150.0, 158.0, 158.0, 148.0, 136.0, 102.0, 61.0, 18.0]
+            },
+            "seg2": {
+              "price": [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
+              "max":   [227586.0, 222063.0, 2720428.0, 14536971.0, 38005481.0, 39904292.0, 40007432.0, 37590439.0, 34461978.0, 25748484.0, 15444419.0, 4433957.0]
+            },
+            "seg3": {
+              "price": [20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0],
+              "max":   [257815.0, 251559.0, 3081775.0, 16467878.0, 43053647.0, 45204672.0, 45321512.0, 42583476.0, 39039470.0, 29168585.0, 17495859.0, 5022907.0]
+            },
+            "seg4": {
+              "price": [25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0],
+              "max":   [452806.0, 441818.0, 5412580.0, 28922843.0, 75615928.0, 79393813.0, 79599021.0, 74790158.0, 68565753.0, 51229334.0, 30728306.0, 8821827.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_MS",
+          "location": "BR_MS",
+          "supply": {
+            "seg1": {
+              "price": [11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0],
+              "max":   [0.0, 0.0, 5.0, 29.0, 75.0, 79.0, 79.0, 74.0, 68.0, 51.0, 30.0, 9.0]
+            },
+            "seg2": {
+              "price": [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
+              "max":   [165698.0, 161677.0, 1980657.0, 10583905.0, 27670578.0, 29053042.0, 29128135.0, 27368400.0, 25090667.0, 18746649.0, 11244588.0, 3228223.0]
+            },
+            "seg3": {
+              "price": [20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0],
+              "max":   [146170.0, 142623.0, 1747228.0, 9336549.0, 24409489.0, 25629023.0, 25695266.0, 24142923.0, 22133630.0, 16537281.0, 9919368.0, 2847763.0]
+            },
+            "seg4": {
+              "price": [25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0],
+              "max":   [279892.0, 273101.0, 3345672.0, 17878044.0, 46740389.0, 49075609.0, 49202454.0, 46229957.0, 42382472.0, 31666331.0, 18994053.0, 5453026.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_MG",
+          "location": "BR_MG",
+          "supply": {
+            "seg1": {
+              "price": [11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0],
+              "max":   [6.0, 4.0, 21.0, 144.0, 262.0, 290.0, 299.0, 297.0, 302.0, 224.0, 116.0, 35.0]
+            },
+            "seg2": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [1157510.0, 747200.0, 4212107.0, 28609592.0, 52138113.0, 57701792.0, 59423535.0, 59119762.0, 59962295.0, 44496765.0, 23024864.0, 6958153.0]
+            },
+            "seg3": {
+              "price": [23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0],
+              "max":   [173880.0, 112243.0, 632737.0, 4297693.0, 7832114.0, 8667882.0, 8926520.0, 8880888.0, 9007452.0, 6684242.0, 3458763.0, 1045244.0]
+            },
+            "seg4": {
+              "price": [28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0],
+              "max":   [81064.0, 52328.0, 294985.0, 2003607.0, 3651374.0, 4041013.0, 4161592.0, 4140318.0, 4199322.0, 3116229.0, 1612494.0, 487298.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_PA",
+          "location": "BR_PA",
+          "supply": {
+            "seg1": {
+              "price": [23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0],
+              "max":   [6.0, 0.0, 0.0, 21.0, 39.0, 46.0, 68.0, 69.0, 72.0, 55.0, 40.0, 23.0]
+            },
+            "seg2": {
+              "price": [23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0],
+              "max":   [6.0, 0.0, 0.0, 21.0, 39.0, 46.0, 68.0, 69.0, 72.0, 55.0, 40.0, 23.0]
+            },
+            "seg3": {
+              "price": [24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0],
+              "max":   [11.0, 0.0, 0.0, 42.0, 79.0, 91.0, 137.0, 137.0, 143.0, 109.0, 80.0, 45.0]
+            },
+            "seg4": {
+              "price": [24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0],
+              "max":   [22.0, 0.0, 0.0, 84.0, 157.0, 182.0, 273.0, 274.0, 287.0, 219.0, 160.0, 90.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_PB",
+          "location": "BR_PB",
+          "supply": {
+            "seg1": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [705326.0, 527461.0, 357103.0, 154615.0, 172035.0, 251568.0, 369604.0, 570756.0, 991687.0, 1100339.0, 1007668.0, 909337.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_PR",
+          "location": "BR_PR",
+          "supply": {
+            "seg1": {
+              "price": [13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0],
+              "max":   [2.0, 0.0, 17.0, 54.0, 68.0, 81.0, 68.0, 73.0, 63.0, 53.0, 19.0, 2.0]
+            },
+            "seg2": {
+              "price": [18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0],
+              "max":   [256211.0, 65.0, 2470779.0, 7900322.0, 10108134.0, 11988657.0, 10009553.0, 10762098.0, 9289223.0, 7879688.0, 2864410.0, 287361.0]
+            },
+            "seg3": {
+              "price": [23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0],
+              "max":   [36755.0, 9.0, 354444.0, 1133337.0, 1450058.0, 1719827.0, 1435916.0, 1543872.0, 1332581.0, 1130377.0, 410913.0, 41223.0]
+            },
+            "seg4": {
+              "price": [27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0],
+              "max":   [31684.0, 8.0, 305546.0, 976985.0, 1250011.0, 1482564.0, 1237820.0, 1330883.0, 1148742.0, 974433.0, 354224.0, 35536.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_PE",
+          "location": "BR_PE",
+          "supply": {
+            "seg1": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [1161.0, 868.0, 588.0, 255.0, 283.0, 414.0, 609.0, 940.0, 1633.0, 1812.0, 1659.0, 1497.0]
+            },
+            "seg2": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [1602870.0, 1198667.0, 811525.0, 351366.0, 390954.0, 571695.0, 839933.0, 1297056.0, 2253633.0, 2500548.0, 2289950.0, 2066491.0]
+            },
+            "seg3": {
+              "price": [24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0],
+              "max":   [173.0, 130.0, 88.0, 38.0, 42.0, 62.0, 91.0, 140.0, 244.0, 271.0, 248.0, 224.0]
+            },
+            "seg4": {
+              "price": [24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0],
+              "max":   [173.0, 130.0, 88.0, 38.0, 42.0, 62.0, 91.0, 140.0, 244.0, 271.0, 248.0, 224.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_PI",
+          "location": "BR_PI",
+          "supply": {
+            "seg1": {
+              "price": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0],
+              "max":   [50.0, 37.0, 25.0, 11.0, 12.0, 18.0, 26.0, 40.0, 70.0, 77.0, 71.0, 64.0]
+            },
+            "seg2": {
+              "price": [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
+              "max":   [2032464.0, 1519928.0, 1029027.0, 445537.0, 495736.0, 724918.0, 1065048.0, 1644686.0, 2857641.0, 3170732.0, 2903692.0, 2620342.0]
+            },
+            "seg3": {
+              "price": [21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0],
+              "max":   [1724723.0, 1289792.0, 873219.0, 378077.0, 420675.0, 615156.0, 903786.0, 1395660.0, 2424958.0, 2690643.0, 2464036.0, 2223588.0]
+            },
+            "seg4": {
+              "price": [25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0],
+              "max":   [4737198.0, 3542597.0, 2398420.0, 1038444.0, 1155444.0, 1689613.0, 2482379.0, 3833379.0, 6660494.0, 7390237.0, 6767827.0, 6107404.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_RJ",
+          "location": "BR_RJ",
+          "supply": {
+            "seg1": {
+              "price": [15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0],
+              "max":   [41434.0, 26747.0, 150777.0, 1024110.0, 1866339.0, 2065496.0, 2127128.0, 2116254.0, 2146413.0, 1592809.0, 824199.0, 249074.0]
+            },
+            "seg2": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [65450.0, 42249.0, 238167.0, 1617682.0, 2948064.0, 3262653.0, 3360006.0, 3342830.0, 3390469.0, 2515996.0, 1301903.0, 393437.0]
+            },
+            "seg3": {
+              "price": [19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0],
+              "max":   [5223.0, 3372.0, 19007.0, 129097.0, 235267.0, 260373.0, 268142.0, 266771.0, 270573.0, 200787.0, 103897.0, 31398.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_RN",
+          "location": "BR_RN",
+          "supply": {
+            "seg1": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [936564.0, 700386.0, 474178.0, 205305.0, 228436.0, 334044.0, 490777.0, 757875.0, 1316807.0, 1461080.0, 1338027.0, 1207459.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_RS",
+          "location": "BR_RS",
+          "supply": {
+            "seg1": {
+              "price": [15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0],
+              "max":   [3.0, 0.0, 31.0, 100.0, 128.0, 152.0, 127.0, 137.0, 118.0, 100.0, 36.0, 4.0]
+            },
+            "seg2": {
+              "price": [21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0],
+              "max":   [278.0, 0.0, 2679.0, 8565.0, 10959.0, 12998.0, 10852.0, 11668.0, 10071.0, 8543.0, 3106.0, 312.0]
+            },
+            "seg3": {
+              "price": [24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0],
+              "max":   [7187.0, 2.0, 69310.0, 221618.0, 283552.0, 336304.0, 280786.0, 301896.0, 260580.0, 221040.0, 80352.0, 8061.0]
+            },
+            "seg4": {
+              "price": [26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0, 26.0],
+              "max":   [1025.0, 0.0, 9885.0, 31606.0, 40439.0, 47962.0, 40045.0, 43055.0, 37163.0, 31524.0, 11459.0, 1150.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_RO",
+          "location": "BR_RO",
+          "supply": {
+            "seg1": {
+              "price": [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
+              "max":   [6.0, 0.0, 0.0, 23.0, 42.0, 49.0, 73.0, 73.0, 77.0, 59.0, 43.0, 24.0]
+            },
+            "seg2": {
+              "price": [22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0],
+              "max":   [22.0, 0.0, 0.0, 84.0, 157.0, 182.0, 273.0, 274.0, 287.0, 219.0, 160.0, 90.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_RR",
+          "location": "BR_RR",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_SC",
+          "location": "BR_SC",
+          "supply": {
+            "seg1": {
+              "price": [15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0],
+              "max":   [2.0, 0.0, 17.0, 54.0, 68.0, 81.0, 68.0, 73.0, 63.0, 53.0, 19.0, 2.0]
+            },
+            "seg2": {
+              "price": [18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0],
+              "max":   [1092.0, 0.0, 10531.0, 33673.0, 43083.0, 51099.0, 42663.0, 45871.0, 39593.0, 33585.0, 12209.0, 1225.0]
+            },
+            "seg3": {
+              "price": [22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0],
+              "max":   [1975.0, 1.0, 19048.0, 60905.0, 77925.0, 92422.0, 77165.0, 82967.0, 71612.0, 60746.0, 22082.0, 2215.0]
+            },
+            "seg4": {
+              "price": [28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0],
+              "max":   [8812.0, 2.0, 84979.0, 271720.0, 347655.0, 412333.0, 344264.0, 370147.0, 319489.0, 271011.0, 98517.0, 9883.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_SP",
+          "location": "BR_SP",
+          "supply": {
+            "seg1": {
+              "price": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0],
+              "max":   [1.0, 1.0, 5.0, 36.0, 66.0, 73.0, 75.0, 74.0, 75.0, 56.0, 29.0, 9.0]
+            },
+            "seg2": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [1596956.0, 1030872.0, 5811220.0, 39471136.0, 71932188.0, 79608101.0, 81983498.0, 81564399.0, 82726796.0, 61389825.0, 31766183.0, 9599795.0]
+            },
+            "seg3": {
+              "price": [23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0],
+              "max":   [104819.0, 67663.0, 381429.0, 2590754.0, 4721390.0, 5225211.0, 5381124.0, 5353616.0, 5429912.0, 4029424.0, 2085027.0, 630099.0]
+            },
+            "seg4": {
+              "price": [28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0],
+              "max":   [41170.0, 26576.0, 149815.0, 1017577.0, 1854433.0, 2052320.0, 2113559.0, 2102754.0, 2132721.0, 1582648.0, 818942.0, 247486.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_SE",
+          "location": "BR_SE",
+          "supply": {
+            "seg1": {
+              "price": [19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0],
+              "max":   [1317748.0, 985446.0, 667170.0, 288864.0, 321410.0, 470000.0, 690524.0, 1066333.0, 1852752.0, 2055745.0, 1882609.0, 1698899.0]
+            },
+            "seg2": {
+              "price": [23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0],
+              "max":   [43.0, 32.0, 22.0, 10.0, 11.0, 15.0, 23.0, 35.0, 61.0, 68.0, 62.0, 56.0]
+            },
+            "seg3": {
+              "price": [23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0],
+              "max":   [1734.0, 1297.0, 878.0, 380.0, 423.0, 619.0, 909.0, 1403.0, 2438.0, 2705.0, 2478.0, 2236.0]
+            },
+            "seg4": {
+              "price": [24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0],
+              "max":   [28484.0, 21301.0, 14421.0, 6244.0, 6948.0, 10159.0, 14926.0, 23050.0, 40049.0, 44437.0, 40694.0, 36723.0]
+            }
+          }
+        },
+        {
+          "id": "sugarcane_BR_TO",
+          "location": "BR_TO",
+          "supply": {
+            "seg1": {
+              "price": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0],
+              "max":   [19.0, 0.0, 0.0, 72.0, 135.0, 156.0, 234.0, 235.0, 246.0, 188.0, 138.0, 77.0]
+            },
+            "seg2": {
+              "price": [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
+              "max":   [449307.0, 0.0, 0.0, 1687064.0, 3145574.0, 3652086.0, 5475421.0, 5493558.0, 5746265.0, 4384423.0, 3214406.0, 1809147.0]
+            },
+            "seg3": {
+              "price": [21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0],
+              "max":   [47845.0, 0.0, 0.0, 179650.0, 334961.0, 388898.0, 583059.0, 584990.0, 611900.0, 466882.0, 342291.0, 192650.0]
+            },
+            "seg4": {
+              "price": [25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0],
+              "max":   [3491149.0, 0.0, 0.0, 13108597.0, 24441313.0, 28376945.0, 42544376.0, 42685302.0, 44648856.0, 34067251.0, 24976144.0, 14057193.0]
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Corn",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+   {
+          "id": "corn_BR_AC",
+          "location": "BR_AC",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_AL",
+          "location": "BR_AL",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_AP",
+          "location": "BR_AP",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_AM",
+          "location": "BR_AM",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_BA",
+          "location": "BR_BA",
+          "supply": {
+            "seg1": {
+              "price": [85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0],
+              "max":   [3.0, 2.0, 3.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0]
+            },
+            "seg2": {
+              "price": [134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0],
+              "max":   [4.0, 4.0, 4.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0]
+            },
+            "seg3": {
+              "price": [160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0],
+              "max":   [13.0, 12.0, 13.0, 12.0, 13.0, 13.0, 14.0, 14.0, 14.0, 16.0, 15.0, 17.0]
+            },
+            "seg4": {
+              "price": [164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0],
+              "max":   [10.0, 9.0, 10.0, 9.0, 10.0, 10.0, 11.0, 11.0, 11.0, 12.0, 12.0, 13.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_CE",
+          "location": "BR_CE",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_DF",
+          "location": "BR_DF",
+          "supply": {
+            "seg1": {
+              "price": [64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0],
+              "max":   [143.0, 131.0, 143.0, 130.0, 149.0, 145.0, 156.0, 159.0, 159.0, 173.0, 172.0, 186.0]
+            },
+            "seg2": {
+              "price": [77.0, 77.0, 77.0, 77.0, 77.0, 77.0, 77.0, 77.0, 77.0, 77.0, 77.0, 77.0],
+              "max":   [60.0, 56.0, 61.0, 55.0, 63.0, 61.0, 66.0, 68.0, 68.0, 74.0, 73.0, 79.0]
+            },
+            "seg3": {
+              "price": [93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0],
+              "max":   [142.0, 131.0, 142.0, 129.0, 148.0, 144.0, 155.0, 158.0, 158.0, 173.0, 171.0, 185.0]
+            },
+            "seg4": {
+              "price": [135.0, 135.0, 135.0, 135.0, 135.0, 135.0, 135.0, 135.0, 135.0, 135.0, 135.0, 135.0],
+              "max":   [41.0, 38.0, 41.0, 37.0, 43.0, 42.0, 45.0, 46.0, 46.0, 50.0, 50.0, 54.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_ES",
+          "location": "BR_ES",
+          "supply": {
+            "seg1": {
+              "price": [164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0, 164.0],
+              "max":   [46.0, 43.0, 47.0, 42.0, 48.0, 47.0, 51.0, 52.0, 52.0, 57.0, 56.0, 61.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_GO",
+          "location": "BR_GO",
+          "supply": {
+            "seg1": {
+              "price": [63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0],
+              "max":   [5.0, 5.0, 5.0, 5.0, 6.0, 5.0, 6.0, 6.0, 6.0, 6.0, 6.0, 7.0]
+            },
+            "seg2": {
+              "price": [93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0],
+              "max":   [2207320.0, 2031909.0, 2211250.0, 2005685.0, 2299162.0, 2244303.0, 2415415.0, 2463597.0, 2463608.0, 2683324.0, 2664077.0, 2876489.0]
+            },
+            "seg3": {
+              "price": [122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0],
+              "max":   [87167.0, 80240.0, 87322.0, 79204.0, 90793.0, 88627.0, 95384.0, 97287.0, 97287.0, 105964.0, 105204.0, 113592.0]
+            },
+            "seg4": {
+              "price": [162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0],
+              "max":   [399029.0, 367319.0, 399739.0, 362578.0, 415631.0, 405714.0, 436647.0, 445357.0, 445359.0, 485078.0, 481599.0, 519998.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_MA",
+          "location": "BR_MA",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_MT",
+          "location": "BR_MT",
+          "supply": {
+            "seg1": {
+              "price": [65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0],
+              "max":   [12.0, 11.0, 12.0, 11.0, 12.0, 12.0, 13.0, 13.0, 13.0, 14.0, 14.0, 15.0]
+            },
+            "seg2": {
+              "price": [93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0, 93.0],
+              "max":   [4648038.0, 4278669.0, 4656312.0, 4223448.0, 4841432.0, 4725915.0, 5086231.0, 5187690.0, 5187713.0, 5650377.0, 5609848.0, 6057131.0]
+            },
+            "seg3": {
+              "price": [122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0, 122.0],
+              "max":   [153743.0, 141526.0, 154017.0, 139699.0, 160140.0, 156319.0, 168238.0, 171593.0, 171594.0, 186898.0, 185557.0, 200352.0]
+            },
+            "seg4": {
+              "price": [151.0, 151.0, 151.0, 151.0, 151.0, 151.0, 151.0, 151.0, 151.0, 151.0, 151.0, 151.0],
+              "max":   [990855.0, 912114.0, 992618.0, 900342.0, 1032082.0, 1007456.0, 1084267.0, 1105896.0, 1105901.0, 1204530.0, 1195890.0, 1291241.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_MS",
+          "location": "BR_MS",
+          "supply": {
+            "seg1": {
+              "price": [61.0, 61.0, 61.0, 61.0, 61.0, 61.0, 61.0, 61.0, 61.0, 61.0, 61.0, 61.0],
+              "max":   [557.0, 513.0, 558.0, 506.0, 581.0, 567.0, 610.0, 622.0, 622.0, 678.0, 673.0, 726.0]
+            },
+            "seg2": {
+              "price": [89.0, 89.0, 89.0, 89.0, 89.0, 89.0, 89.0, 89.0, 89.0, 89.0, 89.0, 89.0],
+              "max":   [1878786.0, 1729483.0, 1882131.0, 1707162.0, 1956958.0, 1910265.0, 2055908.0, 2096919.0, 2096928.0, 2283942.0, 2267560.0, 2448356.0]
+            },
+            "seg3": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [36173.0, 33298.0, 36237.0, 32868.0, 37678.0, 36779.0, 39583.0, 40373.0, 40373.0, 43973.0, 43658.0, 47139.0]
+            },
+            "seg4": {
+              "price": [148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0],
+              "max":   [1083526.0, 997421.0, 1085455.0, 984548.0, 1128609.0, 1101680.0, 1185675.0, 1209327.0, 1209332.0, 1317186.0, 1307738.0, 1412006.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_MG",
+          "location": "BR_MG",
+          "supply": {
+            "seg1": {
+              "price": [65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0],
+              "max":   [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0]
+            },
+            "seg2": {
+              "price": [103.0, 103.0, 103.0, 103.0, 103.0, 103.0, 103.0, 103.0, 103.0, 103.0, 103.0, 103.0],
+              "max":   [1216056.0, 1119418.0, 1218221.0, 1104971.0, 1266653.0, 1236430.0, 1330699.0, 1357244.0, 1357250.0, 1478295.0, 1467692.0, 1584714.0]
+            },
+            "seg3": {
+              "price": [137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0, 137.0],
+              "max":   [133612.0, 122994.0, 133850.0, 121407.0, 139171.0, 135851.0, 146208.0, 149125.0, 149126.0, 162425.0, 161260.0, 174118.0]
+            },
+            "seg4": {
+              "price": [180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0],
+              "max":   [580080.0, 533982.0, 581113.0, 527091.0, 604216.0, 589799.0, 634767.0, 647429.0, 647432.0, 705173.0, 700115.0, 755936.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_PA",
+          "location": "BR_PA",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_PB",
+          "location": "BR_PB",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_PR",
+          "location": "BR_PR",
+          "supply": {
+            "seg1": {
+              "price": [83.0, 83.0, 83.0, 83.0, 83.0, 83.0, 83.0, 83.0, 83.0, 83.0, 83.0, 83.0],
+              "max":   [11.0, 11.0, 11.0, 10.0, 12.0, 12.0, 13.0, 13.0, 13.0, 14.0, 14.0, 15.0]
+            },
+            "seg2": {
+              "price": [115.0, 115.0, 115.0, 115.0, 115.0, 115.0, 115.0, 115.0, 115.0, 115.0, 115.0, 115.0],
+              "max":   [62754.0, 57767.0, 62866.0, 57022.0, 65365.0, 63806.0, 68670.0, 70040.0, 70040.0, 76287.0, 75740.0, 81779.0]
+            },
+            "seg3": {
+              "price": [147.0, 147.0, 147.0, 147.0, 147.0, 147.0, 147.0, 147.0, 147.0, 147.0, 147.0, 147.0],
+              "max":   [188553.0, 173569.0, 188888.0, 171329.0, 196398.0, 191712.0, 206328.0, 210444.0, 210445.0, 229214.0, 227569.0, 245714.0]
+            },
+            "seg4": {
+              "price": [180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0],
+              "max":   [10434.0, 9605.0, 10452.0, 9481.0, 10868.0, 10608.0, 11417.0, 11645.0, 11645.0, 12684.0, 12593.0, 13597.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_PE",
+          "location": "BR_PE",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_PI",
+          "location": "BR_PI",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_RJ",
+          "location": "BR_RJ",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_RN",
+          "location": "BR_RN",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_RS",
+          "location": "BR_RS",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_RO",
+          "location": "BR_RO",
+          "supply": {
+            "seg1": {
+              "price": [67.0, 67.0, 67.0, 67.0, 67.0, 67.0, 67.0, 67.0, 67.0, 67.0, 67.0, 67.0],
+              "max":   [2.0, 2.0, 2.0, 2.0, 3.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0]
+            },
+            "seg2": {
+              "price": [144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0],
+              "max":   [5.0, 4.0, 5.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_RR",
+          "location": "BR_RR",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_SC",
+          "location": "BR_SC",
+          "supply": {
+            "seg1": {
+              "price": [174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0],
+              "max":   [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_SP",
+          "location": "BR_SP",
+          "supply": {
+            "seg1": {
+              "price": [75.0, 75.0, 75.0, 75.0, 75.0, 75.0, 75.0, 75.0, 75.0, 75.0, 75.0, 75.0],
+              "max":   [6.0, 5.0, 6.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 7.0, 8.0]
+            },
+            "seg2": {
+              "price": [109.0, 109.0, 109.0, 109.0, 109.0, 109.0, 109.0, 109.0, 109.0, 109.0, 109.0, 109.0],
+              "max":   [839346.0, 772645.0, 840840.0, 762673.0, 874269.0, 853409.0, 918475.0, 936797.0, 936801.0, 1020349.0, 1013031.0, 1093801.0]
+            },
+            "seg3": {
+              "price": [144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0],
+              "max":   [24778.0, 22809.0, 24822.0, 22514.0, 25809.0, 25193.0, 27114.0, 27655.0, 27655.0, 30121.0, 29905.0, 32289.0]
+            },
+            "seg4": {
+              "price": [180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0],
+              "max":   [13650.0, 12565.0, 13674.0, 12403.0, 14218.0, 13879.0, 14937.0, 15235.0, 15235.0, 16593.0, 16474.0, 17788.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_SE",
+          "location": "BR_SE",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "corn_BR_TO",
+          "location": "BR_TO",
+          "supply": {
+            "seg1": {
+              "price": [70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0],
+              "max":   [3.0, 2.0, 3.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0]
+            },
+            "seg2": {
+              "price": [85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0],
+              "max":   [3.0, 2.0, 3.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0]
+            },
+            "seg3": {
+              "price": [87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0],
+              "max":   [8.0, 7.0, 8.0, 7.0, 8.0, 8.0, 8.0, 8.0, 8.0, 9.0, 9.0, 10.0]
+            },
+            "seg4": {
+              "price": [144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0, 144.0],
+              "max":   [10.0, 9.0, 10.0, 9.0, 10.0, 10.0, 11.0, 11.0, 11.0, 12.0, 12.0, 13.0]
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Soybean",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+         {
+          "id": "soybean_BR_AC",
+          "location": "BR_AC",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_AL",
+          "location": "BR_AL",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_AP",
+          "location": "BR_AP",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_AM",
+          "location": "BR_AM",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_BA",
+          "location": "BR_BA",
+          "supply": {
+            "seg1": {
+              "price": [113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0],
+              "max":   [799.0, 683.0, 1019.0, 890.0, 1033.0, 991.0, 1102.0, 1183.0, 1180.0, 1274.0, 1175.0, 983.0]
+            },
+            "seg2": {
+              "price": [158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0],
+              "max":   [662122.0, 566255.0, 844645.0, 737555.0, 856319.0, 821081.0, 913509.0, 980676.0, 978101.0, 1055596.0, 973790.0, 814793.0]
+            },
+            "seg3": {
+              "price": [204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0],
+              "max":   [132186.0, 113047.0, 168625.0, 147246.0, 170956.0, 163921.0, 182373.0, 195782.0, 195268.0, 210739.0, 194407.0, 162665.0]
+            },
+            "seg4": {
+              "price": [253.0, 253.0, 253.0, 253.0, 253.0, 253.0, 253.0, 253.0, 253.0, 253.0, 253.0, 253.0],
+              "max":   [223687.0, 191300.0, 285349.0, 249171.0, 289293.0, 277389.0, 308614.0, 331305.0, 330435.0, 356615.0, 328979.0, 275264.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_CE",
+          "location": "BR_CE",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0]
+            },
+            "seg2": {
+              "price": [176.0, 176.0, 176.0, 176.0, 176.0, 176.0, 176.0, 176.0, 176.0, 176.0, 176.0, 176.0],
+              "max":   [4.0, 3.0, 5.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 5.0, 5.0]
+            },
+            "seg3": {
+              "price": [184.0, 184.0, 184.0, 184.0, 184.0, 184.0, 184.0, 184.0, 184.0, 184.0, 184.0, 184.0],
+              "max":   [9.0, 8.0, 12.0, 10.0, 12.0, 11.0, 13.0, 14.0, 14.0, 15.0, 14.0, 11.0]
+            },
+            "seg4": {
+              "price": [247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0],
+              "max":   [8.0, 7.0, 10.0, 9.0, 10.0, 10.0, 11.0, 12.0, 12.0, 13.0, 12.0, 10.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_DF",
+          "location": "BR_DF",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [88.0, 96.0, 106.0, 105.0, 108.0, 117.0, 125.0, 124.0, 117.0, 119.0, 113.0, 97.0]
+            },
+            "seg2": {
+              "price": [129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0],
+              "max":   [374.0, 408.0, 453.0, 448.0, 461.0, 500.0, 533.0, 528.0, 498.0, 506.0, 484.0, 414.0]
+            },
+            "seg3": {
+              "price": [149.0, 149.0, 149.0, 149.0, 149.0, 149.0, 149.0, 149.0, 149.0, 149.0, 149.0, 149.0],
+              "max":   [457.0, 499.0, 554.0, 547.0, 563.0, 611.0, 651.0, 645.0, 608.0, 618.0, 591.0, 505.0]
+            },
+            "seg4": {
+              "price": [233.0, 233.0, 233.0, 233.0, 233.0, 233.0, 233.0, 233.0, 233.0, 233.0, 233.0, 233.0],
+              "max":   [160.0, 175.0, 194.0, 192.0, 197.0, 214.0, 228.0, 226.0, 213.0, 217.0, 207.0, 177.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_ES",
+          "location": "BR_ES",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [58.0, 57.0, 62.0, 60.0, 63.0, 65.0, 69.0, 71.0, 75.0, 79.0, 84.0, 69.0]
+            },
+            "seg2": {
+              "price": [117.0, 117.0, 117.0, 117.0, 117.0, 117.0, 117.0, 117.0, 117.0, 117.0, 117.0, 117.0],
+              "max":   [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 2.0]
+            },
+            "seg3": {
+              "price": [124.0, 124.0, 124.0, 124.0, 124.0, 124.0, 124.0, 124.0, 124.0, 124.0, 124.0, 124.0],
+              "max":   [4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 5.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_GO",
+          "location": "BR_GO",
+          "supply": {
+            "seg1": {
+              "price": [108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0],
+              "max":   [31.0, 33.0, 37.0, 37.0, 38.0, 41.0, 44.0, 43.0, 41.0, 41.0, 39.0, 34.0]
+            },
+            "seg2": {
+              "price": [156.0, 156.0, 156.0, 156.0, 156.0, 156.0, 156.0, 156.0, 156.0, 156.0, 156.0, 156.0],
+              "max":   [922853.0, 1006958.0, 1118374.0, 1104595.0, 1137198.0, 1233772.0, 1315283.0, 1303210.0, 1228063.0, 1248529.0, 1193991.0, 1020525.0]
+            },
+            "seg3": {
+              "price": [202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0],
+              "max":   [145779.0, 159065.0, 176664.0, 174488.0, 179638.0, 194893.0, 207769.0, 205862.0, 193991.0, 197224.0, 188609.0, 161208.0]
+            },
+            "seg4": {
+              "price": [257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0],
+              "max":   [120805.0, 131814.0, 146399.0, 144595.0, 148863.0, 161505.0, 172175.0, 170595.0, 160758.0, 163437.0, 156297.0, 133590.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_MA",
+          "location": "BR_MA",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [99551.0, 85137.0, 126993.0, 110892.0, 128749.0, 123451.0, 137347.0, 147446.0, 147059.0, 158710.0, 146411.0, 122505.0]
+            },
+            "seg2": {
+              "price": [163.0, 163.0, 163.0, 163.0, 163.0, 163.0, 163.0, 163.0, 163.0, 163.0, 163.0, 163.0],
+              "max":   [168166.0, 143818.0, 214523.0, 187324.0, 217488.0, 208538.0, 232013.0, 249072.0, 248418.0, 268101.0, 247323.0, 206941.0]
+            },
+            "seg3": {
+              "price": [210.0, 210.0, 210.0, 210.0, 210.0, 210.0, 210.0, 210.0, 210.0, 210.0, 210.0, 210.0],
+              "max":   [80423.0, 68779.0, 102593.0, 89585.0, 104011.0, 99731.0, 110957.0, 119116.0, 118803.0, 128215.0, 118279.0, 98967.0]
+            },
+            "seg4": {
+              "price": [257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0],
+              "max":   [144583.0, 123649.0, 184439.0, 161054.0, 186988.0, 179293.0, 199476.0, 214143.0, 213581.0, 230502.0, 212639.0, 177920.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_MT",
+          "location": "BR_MT",
+          "supply": {
+            "seg1": {
+              "price": [111.0, 111.0, 111.0, 111.0, 111.0, 111.0, 111.0, 111.0, 111.0, 111.0, 111.0, 111.0],
+              "max":   [2684.0, 2928.0, 3252.0, 3212.0, 3307.0, 3588.0, 3825.0, 3790.0, 3571.0, 3631.0, 3472.0, 2968.0]
+            },
+            "seg2": {
+              "price": [160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0, 160.0],
+              "max":   [1516711.0, 1654938.0, 1838051.0, 1815403.0, 1868987.0, 2027706.0, 2161671.0, 2141828.0, 2018323.0, 2051959.0, 1962326.0, 1677234.0]
+            },
+            "seg3": {
+              "price": [207.0, 207.0, 207.0, 207.0, 207.0, 207.0, 207.0, 207.0, 207.0, 207.0, 207.0, 207.0],
+              "max":   [269105.0, 293630.0, 326119.0, 322101.0, 331608.0, 359769.0, 383538.0, 380017.0, 358104.0, 364072.0, 348168.0, 297586.0]
+            },
+            "seg4": {
+              "price": [257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0],
+              "max":   [235897.0, 257396.0, 285876.0, 282354.0, 290688.0, 315374.0, 336210.0, 333123.0, 313914.0, 319146.0, 305205.0, 260864.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_MS",
+          "location": "BR_MS",
+          "supply": {
+            "seg1": {
+              "price": [110.0, 110.0, 110.0, 110.0, 110.0, 110.0, 110.0, 110.0, 110.0, 110.0, 110.0, 110.0],
+              "max":   [295.0, 322.0, 357.0, 353.0, 363.0, 394.0, 420.0, 416.0, 392.0, 399.0, 381.0, 326.0]
+            },
+            "seg2": {
+              "price": [159.0, 159.0, 159.0, 159.0, 159.0, 159.0, 159.0, 159.0, 159.0, 159.0, 159.0, 159.0],
+              "max":   [788594.0, 860464.0, 955671.0, 943896.0, 971756.0, 1054280.0, 1123933.0, 1113616.0, 1049401.0, 1066890.0, 1020286.0, 872057.0]
+            },
+            "seg3": {
+              "price": [208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0],
+              "max":   [144682.0, 157868.0, 175335.0, 173175.0, 178286.0, 193427.0, 206206.0, 204313.0, 192532.0, 195741.0, 187190.0, 159995.0]
+            },
+            "seg4": {
+              "price": [257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0],
+              "max":   [308896.0, 337048.0, 374341.0, 369728.0, 380641.0, 412966.0, 440250.0, 436208.0, 411055.0, 417906.0, 399651.0, 341588.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_MG",
+          "location": "BR_MG",
+          "supply": {
+            "seg1": {
+              "price": [113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0],
+              "max":   [122.0, 119.0, 131.0, 127.0, 132.0, 137.0, 144.0, 150.0, 158.0, 165.0, 176.0, 145.0]
+            },
+            "seg2": {
+              "price": [158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0],
+              "max":   [696844.0, 680155.0, 747553.0, 727323.0, 752903.0, 782897.0, 824551.0, 856892.0, 901598.0, 945172.0, 1004887.0, 828833.0]
+            },
+            "seg3": {
+              "price": [202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0, 202.0],
+              "max":   [120474.0, 117589.0, 129241.0, 125744.0, 130166.0, 135351.0, 142553.0, 148144.0, 155873.0, 163406.0, 173730.0, 143293.0]
+            },
+            "seg4": {
+              "price": [249.0, 249.0, 249.0, 249.0, 249.0, 249.0, 249.0, 249.0, 249.0, 249.0, 249.0, 249.0],
+              "max":   [51638.0, 50401.0, 55396.0, 53896.0, 55792.0, 58015.0, 61101.0, 63498.0, 66811.0, 70040.0, 74465.0, 61419.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_PA",
+          "location": "BR_PA",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [1.0, 2.0, 2.0, 3.0, 3.0, 2.0, 3.0, 2.0, 3.0, 2.0, 2.0, 2.0]
+            },
+            "seg2": {
+              "price": [189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0],
+              "max":   [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+            },
+            "seg3": {
+              "price": [242.0, 242.0, 242.0, 242.0, 242.0, 242.0, 242.0, 242.0, 242.0, 242.0, 242.0, 242.0],
+              "max":   [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_PB",
+          "location": "BR_PB",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_PR",
+          "location": "BR_PR",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [71970.0, 71156.0, 82027.0, 90305.0, 77261.0, 83325.0, 87864.0, 93136.0, 89487.0, 95408.0, 92256.0, 79383.0]
+            },
+            "seg2": {
+              "price": [162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0],
+              "max":   [67873.0, 67105.0, 77357.0, 85165.0, 72863.0, 78582.0, 82863.0, 87835.0, 84393.0, 89977.0, 87004.0, 74865.0]
+            },
+            "seg3": {
+              "price": [208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0],
+              "max":   [19455.0, 19235.0, 22174.0, 24412.0, 20886.0, 22525.0, 23752.0, 25177.0, 24191.0, 25791.0, 24939.0, 21460.0]
+            },
+            "seg4": {
+              "price": [257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0],
+              "max":   [9080.0, 8977.0, 10349.0, 11393.0, 9748.0, 10513.0, 11085.0, 11751.0, 11290.0, 12037.0, 11639.0, 10015.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_PE",
+          "location": "BR_PE",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0]
+            },
+            "seg2": {
+              "price": [148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0, 148.0],
+              "max":   [5.0, 5.0, 7.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 8.0, 7.0]
+            },
+            "seg3": {
+              "price": [179.0, 179.0, 179.0, 179.0, 179.0, 179.0, 179.0, 179.0, 179.0, 179.0, 179.0, 179.0],
+              "max":   [4.0, 3.0, 5.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 6.0, 5.0, 5.0]
+            },
+            "seg4": {
+              "price": [247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0],
+              "max":   [4.0, 3.0, 5.0, 4.0, 5.0, 4.0, 5.0, 5.0, 5.0, 6.0, 5.0, 4.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_PI",
+          "location": "BR_PI",
+          "supply": {
+            "seg1": {
+              "price": [112.0, 112.0, 112.0, 112.0, 112.0, 112.0, 112.0, 112.0, 112.0, 112.0, 112.0, 112.0],
+              "max":   [27.0, 23.0, 35.0, 31.0, 35.0, 34.0, 38.0, 41.0, 40.0, 44.0, 40.0, 34.0]
+            },
+            "seg2": {
+              "price": [158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0],
+              "max":   [73793.0, 63109.0, 94135.0, 82200.0, 95436.0, 91509.0, 101810.0, 109296.0, 109009.0, 117645.0, 108528.0, 90808.0]
+            },
+            "seg3": {
+              "price": [203.0, 203.0, 203.0, 203.0, 203.0, 203.0, 203.0, 203.0, 203.0, 203.0, 203.0, 203.0],
+              "max":   [36007.0, 30794.0, 45933.0, 40109.0, 46567.0, 44651.0, 49678.0, 53330.0, 53190.0, 57404.0, 52956.0, 44309.0]
+            },
+            "seg4": {
+              "price": [257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0],
+              "max":   [54071.0, 46242.0, 68977.0, 60231.0, 69930.0, 67052.0, 74600.0, 80085.0, 79875.0, 86204.0, 79523.0, 66539.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_RJ",
+          "location": "BR_RJ",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_RN",
+          "location": "BR_RN",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_RS",
+          "location": "BR_RS",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [845.0, 835.0, 963.0, 1060.0, 907.0, 978.0, 1031.0, 1093.0, 1050.0, 1120.0, 1083.0, 932.0]
+            },
+            "seg2": {
+              "price": [158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0, 158.0],
+              "max":   [6252.0, 6181.0, 7126.0, 7845.0, 6712.0, 7239.0, 7633.0, 8091.0, 7774.0, 8288.0, 8014.0, 6896.0]
+            },
+            "seg3": {
+              "price": [206.0, 206.0, 206.0, 206.0, 206.0, 206.0, 206.0, 206.0, 206.0, 206.0, 206.0, 206.0],
+              "max":   [3046.0, 3012.0, 3472.0, 3823.0, 3270.0, 3527.0, 3719.0, 3942.0, 3788.0, 4039.0, 3905.0, 3360.0]
+            },
+            "seg4": {
+              "price": [257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0],
+              "max":   [2609.0, 2579.0, 2973.0, 3273.0, 2800.0, 3020.0, 3185.0, 3376.0, 3244.0, 3458.0, 3344.0, 2877.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_RO",
+          "location": "BR_RO",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [4.0, 5.0, 7.0, 8.0, 8.0, 7.0, 8.0, 7.0, 9.0, 7.0, 7.0, 6.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_RR",
+          "location": "BR_RR",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_SC",
+          "location": "BR_SC",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [145.0, 143.0, 165.0, 182.0, 156.0, 168.0, 177.0, 188.0, 180.0, 192.0, 186.0, 160.0]
+            },
+            "seg2": {
+              "price": [162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0, 162.0],
+              "max":   [8029.0, 7938.0, 9151.0, 10074.0, 8619.0, 9296.0, 9802.0, 10390.0, 9983.0, 10644.0, 10292.0, 8856.0]
+            },
+            "seg3": {
+              "price": [204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0, 204.0],
+              "max":   [3092.0, 3057.0, 3524.0, 3880.0, 3319.0, 3580.0, 3775.0, 4001.0, 3844.0, 4099.0, 3963.0, 3410.0]
+            },
+            "seg4": {
+              "price": [256.0, 256.0, 256.0, 256.0, 256.0, 256.0, 256.0, 256.0, 256.0, 256.0, 256.0, 256.0],
+              "max":   [2279.0, 2253.0, 2597.0, 2859.0, 2446.0, 2638.0, 2782.0, 2949.0, 2834.0, 3021.0, 2921.0, 2514.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_SP",
+          "location": "BR_SP",
+          "supply": {
+            "seg1": {
+              "price": [116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0, 116.0],
+              "max":   [195841.0, 191151.0, 210092.0, 204407.0, 211596.0, 220025.0, 231732.0, 240821.0, 253385.0, 265631.0, 282414.0, 232935.0]
+            },
+            "seg2": {
+              "price": [152.0, 152.0, 152.0, 152.0, 152.0, 152.0, 152.0, 152.0, 152.0, 152.0, 152.0, 152.0],
+              "max":   [157143.0, 153379.0, 168578.0, 164016.0, 169785.0, 176548.0, 185942.0, 193235.0, 203316.0, 213142.0, 226609.0, 186907.0]
+            },
+            "seg3": {
+              "price": [189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0, 189.0],
+              "max":   [22569.0, 22028.0, 24211.0, 23556.0, 24385.0, 25356.0, 26705.0, 27752.0, 29200.0, 30612.0, 32546.0, 26844.0]
+            },
+            "seg4": {
+              "price": [257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0],
+              "max":   [8991.0, 8776.0, 9645.0, 9384.0, 9714.0, 10101.0, 10639.0, 11056.0, 11633.0, 12195.0, 12966.0, 10694.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_SE",
+          "location": "BR_SE",
+          "supply": {
+            "seg1": {
+              "price": [120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0],
+              "max":   [5.0, 5.0, 7.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 8.0, 7.0]
+            },
+            "seg2": {
+              "price": [173.0, 173.0, 173.0, 173.0, 173.0, 173.0, 173.0, 173.0, 173.0, 173.0, 173.0, 173.0],
+              "max":   [25.0, 22.0, 32.0, 28.0, 33.0, 31.0, 35.0, 38.0, 37.0, 40.0, 37.0, 31.0]
+            },
+            "seg3": {
+              "price": [224.0, 224.0, 224.0, 224.0, 224.0, 224.0, 224.0, 224.0, 224.0, 224.0, 224.0, 224.0],
+              "max":   [98.0, 84.0, 125.0, 109.0, 127.0, 121.0, 135.0, 145.0, 145.0, 156.0, 144.0, 121.0]
+            },
+            "seg4": {
+              "price": [247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0, 247.0],
+              "max":   [160.0, 137.0, 204.0, 178.0, 207.0, 198.0, 220.0, 237.0, 236.0, 255.0, 235.0, 197.0]
+            }
+          }
+        },
+        {
+          "id": "soybean_BR_TO",
+          "location": "BR_TO",
+          "supply": {
+            "seg1": {
+              "price": [113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0, 113.0],
+              "max":   [32.0, 36.0, 56.0, 58.0, 60.0, 56.0, 63.0, 55.0, 66.0, 55.0, 52.0, 43.0]
+            },
+            "seg2": {
+              "price": [161.0, 161.0, 161.0, 161.0, 161.0, 161.0, 161.0, 161.0, 161.0, 161.0, 161.0, 161.0],
+              "max":   [309059.0, 346530.0, 542633.0, 563294.0, 584828.0, 540229.0, 606659.0, 531551.0, 638183.0, 529554.0, 502623.0, 421690.0]
+            },
+            "seg3": {
+              "price": [208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0, 208.0],
+              "max":   [64607.0, 72440.0, 113434.0, 117754.0, 122255.0, 112932.0, 126819.0, 111118.0, 133409.0, 110700.0, 105071.0, 88152.0]
+            },
+            "seg4": {
+              "price": [257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0, 257.0],
+              "max":   [110503.0, 123901.0, 194016.0, 201404.0, 209103.0, 193157.0, 216909.0, 190054.0, 228180.0, 189340.0, 179711.0, 150774.0]
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "RiceStraw",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "ricestraw_BR_AC",
+          "max_supply": [140.21, 170.57, 173.33, 404.62, 77.83, 259.44, 146.83, 130.82, 173.33, 705.46],
+          "price_supply": [561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41]
+        },
+        {
+          "id": "ricestraw_BR_AL",
+          "max_supply": [3833.64, 448.22, 84.46, 5216.4],
+          "price_supply": [563.58, 563.58, 563.58, 563.58]
+        },
+        {
+          "id": "ricestraw_BR_AP",
+          "max_supply": [22.08, 4.97, 18.77, 70.1, 5.52, 142.42, 67.34, 12.14, 50.78, 36.98],
+          "price_supply": [568.63, 568.63, 568.63, 568.63, 568.63, 568.63, 568.63, 568.63, 568.63, 568.63]
+        },
+        {
+          "id": "ricestraw_BR_AM",
+          "max_supply": [1.1, 21.53, 6.62, 121.44, 4.42, 22.08, 6.62, 33.12, 5.52, 3643.2],
+          "price_supply": [561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41]
+        },
+        {
+          "id": "ricestraw_BR_BA",
+          "max_supply": [59.62, 4.97, 80.59, 68.45, 12.14, 5.52, 9.38, 98.26, 7.18, 33.12],
+          "price_supply": [561.3, 561.3, 561.3, 561.3, 561.3, 561.3, 561.3, 561.3, 561.3, 561.3]
+        },
+        {
+          "id": "ricestraw_BR_CE",
+          "max_supply": [138.0, 767.83, 195.96, 35.33, 340.03, 3029.38, 5422.3, 403.51, 121.44, 169.46],
+          "price_supply": [556.7, 556.7, 556.7, 556.7, 556.7, 556.7, 556.7, 556.7, 556.7, 556.7]
+        },
+        {
+          "id": "ricestraw_BR_DF",
+          "max_supply": [0],
+          "price_supply": [0]
+        },
+        {
+          "id": "ricestraw_BR_ES",
+          "max_supply": [13.8, 27.6, 22.08, 113.71, 7.18, 5.52, 4.42, 6.62, 22.08],
+          "price_supply": [561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41]
+        },
+        {
+          "id": "ricestraw_BR_GO",
+          "max_supply": [8.83, 7067.81, 182.71, 438.84, 8451.67, 106.54, 34996.8, 479.14, 83.35, 380.88],
+          "price_supply": [584.22, 584.22, 584.22, 584.22, 584.22, 584.22, 584.22, 584.22, 584.22, 584.22]
+        },
+        {
+          "id": "ricestraw_BR_MA",
+          "max_supply": [58.51, 669.58, 11771.95, 7822.39, 3870.62, 2899.1, 34437.62, 5985.34, 17129.11, 17338.87],
+          "price_supply": [620.91, 620.91, 620.91, 620.91, 620.91, 620.91, 620.91, 620.91, 620.91, 620.91]
+        },
+        {
+          "id": "ricestraw_BR_MT",
+          "max_supply": [198.72, 4212.31, 21343.63, 28371.14, 31303.37, 31768.7, 34729.63, 15352.78, 11067.05, 890.38],
+          "price_supply": [566.8, 566.8, 566.8, 566.8, 566.8, 566.8, 566.8, 566.8, 566.8, 566.8]
+        },
+        {
+          "id": "ricestraw_BR_MS",
+          "max_supply": [3080.16, 3.86, 2.76, 2511.6, 968.76, 3648.72, 547.58, 11923.2, 405.72, 936.74],
+          "price_supply": [569.29, 569.29, 569.29, 569.29, 569.29, 569.29, 569.29, 569.29, 569.29, 569.29]
+        },
+        {
+          "id": "ricestraw_BR_MG",
+          "max_supply": [15.46, 353.28, 899.21, 204.79, 59.62, 67.9, 336.72, 856.15, 2769.38, 138.0],
+          "price_supply": [556.42, 556.42, 556.42, 556.42, 556.42, 556.42, 556.42, 556.42, 556.42, 556.42]
+        },
+        {
+          "id": "ricestraw_BR_PA",
+          "max_supply": [8.83, 1137.12, 30994.25, 82.25, 439.39, 2543.06, 6078.07, 10720.39, 9839.4, 4623.55],
+          "price_supply": [591.55, 591.55, 591.55, 591.55, 591.55, 591.55, 591.55, 591.55, 591.55, 591.55]
+        },
+        {
+          "id": "ricestraw_BR_PB",
+          "max_supply": [6.62, 107.64, 229.08, 447.12, 9.38, 29.81, 16.56, 83.35, 8.83, 11.04],
+          "price_supply": [561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41]
+        },
+        {
+          "id": "ricestraw_BR_PR",
+          "max_supply": [52.99, 73504.87, 168.91, 1209.98, 578.5, 173.33, 30.36, 195.41, 438.84, 5848.44],
+          "price_supply": [546.82, 546.82, 546.82, 546.82, 546.82, 546.82, 546.82, 546.82, 546.82, 546.82]
+        },
+        {
+          "id": "ricestraw_BR_PE",
+          "max_supply": [0.55, 3.31],
+          "price_supply": [561.41, 561.41]
+        },
+        {
+          "id": "ricestraw_BR_PI",
+          "max_supply": [1186.8, 10389.19, 9551.26, 3599.04, 2567.9, 3943.49, 11659.34, 5384.21, 2569.01, 328.99],
+          "price_supply": [630.07, 630.07, 630.07, 630.07, 630.07, 630.07, 630.07, 630.07, 630.07, 630.07]
+        },
+        {
+          "id": "ricestraw_BR_RJ",
+          "max_supply": [23.74, 48.02, 305.81, 29.26],
+          "price_supply": [561.41, 561.41, 561.41, 561.41]
+        },
+        {
+          "id": "ricestraw_BR_RN",
+          "max_supply": [75.07, 4.42, 7.73, 27.05, 4.97, 6.07, 2.76, 23.74, 11.59, 17.66],
+          "price_supply": [561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41]
+        },
+        {
+          "id": "ricestraw_BR_RS",
+          "max_supply": [1.1, 53.54, 81313.46, 311274.46, 203901.07, 83297.35, 204410.57, 850948.85, 14021.8],
+          "price_supply": [543.99, 543.99, 543.99, 543.99, 543.99, 543.99, 543.99, 543.99, 543.99]
+        },
+        {
+          "id": "ricestraw_BR_RO",
+          "max_supply": [69.0, 11377.82, 9588.24, 1796.21, 62.93, 16227.7, 295.87, 1087.44, 564.14, 21428.09],
+          "price_supply": [608.53, 608.53, 608.53, 608.53, 608.53, 608.53, 608.53, 608.53, 608.53, 608.53]
+        },
+        {
+          "id": "ricestraw_BR_RR",
+          "max_supply": [430.56, 358.8, 358.8, 27408.46, 3169.58, 17322.86, 24.84],
+          "price_supply": [607.15, 607.15, 607.15, 607.15, 607.15, 607.15, 607.15]
+        },
+        {
+          "id": "ricestraw_BR_SC",
+          "max_supply": [2.76, 35406.94, 46634.62, 40522.87, 25394.76, 49108.13, 18992.66, 42238.49, 125766.02, 265242.07],
+          "price_supply": [545.71, 545.71, 545.71, 545.71, 545.71, 545.71, 545.71, 545.71, 545.71, 545.71]
+        },
+        {
+          "id": "ricestraw_BR_SP",
+          "max_supply": [1.1, 192.65, 115.37, 1404.84, 612.72, 1343.02, 4448.02, 9426.5, 3206.02, 5551.46],
+          "price_supply": [551.2, 551.2, 551.2, 551.2, 551.2, 551.2, 551.2, 551.2, 551.2, 551.2]
+        },
+        {
+          "id": "ricestraw_BR_SE",
+          "max_supply": [1138.78, 309.12, 7432.13, 6530.16, 4406.06, 1217.16, 707.11, 299.18],
+          "price_supply": [561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41, 561.41]
+        },
+        {
+          "id": "ricestraw_BR_TO",
+          "max_supply": [8.83, 926.81, 951.1, 1251.94, 2281.97, 313090.54, 6912.7, 4083.14, 3395.35, 712.63],
+          "price_supply": [594.94, 594.94, 594.94, 594.94, 594.94, 594.94, 594.94, 594.94, 594.94, 594.94]
+        }
+      ]
+    },
+    
+
+    { 
+      "type": "Macaw",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+     {
+          "id": "macaw_BR_AC",
+          "location": "BR_AC",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_AL",
+          "location": "BR_AL",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_AP",
+          "location": "BR_AP",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_AM",
+          "location": "BR_AM",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_BA",
+          "location": "BR_BA",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [115212.52, 115212.52, 115212.52, 115212.52, 115212.52, 115212.52, 115212.52, 115212.52, 115212.52, 115212.52, 115212.52, 115212.52]
+            },
+            "seg2": {
+              "price": [40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0],
+              "max":   [794869.5, 794869.5, 794869.5, 794869.5, 794869.5, 794869.5, 794869.5, 794869.5, 794869.5, 794869.5, 794869.5, 794869.5]
+            },
+            "seg3": {
+              "price": [46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0],
+              "max":   [537439.03, 537439.03, 537439.03, 537439.03, 537439.03, 537439.03, 537439.03, 537439.03, 537439.03, 537439.03, 537439.03, 537439.03]
+            },
+            "seg4": {
+              "price": [54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0],
+              "max":   [13140.01, 13140.01, 13140.01, 13140.01, 13140.01, 13140.01, 13140.01, 13140.01, 13140.01, 13140.01, 13140.01, 13140.01]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_CE",
+          "location": "BR_CE",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [27.9, 27.9, 27.9, 27.9, 27.9, 27.9, 27.9, 27.9, 27.9, 27.9, 27.9, 27.9]
+            },
+            "seg2": {
+              "price": [41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0],
+              "max":   [21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_DF",
+          "location": "BR_DF",
+          "supply": {
+            "seg1": {
+              "price": [35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0],
+              "max":   [171.91, 171.91, 171.91, 171.91, 171.91, 171.91, 171.91, 171.91, 171.91, 171.91, 171.91, 171.91]
+            },
+            "seg2": {
+              "price": [37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0],
+              "max":   [43.53, 43.53, 43.53, 43.53, 43.53, 43.53, 43.53, 43.53, 43.53, 43.53, 43.53, 43.53]
+            },
+            "seg3": {
+              "price": [39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0],
+              "max":   [102.71, 102.71, 102.71, 102.71, 102.71, 102.71, 102.71, 102.71, 102.71, 102.71, 102.71, 102.71]
+            },
+            "seg4": {
+              "price": [44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0],
+              "max":   [18.53, 18.53, 18.53, 18.53, 18.53, 18.53, 18.53, 18.53, 18.53, 18.53, 18.53, 18.53]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_ES",
+          "location": "BR_ES",
+          "supply": {
+            "seg1": {
+              "price": [40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0],
+              "max":   [48.28, 48.28, 48.28, 48.28, 48.28, 48.28, 48.28, 48.28, 48.28, 48.28, 48.28, 48.28]
+            },
+            "seg2": {
+              "price": [40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0],
+              "max":   [21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46, 21.46]
+            },
+            "seg3": {
+              "price": [41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0],
+              "max":   [1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_GO",
+          "location": "BR_GO",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [112.89, 112.89, 112.89, 112.89, 112.89, 112.89, 112.89, 112.89, 112.89, 112.89, 112.89, 112.89]
+            },
+            "seg2": {
+              "price": [44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0],
+              "max":   [2086519.52, 2086519.52, 2086519.52, 2086519.52, 2086519.52, 2086519.52, 2086519.52, 2086519.52, 2086519.52, 2086519.52, 2086519.52, 2086519.52]
+            },
+            "seg3": {
+              "price": [54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0],
+              "max":   [222662.94, 222662.94, 222662.94, 222662.94, 222662.94, 222662.94, 222662.94, 222662.94, 222662.94, 222662.94, 222662.94, 222662.94]
+            },
+            "seg4": {
+              "price": [65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0],
+              "max":   [10114.69, 10114.69, 10114.69, 10114.69, 10114.69, 10114.69, 10114.69, 10114.69, 10114.69, 10114.69, 10114.69, 10114.69]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_MA",
+          "location": "BR_MA",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [8901.67, 8901.67, 8901.67, 8901.67, 8901.67, 8901.67, 8901.67, 8901.67, 8901.67, 8901.67, 8901.67, 8901.67]
+            },
+            "seg2": {
+              "price": [39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0, 39.0],
+              "max":   [443266.3, 443266.3, 443266.3, 443266.3, 443266.3, 443266.3, 443266.3, 443266.3, 443266.3, 443266.3, 443266.3, 443266.3]
+            },
+            "seg3": {
+              "price": [44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0],
+              "max":   [271033.18, 271033.18, 271033.18, 271033.18, 271033.18, 271033.18, 271033.18, 271033.18, 271033.18, 271033.18, 271033.18, 271033.18]
+            },
+            "seg4": {
+              "price": [49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0],
+              "max":   [22580.47, 22580.47, 22580.47, 22580.47, 22580.47, 22580.47, 22580.47, 22580.47, 22580.47, 22580.47, 22580.47, 22580.47]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_MT",
+          "location": "BR_MT",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [2910.94, 2910.94, 2910.94, 2910.94, 2910.94, 2910.94, 2910.94, 2910.94, 2910.94, 2910.94, 2910.94, 2910.94]
+            },
+            "seg2": {
+              "price": [40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0],
+              "max":   [3109410.21, 3109410.21, 3109410.21, 3109410.21, 3109410.21, 3109410.21, 3109410.21, 3109410.21, 3109410.21, 3109410.21, 3109410.21, 3109410.21]
+            },
+            "seg3": {
+              "price": [47.0, 47.0, 47.0, 47.0, 47.0, 47.0, 47.0, 47.0, 47.0, 47.0, 47.0, 47.0],
+              "max":   [512327.92, 512327.92, 512327.92, 512327.92, 512327.92, 512327.92, 512327.92, 512327.92, 512327.92, 512327.92, 512327.92, 512327.92]
+            },
+            "seg4": {
+              "price": [56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0],
+              "max":   [158359.69, 158359.69, 158359.69, 158359.69, 158359.69, 158359.69, 158359.69, 158359.69, 158359.69, 158359.69, 158359.69, 158359.69]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_MS",
+          "location": "BR_MS",
+          "supply": {
+            "seg1": {
+              "price": [35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0],
+              "max":   [7.38, 7.38, 7.38, 7.38, 7.38, 7.38, 7.38, 7.38, 7.38, 7.38, 7.38, 7.38]
+            },
+            "seg2": {
+              "price": [44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0],
+              "max":   [1087438.81, 1087438.81, 1087438.81, 1087438.81, 1087438.81, 1087438.81, 1087438.81, 1087438.81, 1087438.81, 1087438.81, 1087438.81, 1087438.81]
+            },
+            "seg3": {
+              "price": [53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0],
+              "max":   [560106.99, 560106.99, 560106.99, 560106.99, 560106.99, 560106.99, 560106.99, 560106.99, 560106.99, 560106.99, 560106.99, 560106.99]
+            },
+            "seg4": {
+              "price": [66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0, 66.0],
+              "max":   [55899.03, 55899.03, 55899.03, 55899.03, 55899.03, 55899.03, 55899.03, 55899.03, 55899.03, 55899.03, 55899.03, 55899.03]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_MG",
+          "location": "BR_MG",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [182.88, 182.88, 182.88, 182.88, 182.88, 182.88, 182.88, 182.88, 182.88, 182.88, 182.88, 182.88]
+            },
+            "seg2": {
+              "price": [44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0],
+              "max":   [1817643.45, 1817643.45, 1817643.45, 1817643.45, 1817643.45, 1817643.45, 1817643.45, 1817643.45, 1817643.45, 1817643.45, 1817643.45, 1817643.45]
+            },
+            "seg3": {
+              "price": [54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0],
+              "max":   [80540.26, 80540.26, 80540.26, 80540.26, 80540.26, 80540.26, 80540.26, 80540.26, 80540.26, 80540.26, 80540.26, 80540.26]
+            },
+            "seg4": {
+              "price": [78.0, 78.0, 78.0, 78.0, 78.0, 78.0, 78.0, 78.0, 78.0, 78.0, 78.0, 78.0],
+              "max":   [889.71, 889.71, 889.71, 889.71, 889.71, 889.71, 889.71, 889.71, 889.71, 889.71, 889.71, 889.71]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_PA",
+          "location": "BR_PA",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [3.9, 3.9, 3.9, 3.9, 3.9, 3.9, 3.9, 3.9, 3.9, 3.9, 3.9, 3.9]
+            },
+            "seg2": {
+              "price": [37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0],
+              "max":   [1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07]
+            },
+            "seg3": {
+              "price": [42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0],
+              "max":   [4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_PB",
+          "location": "BR_PB",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_PR",
+          "location": "BR_PR",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [20.39, 20.39, 20.39, 20.39, 20.39, 20.39, 20.39, 20.39, 20.39, 20.39, 20.39, 20.39]
+            },
+            "seg2": {
+              "price": [50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0],
+              "max":   [97126.85, 97126.85, 97126.85, 97126.85, 97126.85, 97126.85, 97126.85, 97126.85, 97126.85, 97126.85, 97126.85, 97126.85]
+            },
+            "seg3": {
+              "price": [64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0],
+              "max":   [13655.01, 13655.01, 13655.01, 13655.01, 13655.01, 13655.01, 13655.01, 13655.01, 13655.01, 13655.01, 13655.01, 13655.01]
+            },
+            "seg4": {
+              "price": [80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0],
+              "max":   [2737.01, 2737.01, 2737.01, 2737.01, 2737.01, 2737.01, 2737.01, 2737.01, 2737.01, 2737.01, 2737.01, 2737.01]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_PE",
+          "location": "BR_PE",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [22.53, 22.53, 22.53, 22.53, 22.53, 22.53, 22.53, 22.53, 22.53, 22.53, 22.53, 22.53]
+            },
+            "seg2": {
+              "price": [41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0],
+              "max":   [1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07]
+            },
+            "seg3": {
+              "price": [41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0],
+              "max":   [3.22, 3.22, 3.22, 3.22, 3.22, 3.22, 3.22, 3.22, 3.22, 3.22, 3.22, 3.22]
+            },
+            "seg4": {
+              "price": [42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0],
+              "max":   [1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_PI",
+          "location": "BR_PI",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [75925.85, 75925.85, 75925.85, 75925.85, 75925.85, 75925.85, 75925.85, 75925.85, 75925.85, 75925.85, 75925.85, 75925.85]
+            },
+            "seg2": {
+              "price": [37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0],
+              "max":   [36932.42, 36932.42, 36932.42, 36932.42, 36932.42, 36932.42, 36932.42, 36932.42, 36932.42, 36932.42, 36932.42, 36932.42]
+            },
+            "seg3": {
+              "price": [41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0],
+              "max":   [94197.72, 94197.72, 94197.72, 94197.72, 94197.72, 94197.72, 94197.72, 94197.72, 94197.72, 94197.72, 94197.72, 94197.72]
+            },
+            "seg4": {
+              "price": [46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0, 46.0],
+              "max":   [22553.33, 22553.33, 22553.33, 22553.33, 22553.33, 22553.33, 22553.33, 22553.33, 22553.33, 22553.33, 22553.33, 22553.33]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_RJ",
+          "location": "BR_RJ",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_RN",
+          "location": "BR_RN",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_RS",
+          "location": "BR_RS",
+          "supply": {
+            "seg1": {
+              "price": [36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0],
+              "max":   [52.57, 52.57, 52.57, 52.57, 52.57, 52.57, 52.57, 52.57, 52.57, 52.57, 52.57, 52.57]
+            },
+            "seg2": {
+              "price": [44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0],
+              "max":   [3353.94, 3353.94, 3353.94, 3353.94, 3353.94, 3353.94, 3353.94, 3353.94, 3353.94, 3353.94, 3353.94, 3353.94]
+            },
+            "seg3": {
+              "price": [53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0],
+              "max":   [2338.96, 2338.96, 2338.96, 2338.96, 2338.96, 2338.96, 2338.96, 2338.96, 2338.96, 2338.96, 2338.96, 2338.96]
+            },
+            "seg4": {
+              "price": [79.0, 79.0, 79.0, 79.0, 79.0, 79.0, 79.0, 79.0, 79.0, 79.0, 79.0, 79.0],
+              "max":   [254.28, 254.28, 254.28, 254.28, 254.28, 254.28, 254.28, 254.28, 254.28, 254.28, 254.28, 254.28]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_RO",
+          "location": "BR_RO",
+          "supply": {
+            "seg1": {
+              "price": [35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0],
+              "max":   [1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07]
+            },
+            "seg2": {
+              "price": [45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0],
+              "max":   [4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29, 4.29]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_RR",
+          "location": "BR_RR",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_SC",
+          "location": "BR_SC",
+          "supply": {
+            "seg1": {
+              "price": [36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0],
+              "max":   [76.18, 76.18, 76.18, 76.18, 76.18, 76.18, 76.18, 76.18, 76.18, 76.18, 76.18, 76.18]
+            },
+            "seg2": {
+              "price": [44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0],
+              "max":   [5290.55, 5290.55, 5290.55, 5290.55, 5290.55, 5290.55, 5290.55, 5290.55, 5290.55, 5290.55, 5290.55, 5290.55]
+            },
+            "seg3": {
+              "price": [53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0, 53.0],
+              "max":   [2044.98, 2044.98, 2044.98, 2044.98, 2044.98, 2044.98, 2044.98, 2044.98, 2044.98, 2044.98, 2044.98, 2044.98]
+            },
+            "seg4": {
+              "price": [71.0, 71.0, 71.0, 71.0, 71.0, 71.0, 71.0, 71.0, 71.0, 71.0, 71.0, 71.0],
+              "max":   [913.05, 913.05, 913.05, 913.05, 913.05, 913.05, 913.05, 913.05, 913.05, 913.05, 913.05, 913.05]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_SP",
+          "location": "BR_SP",
+          "supply": {
+            "seg1": {
+              "price": [37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0, 37.0],
+              "max":   [3090.44, 3090.44, 3090.44, 3090.44, 3090.44, 3090.44, 3090.44, 3090.44, 3090.44, 3090.44, 3090.44, 3090.44]
+            },
+            "seg2": {
+              "price": [51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0],
+              "max":   [601090.08, 601090.08, 601090.08, 601090.08, 601090.08, 601090.08, 601090.08, 601090.08, 601090.08, 601090.08, 601090.08, 601090.08]
+            },
+            "seg3": {
+              "price": [65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0, 65.0],
+              "max":   [22083.16, 22083.16, 22083.16, 22083.16, 22083.16, 22083.16, 22083.16, 22083.16, 22083.16, 22083.16, 22083.16, 22083.16]
+            },
+            "seg4": {
+              "price": [80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0, 80.0],
+              "max":   [2788.98, 2788.98, 2788.98, 2788.98, 2788.98, 2788.98, 2788.98, 2788.98, 2788.98, 2788.98, 2788.98, 2788.98]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_SE",
+          "location": "BR_SE",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07, 1.07]
+            },
+            "seg2": {
+              "price": [35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0],
+              "max":   [108.36, 108.36, 108.36, 108.36, 108.36, 108.36, 108.36, 108.36, 108.36, 108.36, 108.36, 108.36]
+            },
+            "seg3": {
+              "price": [38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0],
+              "max":   [12.88, 12.88, 12.88, 12.88, 12.88, 12.88, 12.88, 12.88, 12.88, 12.88, 12.88, 12.88]
+            },
+            "seg4": {
+              "price": [42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0],
+              "max":   [598.69, 598.69, 598.69, 598.69, 598.69, 598.69, 598.69, 598.69, 598.69, 598.69, 598.69, 598.69]
+            }
+          }
+        },
+        {
+          "id": "macaw_BR_TO",
+          "location": "BR_TO",
+          "supply": {
+            "seg1": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [78158.14, 78158.14, 78158.14, 78158.14, 78158.14, 78158.14, 78158.14, 78158.14, 78158.14, 78158.14, 78158.14, 78158.14]
+            },
+            "seg2": {
+              "price": [38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0],
+              "max":   [764561.4, 764561.4, 764561.4, 764561.4, 764561.4, 764561.4, 764561.4, 764561.4, 764561.4, 764561.4, 764561.4, 764561.4]
+            },
+            "seg3": {
+              "price": [43.0, 43.0, 43.0, 43.0, 43.0, 43.0, 43.0, 43.0, 43.0, 43.0, 43.0, 43.0],
+              "max":   [244020.16, 244020.16, 244020.16, 244020.16, 244020.16, 244020.16, 244020.16, 244020.16, 244020.16, 244020.16, 244020.16, 244020.16]
+            },
+            "seg4": {
+              "price": [48.0, 48.0, 48.0, 48.0, 48.0, 48.0, 48.0, 48.0, 48.0, 48.0, 48.0, 48.0],
+              "max":   [65936.34, 65936.34, 65936.34, 65936.34, 65936.34, 65936.34, 65936.34, 65936.34, 65936.34, 65936.34, 65936.34, 65936.34]
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Biomass_wood",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+    {
+          "id": "biomass_wood_BR_AC",
+          "location": "BR_AC",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_AL",
+          "location": "BR_AL",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_AP",
+          "location": "BR_AP",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_AM",
+          "location": "BR_AM",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_BA",
+          "location": "BR_BA",
+          "supply": {
+            "seg1": {
+              "price": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+              "max":   [24.11, 24.11, 24.11, 24.11, 24.11, 24.11, 24.11, 24.11, 24.11, 24.11, 24.11, 24.11]
+            },
+            "seg2": {
+              "price": [29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0],
+              "max":   [52114823.73, 52114823.73, 52114823.73, 52114823.73, 52114823.73, 52114823.73, 52114823.73, 52114823.73, 52114823.73, 52114823.73, 52114823.73, 52114823.73]
+            },
+            "seg3": {
+              "price": [52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0],
+              "max":   [5442764.55, 5442764.55, 5442764.55, 5442764.55, 5442764.55, 5442764.55, 5442764.55, 5442764.55, 5442764.55, 5442764.55, 5442764.55, 5442764.55]
+            },
+            "seg4": {
+              "price": [91.0, 91.0, 91.0, 91.0, 91.0, 91.0, 91.0, 91.0, 91.0, 91.0, 91.0, 91.0],
+              "max":   [327429.07, 327429.07, 327429.07, 327429.07, 327429.07, 327429.07, 327429.07, 327429.07, 327429.07, 327429.07, 327429.07, 327429.07]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_CE",
+          "location": "BR_CE",
+          "supply": {
+            "seg1": {
+              "price": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0],
+              "max":   [793.29, 793.29, 793.29, 793.29, 793.29, 793.29, 793.29, 793.29, 793.29, 793.29, 793.29, 793.29]
+            },
+            "seg2": {
+              "price": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0],
+              "max":   [294.38, 294.38, 294.38, 294.38, 294.38, 294.38, 294.38, 294.38, 294.38, 294.38, 294.38, 294.38]
+            },
+            "seg3": {
+              "price": [105.0, 105.0, 105.0, 105.0, 105.0, 105.0, 105.0, 105.0, 105.0, 105.0, 105.0, 105.0],
+              "max":   [184.27, 184.27, 184.27, 184.27, 184.27, 184.27, 184.27, 184.27, 184.27, 184.27, 184.27, 184.27]
+            },
+            "seg4": {
+              "price": [364.0, 364.0, 364.0, 364.0, 364.0, 364.0, 364.0, 364.0, 364.0, 364.0, 364.0, 364.0],
+              "max":   [23.44, 23.44, 23.44, 23.44, 23.44, 23.44, 23.44, 23.44, 23.44, 23.44, 23.44, 23.44]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_DF",
+          "location": "BR_DF",
+          "supply": {
+            "seg1": {
+              "price": [10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0],
+              "max":   [20422.14, 20422.14, 20422.14, 20422.14, 20422.14, 20422.14, 20422.14, 20422.14, 20422.14, 20422.14, 20422.14, 20422.14]
+            },
+            "seg2": {
+              "price": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0],
+              "max":   [10436.27, 10436.27, 10436.27, 10436.27, 10436.27, 10436.27, 10436.27, 10436.27, 10436.27, 10436.27, 10436.27, 10436.27]
+            },
+            "seg3": {
+              "price": [15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0],
+              "max":   [1385.25, 1385.25, 1385.25, 1385.25, 1385.25, 1385.25, 1385.25, 1385.25, 1385.25, 1385.25, 1385.25, 1385.25]
+            },
+            "seg4": {
+              "price": [20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0],
+              "max":   [1849.68, 1849.68, 1849.68, 1849.68, 1849.68, 1849.68, 1849.68, 1849.68, 1849.68, 1849.68, 1849.68, 1849.68]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_ES",
+          "location": "BR_ES",
+          "supply": {
+            "seg1": {
+              "price": [13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0],
+              "max":   [69.69, 69.69, 69.69, 69.69, 69.69, 69.69, 69.69, 69.69, 69.69, 69.69, 69.69, 69.69]
+            },
+            "seg2": {
+              "price": [14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0],
+              "max":   [5623.0, 5623.0, 5623.0, 5623.0, 5623.0, 5623.0, 5623.0, 5623.0, 5623.0, 5623.0, 5623.0, 5623.0]
+            },
+            "seg3": {
+              "price": [18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0],
+              "max":   [493.01, 493.01, 493.01, 493.01, 493.01, 493.01, 493.01, 493.01, 493.01, 493.01, 493.01, 493.01]
+            },
+            "seg4": {
+              "price": [24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0],
+              "max":   [349.58, 349.58, 349.58, 349.58, 349.58, 349.58, 349.58, 349.58, 349.58, 349.58, 349.58, 349.58]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_GO",
+          "location": "BR_GO",
+          "supply": {
+            "seg1": {
+              "price": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0],
+              "max":   [28.73, 28.73, 28.73, 28.73, 28.73, 28.73, 28.73, 28.73, 28.73, 28.73, 28.73, 28.73]
+            },
+            "seg2": {
+              "price": [18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0],
+              "max":   [64491648.07, 64491648.07, 64491648.07, 64491648.07, 64491648.07, 64491648.07, 64491648.07, 64491648.07, 64491648.07, 64491648.07, 64491648.07, 64491648.07]
+            },
+            "seg3": {
+              "price": [29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0, 29.0],
+              "max":   [6660177.87, 6660177.87, 6660177.87, 6660177.87, 6660177.87, 6660177.87, 6660177.87, 6660177.87, 6660177.87, 6660177.87, 6660177.87, 6660177.87]
+            },
+            "seg4": {
+              "price": [41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0, 41.0],
+              "max":   [242728.11, 242728.11, 242728.11, 242728.11, 242728.11, 242728.11, 242728.11, 242728.11, 242728.11, 242728.11, 242728.11, 242728.11]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_MA",
+          "location": "BR_MA",
+          "supply": {
+            "seg1": {
+              "price": [7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0],
+              "max":   [10.76, 10.76, 10.76, 10.76, 10.76, 10.76, 10.76, 10.76, 10.76, 10.76, 10.76, 10.76]
+            },
+            "seg2": {
+              "price": [254.0, 254.0, 254.0, 254.0, 254.0, 254.0, 254.0, 254.0, 254.0, 254.0, 254.0, 254.0],
+              "max":   [12233941.88, 12233941.88, 12233941.88, 12233941.88, 12233941.88, 12233941.88, 12233941.88, 12233941.88, 12233941.88, 12233941.88, 12233941.88, 12233941.88]
+            },
+            "seg3": {
+              "price": [512.0, 512.0, 512.0, 512.0, 512.0, 512.0, 512.0, 512.0, 512.0, 512.0, 512.0, 512.0],
+              "max":   [300744.14, 300744.14, 300744.14, 300744.14, 300744.14, 300744.14, 300744.14, 300744.14, 300744.14, 300744.14, 300744.14, 300744.14]
+            },
+            "seg4": {
+              "price": [1454.0, 1454.0, 1454.0, 1454.0, 1454.0, 1454.0, 1454.0, 1454.0, 1454.0, 1454.0, 1454.0, 1454.0],
+              "max":   [29701.44, 29701.44, 29701.44, 29701.44, 29701.44, 29701.44, 29701.44, 29701.44, 29701.44, 29701.44, 29701.44, 29701.44]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_MT",
+          "location": "BR_MT",
+          "supply": {
+            "seg1": {
+              "price": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0],
+              "max":   [162.92, 162.92, 162.92, 162.92, 162.92, 162.92, 162.92, 162.92, 162.92, 162.92, 162.92, 162.92]
+            },
+            "seg2": {
+              "price": [20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0],
+              "max":   [158205257.22, 158205257.22, 158205257.22, 158205257.22, 158205257.22, 158205257.22, 158205257.22, 158205257.22, 158205257.22, 158205257.22, 158205257.22, 158205257.22]
+            },
+            "seg3": {
+              "price": [34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0, 34.0],
+              "max":   [7029151.21, 7029151.21, 7029151.21, 7029151.21, 7029151.21, 7029151.21, 7029151.21, 7029151.21, 7029151.21, 7029151.21, 7029151.21, 7029151.21]
+            },
+            "seg4": {
+              "price": [49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0, 49.0],
+              "max":   [428187.26, 428187.26, 428187.26, 428187.26, 428187.26, 428187.26, 428187.26, 428187.26, 428187.26, 428187.26, 428187.26, 428187.26]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_MS",
+          "location": "BR_MS",
+          "supply": {
+            "seg1": {
+              "price": [6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0],
+              "max":   [56.31, 56.31, 56.31, 56.31, 56.31, 56.31, 56.31, 56.31, 56.31, 56.31, 56.31, 56.31]
+            },
+            "seg2": {
+              "price": [15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0],
+              "max":   [84211828.61, 84211828.61, 84211828.61, 84211828.61, 84211828.61, 84211828.61, 84211828.61, 84211828.61, 84211828.61, 84211828.61, 84211828.61, 84211828.61]
+            },
+            "seg3": {
+              "price": [22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0],
+              "max":   [22822569.28, 22822569.28, 22822569.28, 22822569.28, 22822569.28, 22822569.28, 22822569.28, 22822569.28, 22822569.28, 22822569.28, 22822569.28, 22822569.28]
+            },
+            "seg4": {
+              "price": [30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0],
+              "max":   [1597579.51, 1597579.51, 1597579.51, 1597579.51, 1597579.51, 1597579.51, 1597579.51, 1597579.51, 1597579.51, 1597579.51, 1597579.51, 1597579.51]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_MG",
+          "location": "BR_MG",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [35.15, 35.15, 35.15, 35.15, 35.15, 35.15, 35.15, 35.15, 35.15, 35.15, 35.15, 35.15]
+            },
+            "seg2": {
+              "price": [20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0],
+              "max":   [72075670.69, 72075670.69, 72075670.69, 72075670.69, 72075670.69, 72075670.69, 72075670.69, 72075670.69, 72075670.69, 72075670.69, 72075670.69, 72075670.69]
+            },
+            "seg3": {
+              "price": [38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0, 38.0],
+              "max":   [4224356.31, 4224356.31, 4224356.31, 4224356.31, 4224356.31, 4224356.31, 4224356.31, 4224356.31, 4224356.31, 4224356.31, 4224356.31, 4224356.31]
+            },
+            "seg4": {
+              "price": [120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0, 120.0],
+              "max":   [20836.91, 20836.91, 20836.91, 20836.91, 20836.91, 20836.91, 20836.91, 20836.91, 20836.91, 20836.91, 20836.91, 20836.91]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_PA",
+          "location": "BR_PA",
+          "supply": {
+            "seg1": {
+              "price": [11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0],
+              "max":   [52.6, 52.6, 52.6, 52.6, 52.6, 52.6, 52.6, 52.6, 52.6, 52.6, 52.6, 52.6]
+            },
+            "seg2": {
+              "price": [150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0],
+              "max":   [33.7, 33.7, 33.7, 33.7, 33.7, 33.7, 33.7, 33.7, 33.7, 33.7, 33.7, 33.7]
+            },
+            "seg3": {
+              "price": [378.0, 378.0, 378.0, 378.0, 378.0, 378.0, 378.0, 378.0, 378.0, 378.0, 378.0, 378.0],
+              "max":   [1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3]
+            },
+            "seg4": {
+              "price": [469.0, 469.0, 469.0, 469.0, 469.0, 469.0, 469.0, 469.0, 469.0, 469.0, 469.0, 469.0],
+              "max":   [3.12, 3.12, 3.12, 3.12, 3.12, 3.12, 3.12, 3.12, 3.12, 3.12, 3.12, 3.12]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_PB",
+          "location": "BR_PB",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_PR",
+          "location": "BR_PR",
+          "supply": {
+            "seg1": {
+              "price": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0],
+              "max":   [256.58, 256.58, 256.58, 256.58, 256.58, 256.58, 256.58, 256.58, 256.58, 256.58, 256.58, 256.58]
+            },
+            "seg2": {
+              "price": [17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0],
+              "max":   [17638408.11, 17638408.11, 17638408.11, 17638408.11, 17638408.11, 17638408.11, 17638408.11, 17638408.11, 17638408.11, 17638408.11, 17638408.11, 17638408.11]
+            },
+            "seg3": {
+              "price": [30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0],
+              "max":   [6297833.19, 6297833.19, 6297833.19, 6297833.19, 6297833.19, 6297833.19, 6297833.19, 6297833.19, 6297833.19, 6297833.19, 6297833.19, 6297833.19]
+            },
+            "seg4": {
+              "price": [56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0, 56.0],
+              "max":   [227206.52, 227206.52, 227206.52, 227206.52, 227206.52, 227206.52, 227206.52, 227206.52, 227206.52, 227206.52, 227206.52, 227206.52]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_PE",
+          "location": "BR_PE",
+          "supply": {
+            "seg1": {
+              "price": [11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0],
+              "max":   [162.19, 162.19, 162.19, 162.19, 162.19, 162.19, 162.19, 162.19, 162.19, 162.19, 162.19, 162.19]
+            },
+            "seg2": {
+              "price": [11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0],
+              "max":   [879.79, 879.79, 879.79, 879.79, 879.79, 879.79, 879.79, 879.79, 879.79, 879.79, 879.79, 879.79]
+            },
+            "seg3": {
+              "price": [51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0],
+              "max":   [31.28, 31.28, 31.28, 31.28, 31.28, 31.28, 31.28, 31.28, 31.28, 31.28, 31.28, 31.28]
+            },
+            "seg4": {
+              "price": [84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0],
+              "max":   [21.3, 21.3, 21.3, 21.3, 21.3, 21.3, 21.3, 21.3, 21.3, 21.3, 21.3, 21.3]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_PI",
+          "location": "BR_PI",
+          "supply": {
+            "seg1": {
+              "price": [5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0],
+              "max":   [42.45, 42.45, 42.45, 42.45, 42.45, 42.45, 42.45, 42.45, 42.45, 42.45, 42.45, 42.45]
+            },
+            "seg2": {
+              "price": [129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0, 129.0],
+              "max":   [4541804.4, 4541804.4, 4541804.4, 4541804.4, 4541804.4, 4541804.4, 4541804.4, 4541804.4, 4541804.4, 4541804.4, 4541804.4, 4541804.4]
+            },
+            "seg3": {
+              "price": [270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0],
+              "max":   [33501.56, 33501.56, 33501.56, 33501.56, 33501.56, 33501.56, 33501.56, 33501.56, 33501.56, 33501.56, 33501.56, 33501.56]
+            },
+            "seg4": {
+              "price": [1390.0, 1390.0, 1390.0, 1390.0, 1390.0, 1390.0, 1390.0, 1390.0, 1390.0, 1390.0, 1390.0, 1390.0],
+              "max":   [84659.45, 84659.45, 84659.45, 84659.45, 84659.45, 84659.45, 84659.45, 84659.45, 84659.45, 84659.45, 84659.45, 84659.45]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_RJ",
+          "location": "BR_RJ",
+          "supply": {
+            "seg1": {
+              "price": [19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0],
+              "max":   [72.45, 72.45, 72.45, 72.45, 72.45, 72.45, 72.45, 72.45, 72.45, 72.45, 72.45, 72.45]
+            },
+            "seg2": {
+              "price": [24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0],
+              "max":   [215.08, 215.08, 215.08, 215.08, 215.08, 215.08, 215.08, 215.08, 215.08, 215.08, 215.08, 215.08]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_RN",
+          "location": "BR_RN",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_RS",
+          "location": "BR_RS",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [194.87, 194.87, 194.87, 194.87, 194.87, 194.87, 194.87, 194.87, 194.87, 194.87, 194.87, 194.87]
+            },
+            "seg2": {
+              "price": [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
+              "max":   [14497029.93, 14497029.93, 14497029.93, 14497029.93, 14497029.93, 14497029.93, 14497029.93, 14497029.93, 14497029.93, 14497029.93, 14497029.93, 14497029.93]
+            },
+            "seg3": {
+              "price": [31.0, 31.0, 31.0, 31.0, 31.0, 31.0, 31.0, 31.0, 31.0, 31.0, 31.0, 31.0],
+              "max":   [2838554.26, 2838554.26, 2838554.26, 2838554.26, 2838554.26, 2838554.26, 2838554.26, 2838554.26, 2838554.26, 2838554.26, 2838554.26, 2838554.26]
+            },
+            "seg4": {
+              "price": [60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0],
+              "max":   [21272.13, 21272.13, 21272.13, 21272.13, 21272.13, 21272.13, 21272.13, 21272.13, 21272.13, 21272.13, 21272.13, 21272.13]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_RO",
+          "location": "BR_RO",
+          "supply": {
+            "seg1": {
+              "price": [9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0],
+              "max":   [80.39, 80.39, 80.39, 80.39, 80.39, 80.39, 80.39, 80.39, 80.39, 80.39, 80.39, 80.39]
+            },
+            "seg2": {
+              "price": [25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0],
+              "max":   [81.41, 81.41, 81.41, 81.41, 81.41, 81.41, 81.41, 81.41, 81.41, 81.41, 81.41, 81.41]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_RR",
+          "location": "BR_RR",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_SC",
+          "location": "BR_SC",
+          "supply": {
+            "seg1": {
+              "price": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+              "max":   [58.31, 58.31, 58.31, 58.31, 58.31, 58.31, 58.31, 58.31, 58.31, 58.31, 58.31, 58.31]
+            },
+            "seg2": {
+              "price": [11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0],
+              "max":   [4194865.36, 4194865.36, 4194865.36, 4194865.36, 4194865.36, 4194865.36, 4194865.36, 4194865.36, 4194865.36, 4194865.36, 4194865.36, 4194865.36]
+            },
+            "seg3": {
+              "price": [21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0],
+              "max":   [8739101.12, 8739101.12, 8739101.12, 8739101.12, 8739101.12, 8739101.12, 8739101.12, 8739101.12, 8739101.12, 8739101.12, 8739101.12, 8739101.12]
+            },
+            "seg4": {
+              "price": [32.0, 32.0, 32.0, 32.0, 32.0, 32.0, 32.0, 32.0, 32.0, 32.0, 32.0, 32.0],
+              "max":   [580321.29, 580321.29, 580321.29, 580321.29, 580321.29, 580321.29, 580321.29, 580321.29, 580321.29, 580321.29, 580321.29, 580321.29]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_SP",
+          "location": "BR_SP",
+          "supply": {
+            "seg1": {
+              "price": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+              "max":   [82.14, 82.14, 82.14, 82.14, 82.14, 82.14, 82.14, 82.14, 82.14, 82.14, 82.14, 82.14]
+            },
+            "seg2": {
+              "price": [25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0],
+              "max":   [37734793.11, 37734793.11, 37734793.11, 37734793.11, 37734793.11, 37734793.11, 37734793.11, 37734793.11, 37734793.11, 37734793.11, 37734793.11, 37734793.11]
+            },
+            "seg3": {
+              "price": [44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0],
+              "max":   [1316434.12, 1316434.12, 1316434.12, 1316434.12, 1316434.12, 1316434.12, 1316434.12, 1316434.12, 1316434.12, 1316434.12, 1316434.12, 1316434.12]
+            },
+            "seg4": {
+              "price": [72.0, 72.0, 72.0, 72.0, 72.0, 72.0, 72.0, 72.0, 72.0, 72.0, 72.0, 72.0],
+              "max":   [23551.54, 23551.54, 23551.54, 23551.54, 23551.54, 23551.54, 23551.54, 23551.54, 23551.54, 23551.54, 23551.54, 23551.54]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_SE",
+          "location": "BR_SE",
+          "supply": {
+            "seg1": {
+              "price": [11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0],
+              "max":   [787.5, 787.5, 787.5, 787.5, 787.5, 787.5, 787.5, 787.5, 787.5, 787.5, 787.5, 787.5]
+            },
+            "seg2": {
+              "price": [36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0],
+              "max":   [5549.18, 5549.18, 5549.18, 5549.18, 5549.18, 5549.18, 5549.18, 5549.18, 5549.18, 5549.18, 5549.18, 5549.18]
+            },
+            "seg3": {
+              "price": [51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0],
+              "max":   [5301.1, 5301.1, 5301.1, 5301.1, 5301.1, 5301.1, 5301.1, 5301.1, 5301.1, 5301.1, 5301.1, 5301.1]
+            },
+            "seg4": {
+              "price": [58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0],
+              "max":   [319.03, 319.03, 319.03, 319.03, 319.03, 319.03, 319.03, 319.03, 319.03, 319.03, 319.03, 319.03]
+            }
+          }
+        },
+        {
+          "id": "biomass_wood_BR_TO",
+          "location": "BR_TO",
+          "supply": {
+            "seg1": {
+              "price": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0],
+              "max":   [35.05, 35.05, 35.05, 35.05, 35.05, 35.05, 35.05, 35.05, 35.05, 35.05, 35.05, 35.05]
+            },
+            "seg2": {
+              "price": [96.0, 96.0, 96.0, 96.0, 96.0, 96.0, 96.0, 96.0, 96.0, 96.0, 96.0, 96.0],
+              "max":   [32322952.74, 32322952.74, 32322952.74, 32322952.74, 32322952.74, 32322952.74, 32322952.74, 32322952.74, 32322952.74, 32322952.74, 32322952.74, 32322952.74]
+            },
+            "seg3": {
+              "price": [289.0, 289.0, 289.0, 289.0, 289.0, 289.0, 289.0, 289.0, 289.0, 289.0, 289.0, 289.0],
+              "max":   [22681.91, 22681.91, 22681.91, 22681.91, 22681.91, 22681.91, 22681.91, 22681.91, 22681.91, 22681.91, 22681.91, 22681.91]
+            },
+            "seg4": {
+              "price": [681.0, 681.0, 681.0, 681.0, 681.0, 681.0, 681.0, 681.0, 681.0, 681.0, 681.0, 681.0],
+              "max":   [18852.77, 18852.77, 18852.77, 18852.77, 18852.77, 18852.77, 18852.77, 18852.77, 18852.77, 18852.77, 18852.77, 18852.77]
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Bagasse",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "bagasse_BR_AC",
+          "location": "BR_AC"
+        },
+        {
+          "id": "bagasse_BR_AL",
+          "location": "BR_AL"
+        },
+        {
+          "id": "bagasse_BR_AP",
+          "location": "BR_AP"
+        },
+        {
+          "id": "bagasse_BR_AM",
+          "location": "BR_AM"
+        },
+        {
+          "id": "bagasse_BR_BA",
+          "location": "BR_BA"
+        },
+        {
+          "id": "bagasse_BR_CE",
+          "location": "BR_CE"
+        },
+        {
+          "id": "bagasse_BR_DF",
+          "location": "BR_DF"
+        },
+        {
+          "id": "bagasse_BR_ES",
+          "location": "BR_ES"
+        },
+        {
+          "id": "bagasse_BR_GO",
+          "location": "BR_GO"
+        },
+        {
+          "id": "bagasse_BR_MA",
+          "location": "BR_MA"
+        },
+        {
+          "id": "bagasse_BR_MT",
+          "location": "BR_MT"
+        },
+        {
+          "id": "bagasse_BR_MS",
+          "location": "BR_MS"
+        },
+        {
+          "id": "bagasse_BR_MG",
+          "location": "BR_MG"
+        },
+        {
+          "id": "bagasse_BR_PA",
+          "location": "BR_PA"
+        },
+        {
+          "id": "bagasse_BR_PB",
+          "location": "BR_PB"
+        },
+        {
+          "id": "bagasse_BR_PR",
+          "location": "BR_PR"
+        },
+        {
+          "id": "bagasse_BR_PE",
+          "location": "BR_PE"
+        },
+        {
+          "id": "bagasse_BR_PI",
+          "location": "BR_PI"
+        },
+        {
+          "id": "bagasse_BR_RJ",
+          "location": "BR_RJ"
+        },
+        {
+          "id": "bagasse_BR_RN",
+          "location": "BR_RN"
+        },
+        {
+          "id": "bagasse_BR_RS",
+          "location": "BR_RS"
+        },
+        {
+          "id": "bagasse_BR_RO",
+          "location": "BR_RO"
+        },
+        {
+          "id": "bagasse_BR_RR",
+          "location": "BR_RR"
+        },
+        {
+          "id": "bagasse_BR_SC",
+          "location": "BR_SC"
+        },
+        {
+          "id": "bagasse_BR_SP",
+          "location": "BR_SP"
+        },
+        {
+          "id": "bagasse_BR_SE",
+          "location": "BR_SE"
+        },
+        {
+          "id": "bagasse_BR_TO",
+          "location": "BR_TO"
+        },
+
+        {
+          "id": "bagasse_notused_BR",
+          "demand": [9999999999],
+          "max_nsd": [
+            1.0
+          ],
+          "price_nsd": [
+              0
+          ],
+          "constraints": {
+            "MaxNonServedDemandConstraint": true,
+            "MaxNonServedDemandPerSegmentConstraint": false
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Residue",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "residue_BR_AC",
+          "location": "BR_AC"
+        },
+        {
+          "id": "residue_BR_AL",
+          "location": "BR_AL"
+        },
+        {
+          "id": "residue_BR_AP",
+          "location": "BR_AP"
+        },
+        {
+          "id": "residue_BR_AM",
+          "location": "BR_AM"
+        },
+        {
+          "id": "residue_BR_BA",
+          "location": "BR_BA"
+        },
+        {
+          "id": "residue_BR_CE",
+          "location": "BR_CE"
+        },
+        {
+          "id": "residue_BR_DF",
+          "location": "BR_DF"
+        },
+        {
+          "id": "residue_BR_ES",
+          "location": "BR_ES"
+        },
+        {
+          "id": "residue_BR_GO",
+          "location": "BR_GO"
+        },
+        {
+          "id": "residue_BR_MA",
+          "location": "BR_MA"
+        },
+        {
+          "id": "residue_BR_MT",
+          "location": "BR_MT"
+        },
+        {
+          "id": "residue_BR_MS",
+          "location": "BR_MS"
+        },
+        {
+          "id": "residue_BR_MG",
+          "location": "BR_MG"
+        },
+        {
+          "id": "residue_BR_PA",
+          "location": "BR_PA"
+        },
+        {
+          "id": "residue_BR_PB",
+          "location": "BR_PB"
+        },
+        {
+          "id": "residue_BR_PR",
+          "location": "BR_PR"
+        },
+        {
+          "id": "residue_BR_PE",
+          "location": "BR_PE"
+        },
+        {
+          "id": "residue_BR_PI",
+          "location": "BR_PI"
+        },
+        {
+          "id": "residue_BR_RJ",
+          "location": "BR_RJ"
+        },
+        {
+          "id": "residue_BR_RN",
+          "location": "BR_RN"
+        },
+        {
+          "id": "residue_BR_RS",
+          "location": "BR_RS"
+        },
+        {
+          "id": "residue_BR_RO",
+          "location": "BR_RO"
+        },
+        {
+          "id": "residue_BR_RR",
+          "location": "BR_RR"
+        },
+        {
+          "id": "residue_BR_SC",
+          "location": "BR_SC"
+        },
+        {
+          "id": "residue_BR_SP",
+          "location": "BR_SP"
+        },
+        {
+          "id": "residue_BR_SE",
+          "location": "BR_SE"
+        },
+        {
+          "id": "residue_BR_TO",
+          "location": "BR_TO"
+        },
+        {
+          "id": "residue_disposal_BR",
+          "location": "BR",
+          "demand": [9999999999],
+          "max_nsd": [
+            1
+          ],
+          "price_nsd": [
+              0
+          ],
+          "constraints": {
+            "MaxNonServedDemandConstraint": true,
+            "MaxNonServedDemandPerSegmentConstraint": false
+          }
+        
+        }
+      ]
+    },
+
+  
+    {
+      "type": "Charcoal",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "charcoal_BR",
+          "location": "BR",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_monthly.csv",
+              "header": "Demand_Charcoal"
+            }
+          }
+        }
+      ]
+    },
+
+       {
+      "type": "Ammonia",
+      "global_data": {
+        "time_interval": "Ammonia"
+      },
+      "instance_data": [
+        {
+          "id": "nh3_BR",
+          "location": "BR"
+        },
+        {
+          "id": "nh3_demand_BR",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_monthly.csv",
+              "header": "Demand_Ammonia"
+            }
+          }
+        }
+      ]
+    },
+    
+    { 
+      "type": "Ethanol",
+      "global_data": {
+        "time_interval": "LiquidFuels"
+      },
+      "instance_data": [
+        {
+          "id": "ethanol_BR",
+          "location": "BR"
+        },
+        {
+          "id": "ethanol_demand_BR",
+          "constraints": {
+            "BalanceConstraint": false,
+            "AggregatedDemandConstraint": true
+          },
+          "rhs_policy": {
+            "AggregatedDemandConstraint": 26085287
+          },
+          "CMOUT_demand": {
+            "timeseries": {
+              "path": "system/demand_monthly.csv",
+              "header": "Demand_Ethanol"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Gasoline",
+      "global_data": {
+        "time_interval": "LiquidFuels"
+      },
+      "instance_data": [
+        {
+          "id": "gasoline_renewable_BR",
+          "location": "BR"
+        },
+        {
+          "id": "gasoline_demand_BR",
+          "constraints": {
+            "BalanceConstraint": false,
+            "AggregatedDemandConstraint": true
+          },
+          "rhs_policy": {
+            "AggregatedDemandConstraint": 70526887
+          },
+          "CMOUT_demand": {
+            "timeseries": {
+              "path": "system/demand_monthly.csv",
+              "header": "Demand_Gasoline"
+            }
+          }
+        },
+        {
+          "id": "gasoline_fossil_BR",
+          "max_supply": [100000000],
+          "price_supply": [81.2]
+        }
+      ]
+    },
+
+    {
+      "type": "Flexfuel",
+      "global_data": {
+        "time_interval": "LiquidFuels"
+      },
+      "instance_data": [
+        {
+          "id": "flexfuel_demand_BR",
+          "constraints": {
+            "BalanceConstraint": false,
+            "AggregatedDemandConstraint": true
+          },
+          "rhs_policy": {
+            "AggregatedDemandConstraint": 586452199
+          },
+          "CMOUT_demand": {
+            "timeseries": {
+              "path": "system/demand_monthly.csv",
+              "header": "Demand_Flexfuel"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "JetFuel",
+      "global_data": {
+        "time_interval": "LiquidFuels"
+      },
+      "instance_data": [
+        {
+          "id": "jetfuel_flex_demand_BR",
+          "constraints": {
+            "BalanceConstraint": false,
+            "AggregatedDemandConstraint": true
+          },
+          "rhs_policy": {
+            "AggregatedDemandConstraint": 15940517
+          },
+          "CMOUT_demand": {
+            "timeseries": {
+              "path": "system/demand_monthly.csv",
+              "header": "Demand_Jetfuel"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "JetFuel_SAF",
+      "global_data": {
+        "time_interval": "LiquidFuels"
+      },
+      "instance_data": [
+        {
+          "id": "jetfuel_SAF_BR"
+        },
+        {
+          "id": "jetfuel_SAF_mandate_demand_BR",
+          "constraints": {
+            "BalanceConstraint": false,
+            "AggregatedDemandConstraint": true
+          },
+          "rhs_policy": {
+            "AggregatedDemandConstraint": 3985129
+          },
+          "CMOUT_demand": {
+            "timeseries": {
+              "path": "system/demand_monthly.csv",
+              "header": "Demand_SAF_Jetfuel"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "JetFuel_Fossil",
+      "global_data": {
+        "time_interval": "LiquidFuels"
+      },
+      "instance_data": [
+        {
+          "id": "jetfuel_fossil_BR",
+          "max_supply": [100000000],
+          "price_supply": [72.7]
+        },
+        {
+          "id": "jetfuel_fossil_mandate_demand_BR",
+          "constraints": {
+            "BalanceConstraint": false,
+            "AggregatedDemandConstraint": true
+          },
+          "rhs_policy": {
+            "AggregatedDemandConstraint": 19925647
+          },
+          "CMout_demand": {
+            "timeseries": {
+              "path": "system/demand_monthly.csv",
+              "header": "Demand_fossil_Jetfuel" 
+            }
+          }
+        }
+      ]
+    },
+    
+
+    {
+      "type": "Diesel",
+      "global_data": {
+        "time_interval": "LiquidFuels"
+      },
+      "instance_data": [
+        {
+          "id": "biodiesel_BR"
+        },
+        {
+          "id": "renewable_diesel_BR"
+        },
+        {
+          "id": "biodiesel_mandate_demand_BR",
+          "constraints": {
+            "BalanceConstraint": false,
+            "AggregatedDemandConstraint": true
+          },
+          "rhs_policy": {
+            "AggregatedDemandConstraint": 83330198
+          },
+          "CMOUT_demand": {
+            "timeseries": {
+              "path": "system/demand_monthly.csv",
+              "header": "Demand_BioDiesel" 
+            }
+          }
+        },
+        {
+          "id": "diesel_demand_BR",
+          "constraints": {
+            "BalanceConstraint": false,
+            "AggregatedDemandConstraint": true
+          },
+          "rhs_policy": {
+            "AggregatedDemandConstraint": 749971786
+          },
+          "CMOUT_demand": {
+            "timeseries": {
+              "path": "system/demand_monthly.csv",
+              "header": "Demand_Diesel" 
+            }
+          }
+        },
+        {
+          "id": "diesel_fossil_BR",
+          "max_supply": [300000000],
+          "price_supply": [71]
+        }
+      ]
+    },
+
+    {
+      "type": "Sugar",
+      "global_data": {
+        "time_interval": "Biomass",
+        "max_nsd": [
+            1
+        ],
+        "price_nsd": [
+            20000
+        ],
+        "constraints": {
+            "BalanceConstraint": true,
+            "MaxNonServedDemandConstraint": true,
+            "MaxNonServedDemandPerSegmentConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "sugar_BR",
+          "location": "BR",
+          "demand": [0]
+        }
+      ]
+    }
+
+    ]
+}

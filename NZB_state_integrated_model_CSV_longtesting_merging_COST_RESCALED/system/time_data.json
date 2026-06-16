@@ -1,0 +1,34 @@
+{
+  "TimeStepsPerSubperiod": 8760,
+  "TimeResolution": {
+    "Ammonia": 730,
+    "Biomass": 730,
+    "LiquidFuels": 730,
+    "Charcoal": 730,
+    "Hydrogen": 1,
+    "CO2": 1,
+    "CO2Captured": 1,
+    "Pollution": 1,
+    "Electricity": 1,
+    "NaturalGas": 1,
+    "Coal":1,
+    "Uranium": 1
+  },
+  "ReferenceClock": 1,
+  "NumberOfSubperiods": 1,
+  "HoursPerSubperiod": {
+    "Electricity": 8760,
+    "NaturalGas": 8760,
+    "Hydrogen": 8760,
+    "Ammonia": 8760,
+    "CO2": 8760,
+    "Biomass": 8760,
+    "LiquidFuels": 8760,
+    "CO2Captured": 8760,
+    "Pollution": 8760,
+    "Charcoal": 8760,
+    "Coal":8760,
+    "Uranium": 8760
+  },
+  "TotalTimeStepsModeled": 8760
+}
