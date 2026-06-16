@@ -44,6 +44,14 @@ Manifest*toml
 output.log
 output.log
 
+# Results folders
+results_*/
+
+# Large files
+*.zip
+*.rar
+*.7z
+
 **/results*/
 **/tdr_results*/
 **/tmp/

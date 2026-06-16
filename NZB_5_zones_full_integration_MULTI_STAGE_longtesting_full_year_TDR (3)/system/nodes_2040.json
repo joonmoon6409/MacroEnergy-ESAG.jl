@@ -1,0 +1,853 @@
+{
+  "nodes": [
+
+    {
+      "type": "Ethanol",
+      "global_data": {
+        "time_interval": "LiquidFuels",
+        "max_nsd": [
+            1
+        ],
+        "price_nsd": [
+            50000.0
+        ],
+        "constraints": {
+          "BalanceConstraint": true,
+          "MaxNonServedDemandConstraint": true,
+          "MaxNonServedDemandPerSegmentConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "ethanol_BR"
+        },
+        {
+          "id": "ethanol_demand_BR",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand40.csv",
+              "header": "Demand_Ethanol"
+            }
+          }
+        }
+      ]
+    },
+    
+    {
+      "type": "GreenDiesel",
+      "global_data": {
+        "time_interval": "LiquidFuels",
+        "max_nsd": [
+            1
+        ],
+        "price_nsd": [
+            50000.0
+        ],
+        "constraints": {
+            "BalanceConstraint": true,
+            "MaxNonServedDemandConstraint": true,
+            "MaxNonServedDemandPerSegmentConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "greendiesel_BR"
+        },
+        {
+          "id": "greendiesel_demand_BR",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand40.csv",
+              "header": "Demand_GreenDiesel"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Gasoline",
+      "global_data": {
+        "time_interval": "LiquidFuels",
+        "max_nsd": [
+            1
+        ],
+        "price_nsd": [
+            50000.0
+        ],
+        "constraints": {
+            "BalanceConstraint": true,
+            "MaxNonServedDemandConstraint": true,
+            "MaxNonServedDemandPerSegmentConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "gasoline_BR"
+        },
+        {
+            "id": "gasoline_demand_BR",
+            "demand": {
+            "timeseries": {
+              "path": "system/demand40.csv",
+              "header": "Demand_Gasoline"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Charcoal",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "charcoal_BR",
+          "location": "BR",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand40.csv",
+              "header": "Demand_Charcoal"
+            }
+          }
+        }
+      ]
+    },
+
+   
+    {
+      "type": "Sugarcane",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "sugarcane_N",
+          "location": "N",
+          "max_supply": [96.18, 2291015.33, 649470.08, 7374.17, 5583.06, 7659.29, 9917.86, 6453.7, 3394.25, 1077.11],
+          "price_supply": [896.72, 913.87, 933.58, 946.47, 953.07, 961.67, 966.07, 982.78, 1014.67, 1322.43]
+        },
+                {
+          "id": "sugarcane_NE",
+          "location": "NE",
+          "max_supply": [45.27, 126380.93, 2788368.8, 4347087.76, 629838.33, 2078161.11, 2656639.99, 2314923.02, 3018834.73, 435368.69],
+          "price_supply": [892.05, 900.59, 929.42, 949.2, 966.54, 992.01, 1010.46, 1060.47, 1152.92, 1596.5]
+        },
+        {
+          "id": "sugarcane_MW",
+          "location": "MW",
+          "max_supply": [460.08, 5360431.98, 4792943.09, 21823418.65, 11373449.01, 8198598.72, 20233703.36, 12089295.57, 10745604.14, 4566388.11],
+          "price_supply": [760.2, 847.72, 895.89, 927.95, 953.9, 987.87, 1012.47, 1051.43, 1177.72, 1613.04]
+        },
+        {
+          "id": "sugarcane_SE",
+          "location": "SE",
+          "max_supply": [19859.19, 869920.03, 2013242.36, 10412570.36, 26072174.95, 30503267.31, 50674962.07, 43324191.15, 25821289.83, 1038254.3],
+          "price_supply": [760.82, 798.5, 857.57, 919.28, 939.94, 970.36, 1001.17, 1034.5, 1123.79, 1588.74]
+        },
+        {
+          "id": "sugarcane_S",
+          "location": "S",
+          "max_supply": [9010.37, 2996942.36, 2444964.73, 2372571.45, 2146899.0, 1855118.16, 1346700.31, 452037.6, 802993.28, 14818.79],
+          "price_supply": [1077.26, 1148.1, 1187.21, 1247.28, 1318.72, 1376.31, 1493.77, 1554.36, 1630.81, 1630.81]
+        }
+      ]
+    },
+
+
+    {
+      "type": "Corn",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "corn_N",
+          "max_supply": [0],
+          "price_supply": [0]
+        },
+                {
+          "id": "corn_NE",
+            "max_supply": [0],
+            "price_supply": [0]
+        },
+        {
+          "id": "corn_MW",
+          "max_supply": [4982.76,	716067.96,	410309.76,	1284627.72,	2813736.24,	1790355.96,	2076425.76,	1711956.96,	716607.12,	1651055.04],
+          "price_supply": [8940.57, 9764.82, 10592.07, 10975.17, 11407.97, 11641.32, 11809.73, 12060.67, 12930.35, 18019.02]
+        },
+        {
+          "id": "corn_SE",
+          "max_supply": [2492.04,	3116.64,	2089.68,	2215.44,	4218.72,	4317.96,	2070.12,	2882.28,	1527.96],
+          "price_supply": [ 11186.33, 11555.01, 11879.22, 12134.59, 12388.68, 12714.36, 13106.16, 13860.15, 17333.42]
+        },
+                {
+          "id": "corn_S",
+          "max_supply": [713.4,	6032.16,	3248.64,	4140,	6414.48,	7025.16,	10348.68,	7121.88,	6856.2,	4065.48],
+          "price_supply": [11129.93, 12084.33, 12910.07, 14250.03, 14946.36, 15391.48, 16039.44, 16612.91, 17418.76, 18184.32]
+        }
+      ]
+    },
+
+    {
+      "type": "Soybean",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "soybean_N",
+          "max_supply": [623.52, 27443.83, 46566.47, 68054.45, 128589.05, 100884.3, 16728.11, 45906.55, 57515.85, 36083.49],
+          "price_supply": [11452.64, 12247.69, 12358.86, 12433.02, 12578.74, 12790.04, 13007.61, 13156.19, 13294.42, 13897.53]
+        },
+                {
+          "id": "soybean_NE",
+          "max_supply": [496.78, 1587.61, 7188.15, 142052.39, 108707.55, 48097.42, 1425.32, 202588.15, 1128937.83, 301864.39],
+          "price_supply": [10691.67, 10805.05, 10967.22, 11114.9, 11205.42, 12141.19, 13327.81, 14540.17, 14760.16, 16518.72]
+        },
+                {
+          "id": "soybean_MW",
+          "max_supply": [1929.52, 694857.42, 779172.35, 536891.59, 687040.8, 1236770.03, 932761.64, 1661455.93, 2594043.92, 1699980.61],
+          "price_supply": [7666.17, 10037.57, 11154.57, 11767.6, 12378.11, 12743.29, 13702.62, 15051.88, 16172.93, 22330.22]
+        },
+                {
+          "id": "soybean_SE",
+          "max_supply": [28.77, 14717.86, 9205.16, 17835.21, 32896.15, 25249.47, 48716.91, 32526.39, 49094.68, 33107.2],
+          "price_supply": [8680.5, 10598.48, 12750.95, 13715.89, 14400.74, 15190.11, 15824.89, 16410.51, 17201.9, 25279.3]
+        },
+                {
+          "id": "soybean_S",
+          "max_supply": [22154.24, 1443677.08, 884358.96, 978619.63, 1273935.9, 1070641.02, 1185044.63, 913433.27, 948441.36, 1358642.32],
+          "price_supply": [11287.72, 14920.38, 16522.88, 18279.12, 19988.42, 20922.5, 21985.88, 23477.27, 25341.51, 27786.46]
+        }
+      ]
+    },
+
+
+
+    {
+      "type": "RiceStraw",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "ricestraw_N",
+          "location": "N",
+          "max_supply": [11.68, 508.9, 2722.42, 345.87, 2529.72, 3055.55, 240.99, 23875.98, 4849.87, 5053.19],
+          "price_supply": [561.41, 561.41, 591.55, 591.55, 594.94, 594.94, 594.94, 594.94, 608.53, 608.53]
+        },
+                {
+          "id": "ricestraw_NE",
+          "location": "NE",
+          "max_supply": [11.5, 858.73, 70.1, 2932.22, 3204.87, 2167.2, 2486.53, 2136.61, 1600.06, 940.56],
+          "price_supply": [556.7, 556.7, 561.41, 620.91, 620.91, 620.91, 620.91, 630.07, 630.07, 630.07]
+        },
+        {
+          "id": "ricestraw_MW",
+          "location": "MW",
+          "max_supply": [248.4, 2535.84, 1035.14, 2800.11, 5030.28, 3511.13, 1782.96, 50.05, 2967.78, 1326.92],
+          "price_supply": [566.8, 566.8, 566.8, 566.8, 566.8, 569.29, 584.22, 584.22, 584.22, 584.22]
+        },
+        {
+          "id": "ricestraw_SE",
+          "location": "SE",
+          "max_supply": [0.51, 1179.81, 1004.92, 40.43, 68.03, 76.59, 17.25, 37.17, 234.92, 58.42],
+          "price_supply": [551.2, 551.2, 551.2, 556.42, 556.42, 556.42, 556.42, 556.42, 556.42, 561.41]
+        },
+                {
+          "id": "ricestraw_S",
+          "location": "S",
+          "max_supply": [15.64, 222174.66, 55677.71, 50096.39, 23622.2, 10132.14, 21742.36, 152.4, 40.2, 5733.35],
+          "price_supply": [543.99, 543.99, 543.99, 543.99, 545.71, 545.71, 546.82, 546.82, 546.82, 546.82]
+        }
+      ]
+    },
+
+    {
+      "type": "Biomass_Wood",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "biomass_wood_N",
+          "location": "N",
+          "max_supply": [337.0, 49095.28, 47442.58, 47239.73, 29210.88, 4176.69, 2811.84, 8123.1, 12856.55, 7339.95],
+          "price_supply": [386.75, 386.75, 386.75, 396.19, 396.19, 396.19, 396.19, 396.19, 396.19, 396.24]
+        },
+        {
+          "id": "biomass_wood_NE",
+          "location": "NE",
+          "max_supply": [1439.27, 69829.21, 103533.42, 75914.16, 152027.02, 162135.61, 12506.21, 10454.72, 15997.58, 5729.0],
+          "price_supply": [385.92, 385.92, 387.31, 387.31, 387.31, 387.31, 389.58, 390.86, 390.86, 402.46]
+        },
+        {
+          "id": "biomass_wood_MW",
+          "location": "MW",
+          "max_supply": [7715.9, 36203.63, 22676.59, 635377.12, 345967.95, 52860.18, 12552.44, 32369.55, 12405.81, 12655.43],
+          "price_supply": [395.69, 395.69, 395.69, 396.13, 396.13, 396.96, 396.96, 396.96, 396.96, 400.35]
+        },
+        {
+          "id": "biomass_wood_SE",
+          "location": "SE",
+          "max_supply": [2246.67, 677416.37, 422432.42, 191824.52, 110648.29, 79712.6, 234613.39, 168655.54, 220213.75, 390273.02],
+          "price_supply": [396.19, 396.19, 396.19, 396.19, 396.19, 399.24, 402.79, 402.79, 402.79, 402.79]
+        },
+        {
+          "id": "biomass_wood_S",
+          "location": "S",
+          "max_supply": [273.26, 161078.71, 262617.71, 31054.19, 136123.72, 285454.42, 292916.96, 89231.77, 263955.4, 249678.57],
+          "price_supply": [390.97, 390.97, 390.97, 390.97, 395.52, 395.52, 395.52, 400.35, 400.35, 400.35]
+        }
+      ]
+    },
+    {
+      "type": "Bagasse",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "bagasse_N",
+          "location": "N"
+        },
+                {
+          "id": "bagasse_NE",
+          "location": "NE"
+        },
+        {
+          "id": "bagasse_MW",
+          "location": "MW"
+        },
+                {
+          "id": "bagasse_SE",
+          "location": "SE"
+        },
+                {
+          "id": "bagasse_S",
+          "location": "S"
+        },
+                
+        {
+          "id": "bagasse_notused_BR",
+          "demand": [9999999],
+          "max_nsd": [
+            1
+          ],
+          "price_nsd": [
+              0
+          ],
+          "constraints": {
+            "MaxNonServedDemandConstraint": true,
+            "MaxNonServedDemandPerSegmentConstraint": false
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Residue",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "residue_N",
+          "location": "N"
+        },
+        {
+          "id": "residue_NE",
+          "location": "NE"
+        },
+        {
+          "id": "residue_MW",
+          "location": "MW"
+        },
+        {
+          "id": "residue_SE",
+          "location": "SE"
+        },
+        {
+          "id": "residue_S",
+          "location": "S"
+        },
+        {
+          "id": "residue_disposal_BR",
+          "location": "BR"
+        }
+      ]
+    },
+   
+    {
+      "type": "Electricity",
+      "global_data": {
+        "constraints": {
+          "MaxNonServedDemandConstraint": true,
+          "MaxNonServedDemandPerSegmentConstraint": true,
+          "BalanceConstraint": true
+        },
+        "max_nsd": [1, 0.04, 0.024, 0.003],
+        "time_interval": "Electricity",
+        "price_nsd": [50000, 45000, 27500, 10000]
+      },
+      "instance_data": [
+        {
+          "id": "elec_NE",
+          "location": "NE",
+          "demand": {
+            "timeseries": {
+              "header": "elec_demand_NE",
+              "path": "system/demand40.csv"
+            }
+          }
+        },
+        {
+          "id": "elec_N",
+          "location": "N",
+          "demand": {
+            "timeseries": {
+              "header": "elec_demand_N",
+              "path": "system/demand40.csv"
+            }
+          }
+        },
+        {
+          "id": "elec_SE",
+          "location": "SE",
+          "demand": {
+            "timeseries": {
+              "header": "elec_demand_SE",
+              "path": "system/demand40.csv"
+            }
+          }
+        },
+        {
+          "id": "elec_S",
+          "location": "S",
+          "demand": {
+            "timeseries": {
+              "header": "elec_demand_S",
+              "path": "system/demand40.csv"
+            }
+          }
+        }
+      ]
+    },
+
+        {
+      "type": "Ammonia",
+      "global_data": {
+        "time_interval": "Ammonia",
+        "max_nsd": [
+            1
+        ],
+        "price_nsd": [
+            50000.0
+        ],
+        "constraints": {
+            "BalanceConstraint": true,
+            "MaxNonServedDemandConstraint": true,
+            "MaxNonServedDemandPerSegmentConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "nh3_BR"
+        },
+        {
+          "id": "nh3_demand_BR",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand40.csv",
+              "header": "Demand_Ammonia"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "BioDiesel",
+      "global_data": {
+        "time_interval": "LiquidFuels",
+        "max_nsd": [
+            1
+        ],
+        "price_nsd": [
+            50000.0
+        ],
+        "constraints": {
+            "BalanceConstraint": true,
+            "MaxNonServedDemandConstraint": true,
+            "MaxNonServedDemandPerSegmentConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "biodiesel_BR"
+        },
+        {
+          "id": "biodiesel_demand_BR",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand40.csv",
+              "header": "Demand_BioDiesel" 
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "JetFuel",
+      "global_data": {
+        "time_interval": "LiquidFuels",
+        "max_nsd": [
+            1
+        ],
+        "price_nsd": [
+            50000.0
+        ],
+        "constraints": {
+            "BalanceConstraint": true,
+            "MaxNonServedDemandConstraint": true,
+            "MaxNonServedDemandPerSegmentConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "jetfuel_BR"
+        },
+        {
+          "id": "jetfuel_demand_BR",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand40.csv",
+              "header": "Demand_Jetfuel"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+        "type": "Hydrogen",
+        "global_data": {
+            "time_interval": "Hydrogen",
+            "max_nsd": [
+                1
+            ],
+            "price_nsd": [
+                50000.0
+            ],
+            "constraints": {
+                "BalanceConstraint": true,
+                "MaxNonServedDemandConstraint": true,
+                "MaxNonServedDemandPerSegmentConstraint": true
+            }
+        },
+        "instance_data": [
+            {
+                "id": "h2_N",
+                "location": "N",
+                "demand": {
+                    "timeseries": {
+                        "path": "system/demand40.csv",
+                        "header": "h2_demand_N"
+                    }
+                }
+            },
+            {
+                "id": "h2_NE",
+                "location": "NE",
+                "demand": {
+                    "timeseries": {
+                        "path": "system/demand40.csv",
+                        "header": "h2_demand_NE"
+                    }
+                }
+            },
+            {
+                "id": "h2_SE",
+                "location": "SE",
+                "demand": {
+                    "timeseries": {
+                        "path": "system/demand40.csv",
+                        "header": "h2_demand_SE"
+                    }
+                }
+            },
+            {
+                "id": "h2_S",
+                "location": "S",
+                "demand": {
+                    "timeseries": {
+                        "path": "system/demand40.csv",
+                        "header": "h2_demand_S"
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+      "type": "NaturalGas",
+      "global_data": {
+        "time_interval": "NaturalGas",
+        "constraints": {
+          "BalanceConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "natgas",
+          "location": "Brazil_1",
+          "price": {
+            "timeseries": {
+              "header": "natgas",
+              "path": "system/fuel_prices40.csv"
+            }
+          }
+        },
+        {
+          "id": "natgas_LNG",
+          "location": "Brazil_2",
+          "price": {
+            "timeseries": {
+              "header": "natgas_LNG",
+              "path": "system/fuel_prices40.csv"
+            }
+          }
+        },
+        {
+          "id": "natgas_LNG_100_flexible",
+          "location": "Brazil_3",
+          "price": {
+            "timeseries": {
+              "header": "natgas_LNG_100_flexible",
+              "path": "system/fuel_prices40.csv"
+            }
+          }
+        },
+        {
+          "id": "natgas_LNG_50_inflexible",
+          "location": "Brazil_4",
+          "price": {
+            "timeseries": {
+              "header": "natgas_LNG_50_inflexible",
+              "path": "system/fuel_prices40.csv"
+            }
+          }
+        },
+        {
+          "id": "natgas_NG_70_inflexible",
+          "location": "Brazil_5",
+          "price": {
+            "timeseries": {
+              "header": "natgas_NG_70_inflexible",
+              "path": "system/fuel_prices40.csv"
+            }
+          }
+        },
+        {
+          "id": "natgas_NG_100_inflexible",
+          "location": "Brazil_6",
+          "price": {
+            "timeseries": {
+              "header": "natgas_NG_100_inflexible",
+              "path": "system/fuel_prices40.csv"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Uranium",
+      "global_data": {
+        "time_interval": "Uranium",
+        "constraints": {
+          "BalanceConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "uranium_source",
+          "location": "Brazil_1",
+          "price": {
+            "timeseries": {
+              "header": "uranium_source",
+              "path": "system/fuel_prices40.csv"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Coal",
+      "global_data": {
+        "time_interval": "Coal",
+        "constraints": {
+          "BalanceConstraint": false
+        }
+      },
+      "instance_data": [
+       {
+          "id": "coal_NE",
+          "location": "NE",
+          "price": {
+            "timeseries": {
+              "header": "coal_NE",
+              "path": "system/fuel_prices40.csv"
+            }
+          }
+        },
+        {
+          "id": "coal_S",
+          "location": "S",
+          "price": {
+            "timeseries": {
+              "header": "coal_S",
+              "path": "system/fuel_prices40.csv"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "Electricity",
+      "global_data": {
+        "constraints": {
+          "BalanceConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "hydro_source_N"
+        },
+        {
+          "id": "hydro_source_NE"
+        },
+        {
+          "id": "hydro_source_SE"
+        },
+        {
+          "id": "hydro_source_S"
+        }        
+      ]
+    },
+
+
+    {
+      "type": "CO2",
+      "global_data": {
+        "time_interval": "CO2"
+      },
+      "instance_data": [
+        {
+          "id": "co2_sink",
+          "constraints": {
+            "BalanceConstraint": false,
+            "CO2CapConstraint": true
+          },
+          "rhs_policy": {
+            "CO2CapConstraint": -1000000
+          },
+          "price_unmet_policy": {
+            "CO2CapConstraint": 10000
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "CO2Captured",
+      "global_data": {
+        "time_interval": "CO2Captured",
+        "constraints": {
+          "BalanceConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "co2_captured_N",
+          "location": "N"
+        },
+        {
+          "id": "co2_captured_NE",
+          "location": "NE"
+        },
+        {
+          "id": "co2_captured_MW",
+          "location": "MW"
+        },
+        {
+          "id": "co2_captured_SE",
+          "location": "SE"
+        },
+        {
+          "id": "co2_captured_S",
+          "location": "S"
+        },
+        {
+          "id": "co2_captured_BR",
+          "location": "BR"
+        }
+      ]
+    },
+
+    {
+      "type": "Sugar",
+      "global_data": {
+        "time_interval": "Biomass",
+        "max_nsd": [
+            1
+        ],
+        "price_nsd": [
+            50000.0
+        ],
+        "constraints": {
+            "BalanceConstraint": true,
+            "MaxNonServedDemandConstraint": true,
+            "MaxNonServedDemandPerSegmentConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "sugar_BR",
+          "location": "BR",
+          "demand": [0]
+        }
+      ]
+    }
+  ]
+}

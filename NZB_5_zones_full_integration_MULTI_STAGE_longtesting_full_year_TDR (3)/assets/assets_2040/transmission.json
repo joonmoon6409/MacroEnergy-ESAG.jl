@@ -1,0 +1,87 @@
+{
+  "transmission": {
+    "type": "TransmissionLink",
+    "global_data": {
+      "transforms": {},
+      "edges": {
+        "transmission_edge": {
+          "lifetime": 30,
+          "unidirectional": false,
+          "has_capacity": true,
+          "commodity": "Electricity"
+        }
+      }
+    },
+    "instance_data": [
+      {
+        "id": "N_to_NE",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_N",
+            "end_vertex": "elec_NE",
+            "loss_fraction": 0.012305837,
+            "existing_capacity": 2500,
+            "investment_cost": 12060          }
+        }
+      },    
+      {
+        "id": "N_to_SE",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_N",
+            "end_vertex": "elec_SE",
+            "loss_fraction": 0.012305837,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+
+      {
+        "id": "NE_to_SE",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_NE",
+            "end_vertex": "elec_SE",
+            "loss_fraction": 0.012305837,
+            "existing_capacity": 2500,
+            "investment_cost": 12060
+          }
+        }
+      },
+
+      {
+        "id": "SE_to_S",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_SE",
+            "end_vertex": "elec_S",
+            "loss_fraction": 0.012305837,
+            "existing_capacity": 10,
+            "investment_cost": 12060
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+abstract type Biomass_Wood <: MacroEnergy.Biomass end
+abstract type Residue <: MacroEnergy.Biomass end
+abstract type Sugar <: MacroEnergy.Biomass end
+abstract type Sugarcane <: MacroEnergy.Biomass end
+abstract type Bagasse <: MacroEnergy.Biomass end
+abstract type Corn <: MacroEnergy.Biomass end
+abstract type Soybean <: MacroEnergy.Biomass end
+abstract type RiceStraw <: MacroEnergy.Biomass end
+abstract type Gasoline <: MacroEnergy.LiquidFuels end
+abstract type JetFuel <: MacroEnergy.LiquidFuels end
+abstract type BioDiesel <: MacroEnergy.LiquidFuels end
+abstract type GreenDiesel <: MacroEnergy.LiquidFuels end
+abstract type Ethanol <: MacroEnergy.LiquidFuels end

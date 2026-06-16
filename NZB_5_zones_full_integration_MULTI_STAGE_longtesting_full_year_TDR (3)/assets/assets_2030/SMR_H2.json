@@ -1,0 +1,103 @@
+{
+    "NG_SMR_H2": [
+        {
+            "type": "ThermalHydrogen",
+            "global_data": {
+                "transforms": {
+                    "timedata": "Hydrogen",
+                    "emission_rate": 0.181048235160161,
+                    "fuel_consumption": 1.390821,
+                    "electricity_consumption": 0.013969,
+                    "constraints": {
+                        "BalanceConstraint": true
+                    }
+                },
+                "edges": {
+                    "h2_edge": {
+                        "commodity": "Hydrogen",
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "can_expand": true,
+                        "can_retire": true,
+                        "uc": false,
+                        "capacity_size": 669.130,
+                        "existing_capacity": 0,
+                        "investment_cost": 550816.01,
+                        "fixed_om_cost": 15891.96,
+                        "variable_om_cost": 2.61,
+                        "lifetime": 30,
+                        "retirement_period":30,
+                        "wacc": 0.08,
+                        "capital_recovery_period": 20,
+                        "constraints": {
+                            "CapacityConstraint": true
+                        }
+                    },
+                    "elec_edge": {
+                        "commodity": "Electricity",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "fuel_edge": {
+                        "commodity": "NaturalGas",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "start_vertex": "natgas"
+                    },
+                    "co2_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "end_vertex": "co2_sink"
+                    }
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "NG_SMR_H2_N",
+                    "edges": {
+                        "h2_edge": {
+                            "end_vertex": "h2_N"
+                        },
+                        "elec_edge": {
+                            "start_vertex": "elec_N"
+                        }
+                    }
+                },
+                {
+                    "id": "NG_SMR_H2_NE",
+                    "edges": {
+                        "h2_edge": {
+                            "end_vertex": "h2_NE"
+                        },
+                        "elec_edge": {
+                            "start_vertex": "elec_NE"
+                        }
+                    }
+                },
+                {
+                    "id": "NG_SMR_H2_SE",
+                    "edges": {
+                        "h2_edge": {
+                            "end_vertex": "h2_SE"
+                        },
+                        "elec_edge": {
+                            "start_vertex": "elec_SE"
+                        }
+                    }
+                },
+                {
+                    "id": "NG_SMR_H2_S",
+                    "edges": {
+                        "h2_edge": {
+                            "end_vertex": "h2_S"
+                        },
+                        "elec_edge": {
+                            "start_vertex": "elec_S"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

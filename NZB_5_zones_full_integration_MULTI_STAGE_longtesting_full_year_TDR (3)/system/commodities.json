@@ -1,0 +1,31 @@
+{
+  "commodities": [
+    "Electricity",
+    "NaturalGas",
+    "Ammonia",
+    "Uranium",
+    "Coal",
+    "CO2",
+    "Charcoal",
+    "Hydrogen",
+    "CO2Captured",
+    "Pollution",
+    "Biomass",
+    { "name": "Biomass_Wood", "acts_like": "Biomass" },
+    { "name": "Residue", "acts_like": "Biomass" },
+    { "name": "Sugar", "acts_like": "Biomass" },
+    { "name": "Sugarcane", "acts_like": "Biomass" },
+    { "name": "Bagasse", "acts_like": "Biomass" },
+    { "name": "Corn", "acts_like": "Biomass" },
+    { "name": "Soybean", "acts_like": "Biomass" },
+    { "name": "RiceStraw", "acts_like": "Biomass" },
+    "Uranium",
+    "LiquidFuels",
+    { "name": "Gasoline", "acts_like": "LiquidFuels" },
+    { "name": "JetFuel", "acts_like": "LiquidFuels" },
+    { "name": "BioDiesel", "acts_like": "LiquidFuels" },
+    { "name": "GreenDiesel", "acts_like": "LiquidFuels" },
+    { "name": "Ethanol", "acts_like": "LiquidFuels" }
+  ]
+}
+
