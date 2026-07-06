@@ -1,0 +1,235 @@
+Technology,Year,OCC_$/MW (2021 real),FOM_$/MW-yr,VOM_$/MWh,Source
+Coal,2025,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2026,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2027,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2028,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2029,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2030,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2031,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2032,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2033,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2034,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2035,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2036,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2037,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2038,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2039,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2040,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2041,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2042,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2043,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2044,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2045,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2046,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2047,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2048,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2049,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal,2050,1164761,15816,1.55,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2025,5200000,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2026,5140000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2027,5080000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2028,5020000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2029,4960000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2030,4900000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2031,4830000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2032,4760000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2033,4690000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2034,4620000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2035,4550000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2036,4480000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2037,4410000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2038,4340000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2039,4270000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2040,4200000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2041,4130000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2042,4060000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2043,3990000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2044,3920000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2045,3850000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2046,3780000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2047,3710000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2048,3640000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2049,3570000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Coal_CCS,2050,3500000.0,53714.13,19.135,NREL ATB 2024 (2021 real)
+Gas_CCGT,2025,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2026,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2027,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2028,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2029,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2030,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2031,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2032,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2033,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2034,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2035,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2036,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2037,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2038,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2039,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2040,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2041,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2042,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2043,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2044,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2045,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2046,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2047,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2048,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2049,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2050,695602,15274,1.82,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2025,2500000,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2026,2450000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2027,2400000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2028,2350000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2029,2300000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2030,2250000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2031,2215000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2032,2180000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2033,2145000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2034,2110000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2035,2075000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2036,2040000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2037,2005000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2038,1970000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2039,1935000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2040,1900000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2041,1865000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2042,1830000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2043,1795000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2044,1760000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2045,1725000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2046,1690000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2047,1655000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2048,1620000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2049,1585000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Gas_CCS,2050,1550000.0,17597,8.58,NREL ATB 2024 (2021 real)
+Nuclear,2025,2885794,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2026,2875351,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2027,2864908,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2028,2854464,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2029,2844021,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2030,2833578,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2031,2823135,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2032,2812692,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2033,2802249,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2034,2791806,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2035,2781362,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2036,2770919,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2037,2760476,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2038,2750033,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2039,2739590,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2040,2729147,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2041,2718703,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2042,2708260,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2043,2697817,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2044,2687374,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2045,2676931,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2046,2666488,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2047,2656044,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2048,2645601,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2049,2635158,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2050,2624715,199087,10.34,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2025,4797850,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2026,4741544,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2027,4700903,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2028,4643987,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2029,4579675,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2030,4519714,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2031,4369071,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2032,4218429,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2033,4067786,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2034,4025404,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2035,3988070,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2036,3948038,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2037,3907396,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2038,3865450,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2039,3863100,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2040,3860141,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2041,3858749,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2042,3857008,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2043,3854658,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2044,3854484,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2045,3853701,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2046,3851874,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2047,3851612,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2048,3851612,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2049,3851612,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Offshore_Wind,2050,3851612,63000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2025,1969493,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2026,1949738,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2027,1858187,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2028,1769507,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2029,1679957,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2030,1589710,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2031,1570652,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2032,1551506,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2033,1534536,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2034,1518871,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2035,1504512,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2036,1491806,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2037,1484844,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2038,1479535,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2039,1473965,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2040,1467700,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2041,1462043,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2042,1456647,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2043,1450903,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2044,1445334,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2045,1440460,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2046,1435152,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2047,1428277,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2048,1420444,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2049,1413830,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Onshore_Wind,2050,1407651,40000,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2025,875920,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2026,777058,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2027,713790,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2028,668275,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2029,633204,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2030,605007,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2031,581597,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2032,561755,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2033,544524,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2034,529381,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2035,515979,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2036,501359,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2037,490568,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2038,480298,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2039,470377,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2040,460805,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2041,451493,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2042,442529,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2043,433913,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2044,425472,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2045,417291,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2046,409459,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2047,401801,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2048,394316,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2049,387093,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Solar_PV,2050,380044,19800,0,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Battery,2025,1300000,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2026,1230000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2027,1160000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2028,1090000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2029,1020000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2030,950000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2031,910000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2032,870000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2033,830000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2034,790000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2035,750000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2036,730000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2037,710000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2038,690000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2039,670000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2040,650000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2041,638000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2042,626000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2043,614000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2044,602000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2045,590000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2046,578000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2047,566000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2048,554000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2049,542000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
+Battery,2050,530000.0,20000,0,"NREL ATB 2024 Moderate (2021 real, 4h system)"
