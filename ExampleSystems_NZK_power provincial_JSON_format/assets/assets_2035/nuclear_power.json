@@ -1,0 +1,522 @@
+{
+  "NuclearPower": [
+    {
+      "type": "ThermalPower",
+      "global_data": {
+        "nodes": {},
+        "transforms": {
+          "timedata": "Uranium",
+          "constraints": {
+            "BalanceConstraint": true
+          }
+        },
+        "edges": {
+          "elec_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": true,
+            "uc": true,
+            "integer_decisions": false,
+            "lifetime": 30,
+            "constraints": {
+              "CapacityConstraint": true,
+              "RampingLimitConstraint": true,
+              "MinFlowConstraint": true,
+              "MinUpTimeConstraint": true,
+              "MinDownTimeConstraint": true
+            }
+          },
+          "fuel_edge": {
+            "commodity": "Uranium",
+            "unidirectional": true,
+            "has_capacity": false,
+            "start_vertex": "uranium_source"
+          },
+          "co2_edge": {
+            "commodity": "CO2",
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_SEL"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_SEL"
+            }
+          },
+          "id": "SEL_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_PUS"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_PUS"
+            }
+          },
+          "id": "PUS_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_TAE"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_TAE"
+            }
+          },
+          "id": "TAE_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_INC"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_INC"
+            }
+          },
+          "id": "INC_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_KWJ"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_KWJ"
+            }
+          },
+          "id": "KWJ_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_DJJ"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_DJJ"
+            }
+          },
+          "id": "DJJ_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_USN"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_USN"
+            }
+          },
+          "id": "USN_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_SJG"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_SJG"
+            }
+          },
+          "id": "SJG_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_GGI"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_GGI"
+            }
+          },
+          "id": "GGI_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_GWN"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_GWN"
+            }
+          },
+          "id": "GWN_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_CNB"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_CNB"
+            }
+          },
+          "id": "CNB_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_CNA"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_CNA"
+            }
+          },
+          "id": "CNA_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_JNB"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_JNB"
+            }
+          },
+          "id": "JNB_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_JNA"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_JNA"
+            }
+          },
+          "id": "JNA_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_GNB"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_GNB"
+            }
+          },
+          "id": "GNB_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_GNA"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_GNA"
+            }
+          },
+          "id": "GNA_nuclear_power_plant"
+        },
+        {
+          "transforms": {
+            "fuel_consumption": 3.064351108
+          },
+          "edges": {
+            "elec_edge": {
+              "can_retire": false,
+              "can_expand": false,
+              "existing_capacity": 23126.35968,
+              "investment_cost": 2944000,
+              "fixed_om_cost": 199087.824,
+              "variable_om_cost": 10.34,
+              "capacity_size": 1051.009,
+              "min_flow_fraction": 0.5,
+              "startup_cost": 0,
+              "min_up_time": 36,
+              "min_down_time": 36,
+              "ramp_up_fraction": 0.25,
+              "ramp_down_fraction": 0.25,
+              "startup_fuel_consumption": 0,
+              "end_vertex": "elec_JEJ"
+            },
+            "co2_edge": {
+              "end_vertex": "co2_sink_JEJ"
+            }
+          },
+          "id": "JEJ_nuclear_power_plant"
+        }
+      ]
+    }
+  ]
+}

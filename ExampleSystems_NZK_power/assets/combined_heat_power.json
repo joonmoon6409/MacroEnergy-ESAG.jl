@@ -1,0 +1,117 @@
+{
+    "NaturalGasSteam": [
+        {
+            "type": "ThermalSteam",
+            "global_data": {
+                "transforms": {
+                    "timedata": "Steam",
+                    "constraints": {
+                        "BalanceConstraint": true
+                    }
+                },
+                "edges": {
+                    "steam_edge": {
+                        "commodity": "Steam",
+                        "unidirectional": true,
+                        "has_capacity": true,
+                        "uc": true,
+                        "integer_decisions": false,
+                        "constraints": {
+                            "CapacityConstraint": true,
+                            "RampingLimitConstraint": true,
+                            "MinFlowConstraint": true,
+                            "MinUpTimeConstraint": true,
+                            "MinDownTimeConstraint": true
+                        }
+                    },
+                    "fuel_edge": {
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "elec_edge": {
+                        "commodity": "Electricity",
+                        "unidirectional": true,
+                        "has_capacity": false
+                    },
+                    "co2_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "end_vertex": "co2_sink_KR"
+                    }
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "KR_natgas_CHP",
+                    "transforms": {
+                        "emission_rate": 0.1810,
+                        "fuel_consumption": 0.45,
+                        "elec_cogen_rate": 1.125
+                    },
+                    "edges": {
+                        "steam_edge": {
+                            "end_vertex": "heat_KR",
+                            "can_retire": false,
+                            "can_expand": false,
+                            "existing_capacity": 8502.0,
+                            "investment_cost": 996000.0,
+                            "fixed_om_cost": 18274,
+                            "variable_om_cost": 3.8,
+                            "capacity_size": 500.0,
+                            "startup_cost": 50.0,
+                            "startup_fuel_consumption": 0.2,
+                            "min_up_time": 6,
+                            "min_down_time": 6,
+                            "ramp_up_fraction": 0.64,
+                            "ramp_down_fraction": 0.64,
+                            "min_flow_fraction": 0.41
+                        },
+                        "fuel_edge": {
+                            "commodity": "NaturalGas",
+                            "start_vertex": "natgas_source"
+                        },
+                        "elec_edge": {
+                            "end_vertex": "elec_KR"
+                        }
+                    }
+                },
+                
+                {
+                    "id": "KR_coal_CHP",
+                    "transforms": {
+                        "emission_rate": 0.181048235160161,
+                        "fuel_consumption": 0.37,
+                        "elec_cogen_rate": 0.74
+                    },
+                    "edges": {
+                        "steam_edge": {
+                            "end_vertex": "heat_KR",
+                            "can_retire": false,
+                            "can_expand": false,
+                            "existing_capacity": 2980.0,
+                            "investment_cost": 1883000.0,
+                            "fixed_om_cost": 17816,
+                            "variable_om_cost": 3.55,
+                            "capacity_size": 500.0,
+                            "startup_cost": 50.0,
+                            "startup_fuel_consumption": 0.2,
+                            "min_up_time": 6,
+                            "min_down_time": 6,
+                            "ramp_up_fraction": 0.64,
+                            "ramp_down_fraction": 0.64,
+                            "min_flow_fraction": 0.41
+                        },
+                        "fuel_edge": {
+                            "commodity": "Coal",
+                            "start_vertex": "coal_source"
+                        },
+                        "elec_edge": {
+                            "end_vertex": "elec_KR"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

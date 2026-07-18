@@ -1,0 +1,131 @@
+{
+    "existing_vre": [
+        {
+            "type": "VRE",
+            "global_data": {
+                "nodes": {},
+                "transforms": {
+                    "timedata": "Electricity"
+                },
+                "edges": {
+                    "edge": {
+                        "commodity": "Electricity",
+                        "unidirectional": true,
+                        "can_expand": false,
+                        "can_retire": false,
+                        "has_capacity": true,
+                        "constraints": {
+                            "CapacityConstraint": true
+                        }
+                    }
+                },
+                "storage": {}
+            },
+            "instance_data": [
+                {
+                    "nodes": {},
+                    "id": "existing_solar_KR",
+                    "edges": {
+                        "edge": {
+                            "fixed_om_cost": 22887,
+                            "capacity_size": 10.578,
+                            "existing_capacity": 23582,
+                            "end_vertex": "elec_KR",
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "KR_utilitypv"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {}
+                },
+                {
+                    "nodes": {},
+                    "id": "existing_wind_KR",
+                    "edges": {
+                        "edge": {
+                            "fixed_om_cost": 43000,
+                            "capacity_size": 86.17,
+                            "existing_capacity": 1962,
+                            "end_vertex": "elec_KR",
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "onwind"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {}
+                }
+            ]
+        }
+    ],
+    "new_vre": [
+        {
+            "type": "VRE",
+            "global_data": {
+                "nodes": {},
+                "transforms": {
+                    "timedata": "Electricity"
+                },
+                "edges": {
+                    "edge": {
+                        "commodity": "Electricity",
+                        "unidirectional": true,
+                        "can_expand": false,
+                        "can_retire": false,
+                        "has_capacity": true,
+                        "constraints": {
+                            "CapacityConstraint": true,
+                            "MaxCapacityConstraint": true
+                        }
+                    }
+                },
+                "storage": {}
+            },
+            "instance_data": [
+                {
+                    "nodes": {},
+                    "id": "KR_utility_pv",
+                    "edges": {
+                        "edge": {
+                            "fixed_om_cost": 13510.19684,
+                            "investment_cost": 41016.27415,
+                            "max_capacity": 288617,
+                            "end_vertex": "elec_KR",
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "KR_utilitypv"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {}
+                },
+                {
+                    "nodes": {},
+                    "id": "KR_onshore_wind",
+                    "edges": {
+                        "edge": {
+                            "fixed_om_cost": 26256.10757,
+                            "investment_cost": 78331.91929,
+                            "max_capacity": 1384,
+                            "end_vertex": "elec_KR",
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "onwind"
+                                }
+                            }
+                        }
+                    },
+                    "storage": {}
+                }
+            ]
+        }
+    ]
+}

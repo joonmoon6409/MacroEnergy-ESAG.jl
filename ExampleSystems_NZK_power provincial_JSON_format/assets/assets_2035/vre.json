@@ -1,0 +1,946 @@
+{
+  "new_vre": [
+    {
+      "type": "VRE",
+      "global_data": {
+        "transforms": {
+          "timedata": "Electricity"
+        },
+        "edges": {
+          "edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "can_expand": false,
+            "can_retire": false,
+            "lifetime": 30,
+            "has_capacity": true,
+            "constraints": {
+              "CapacityConstraint": true,
+              "MaxCapacityConstraint": true
+            }
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "id": "SEL_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_SEL"
+            }
+          }
+        },
+        {
+          "id": "SEL_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_SEL"
+            }
+          }
+        },
+        {
+          "id": "SEL_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_SEL"
+            }
+          }
+        },
+        {
+          "id": "PUS_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_PUS"
+            }
+          }
+        },
+        {
+          "id": "PUS_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_PUS"
+            }
+          }
+        },
+        {
+          "id": "PUS_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_PUS"
+            }
+          }
+        },
+        {
+          "id": "TAE_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_TAE"
+            }
+          }
+        },
+        {
+          "id": "TAE_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_TAE"
+            }
+          }
+        },
+        {
+          "id": "TAE_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_TAE"
+            }
+          }
+        },
+        {
+          "id": "INC_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_INC"
+            }
+          }
+        },
+        {
+          "id": "INC_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_INC"
+            }
+          }
+        },
+        {
+          "id": "INC_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_INC"
+            }
+          }
+        },
+        {
+          "id": "KWJ_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_KWJ"
+            }
+          }
+        },
+        {
+          "id": "KWJ_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_KWJ"
+            }
+          }
+        },
+        {
+          "id": "KWJ_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_KWJ"
+            }
+          }
+        },
+        {
+          "id": "DJJ_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_DJJ"
+            }
+          }
+        },
+        {
+          "id": "DJJ_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_DJJ"
+            }
+          }
+        },
+        {
+          "id": "DJJ_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_DJJ"
+            }
+          }
+        },
+        {
+          "id": "USN_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_USN"
+            }
+          }
+        },
+        {
+          "id": "USN_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_USN"
+            }
+          }
+        },
+        {
+          "id": "USN_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_USN"
+            }
+          }
+        },
+        {
+          "id": "SJG_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_SJG"
+            }
+          }
+        },
+        {
+          "id": "SJG_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_SJG"
+            }
+          }
+        },
+        {
+          "id": "SJG_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_SJG"
+            }
+          }
+        },
+        {
+          "id": "GGI_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_GGI"
+            }
+          }
+        },
+        {
+          "id": "GGI_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_GGI"
+            }
+          }
+        },
+        {
+          "id": "GGI_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_GGI"
+            }
+          }
+        },
+        {
+          "id": "GWN_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_GWN"
+            }
+          }
+        },
+        {
+          "id": "GWN_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_GWN"
+            }
+          }
+        },
+        {
+          "id": "GWN_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_GWN"
+            }
+          }
+        },
+        {
+          "id": "CNB_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_CNB"
+            }
+          }
+        },
+        {
+          "id": "CNB_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_CNB"
+            }
+          }
+        },
+        {
+          "id": "CNB_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_CNB"
+            }
+          }
+        },
+        {
+          "id": "CNA_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_CNA"
+            }
+          }
+        },
+        {
+          "id": "CNA_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_CNA"
+            }
+          }
+        },
+        {
+          "id": "CNA_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_CNA"
+            }
+          }
+        },
+        {
+          "id": "JNB_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_JNB"
+            }
+          }
+        },
+        {
+          "id": "JNB_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_JNB"
+            }
+          }
+        },
+        {
+          "id": "JNB_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_JNB"
+            }
+          }
+        },
+        {
+          "id": "JNA_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_JNA"
+            }
+          }
+        },
+        {
+          "id": "JNA_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_JNA"
+            }
+          }
+        },
+        {
+          "id": "JNA_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_JNA"
+            }
+          }
+        },
+        {
+          "id": "GNB_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_GNB"
+            }
+          }
+        },
+        {
+          "id": "GNB_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_GNB"
+            }
+          }
+        },
+        {
+          "id": "GNB_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_GNB"
+            }
+          }
+        },
+        {
+          "id": "GNA_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_GNA"
+            }
+          }
+        },
+        {
+          "id": "GNA_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_GNA"
+            }
+          }
+        },
+        {
+          "id": "GNA_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_GNA"
+            }
+          }
+        },
+        {
+          "id": "JEJ_utility_pv",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 19800.19684,
+              "investment_cost": 884000,
+              "max_capacity": 288617,
+              "existing_capacity": 19066.54048,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "KR_utilitypv"
+                }
+              },
+              "end_vertex": "elec_JEJ"
+            }
+          }
+        },
+        {
+          "id": "JEJ_onshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 1988000,
+              "max_capacity": 5000,
+              "existing_capacity": 1241.934589,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "onwind"
+                }
+              },
+              "end_vertex": "elec_JEJ"
+            }
+          }
+        },
+        {
+          "id": "JEJ_offshore_wind",
+          "edges": {
+            "edge": {
+              "fixed_om_cost": 26256.10757,
+              "investment_cost": 4842000,
+              "max_capacity": 1384,
+              "existing_capacity": 0,
+              "availability": {
+                "timeseries": {
+                  "path": "system/availability.csv",
+                  "header": "offwind-dc"
+                }
+              },
+              "end_vertex": "elec_JEJ"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
