@@ -1,0 +1,3345 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='capacity' inline='true' name='federated.0w2w5vu1e01qsn173ff2x0ak20ne' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='capacity' name='textscan.0mltunq0krdcgk1afpptj0fr3d3y'>
+            <connection class='textscan' directory='C:/Users/jm6409/MacroEnergy_TDR/NZB_statelevel_full_integration_MULTI_STAGE_longtesting_full_year_TDR_hourly remapping_V2/results_003/results_period_2' filename='capacity.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0mltunq0krdcgk1afpptj0fr3d3y' name='capacity.csv' table='[capacity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='commodity' ordinal='0' />
+            <column datatype='string' name='zone' ordinal='1' />
+            <column datatype='string' name='resource_id' ordinal='2' />
+            <column datatype='string' name='component_id' ordinal='3' />
+            <column datatype='string' name='resource_type' ordinal='4' />
+            <column datatype='string' name='component_type' ordinal='5' />
+            <column datatype='string' name='variable' ordinal='6' />
+            <column datatype='real' name='value' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[capacity.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commodity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[commodity]</local-name>
+            <parent-name>[capacity.csv]</parent-name>
+            <remote-alias>commodity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[capacity.csv_F343DAAF97034B698816696599889C9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[zone]</local-name>
+            <parent-name>[capacity.csv]</parent-name>
+            <remote-alias>zone</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[capacity.csv_F343DAAF97034B698816696599889C9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resource_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[resource_id]</local-name>
+            <parent-name>[capacity.csv]</parent-name>
+            <remote-alias>resource_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[capacity.csv_F343DAAF97034B698816696599889C9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>component_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[component_id]</local-name>
+            <parent-name>[capacity.csv]</parent-name>
+            <remote-alias>component_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[capacity.csv_F343DAAF97034B698816696599889C9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resource_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[resource_type]</local-name>
+            <parent-name>[capacity.csv]</parent-name>
+            <remote-alias>resource_type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[capacity.csv_F343DAAF97034B698816696599889C9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>component_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[component_type]</local-name>
+            <parent-name>[capacity.csv]</parent-name>
+            <remote-alias>component_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[capacity.csv_F343DAAF97034B698816696599889C9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variable</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[variable]</local-name>
+            <parent-name>[capacity.csv]</parent-name>
+            <remote-alias>variable</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[capacity.csv_F343DAAF97034B698816696599889C9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[capacity.csv]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[capacity.csv_F343DAAF97034B698816696599889C9D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='capacity.csv' datatype='table' name='[__tableau_internal_object_id__].[capacity.csv_F343DAAF97034B698816696599889C9D]' role='measure' type='quantitative' />
+      <column caption='Commodity' datatype='string' name='[commodity]' role='dimension' type='nominal' />
+      <column caption='Component Id' datatype='string' name='[component_id]' role='dimension' type='nominal' />
+      <column caption='Component Type' datatype='string' name='[component_type]' role='dimension' type='nominal' />
+      <column caption='Resource Id' datatype='string' name='[resource_id]' role='dimension' type='nominal' />
+      <column caption='Resource Type' datatype='string' name='[resource_type]' role='dimension' type='nominal' />
+      <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+      <column caption='Variable' datatype='string' name='[variable]' role='dimension' type='nominal' />
+      <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+      <column-instance column='[resource_type]' derivation='None' name='[none:resource_type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:resource_type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;BiomassTransformation_coprod&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;VRE&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Battery&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ThermalHydrogen{NaturalGas}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BECCSElectricity&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;ThermalPower{NaturalGas}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;FischerTropsch&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;CO2Injection&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BECCSEthanol&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ThermalPower{Uranium}&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;SyntheticLiquidFuels&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BECCSATJ&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ThermalHydrogenCCS{NaturalGas}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;OneWayTransmissionLink{CO2Captured}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BECCSHydrogen&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ThermalPowerCCS{NaturalGas}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;HEFA&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;HydroRes&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;OneWayTransmissionLink{Electricity}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SyntheticNaturalGas&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;ElectricDAC&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BiomassTransformation&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;TransmissionLink{Electricity}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BECCSCharcoal&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ThermalPower{Coal}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;MustRun&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Electrolyzer&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BECCSDiesel&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;ThermalPower{Hydrogen}&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='capacity.csv' id='capacity.csv_F343DAAF97034B698816696599889C9D'>
+            <properties context=''>
+              <relation connection='textscan.0mltunq0krdcgk1afpptj0fr3d3y' name='capacity.csv' table='[capacity#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='commodity' ordinal='0' />
+                  <column datatype='string' name='zone' ordinal='1' />
+                  <column datatype='string' name='resource_id' ordinal='2' />
+                  <column datatype='string' name='component_id' ordinal='3' />
+                  <column datatype='string' name='resource_type' ordinal='4' />
+                  <column datatype='string' name='component_type' ordinal='5' />
+                  <column datatype='string' name='variable' ordinal='6' />
+                  <column datatype='real' name='value' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='flows' inline='true' name='federated.0b4x5og1ud2jqd119sf1w1pef0jq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='flows' name='textscan.0ezss6x0chfcac1bvyyhs02ob1ds'>
+            <connection class='textscan' directory='C:/Users/jm6409/MacroEnergy_TDR/NZB_statelevel_full_integration_MULTI_STAGE_longtesting_full_year_TDR_hourly remapping_V2/results_003/results_period_2' filename='flows.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ezss6x0chfcac1bvyyhs02ob1ds' name='flows.csv' table='[flows#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='commodity' ordinal='0' />
+            <column datatype='string' name='node_in' ordinal='1' />
+            <column datatype='string' name='node_out' ordinal='2' />
+            <column datatype='string' name='resource_id' ordinal='3' />
+            <column datatype='string' name='component_id' ordinal='4' />
+            <column datatype='string' name='resource_type' ordinal='5' />
+            <column datatype='string' name='component_type' ordinal='6' />
+            <column datatype='string' name='variable' ordinal='7' />
+            <column datatype='integer' name='time' ordinal='8' />
+            <column datatype='real' name='value' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commodity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[commodity]</local-name>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias>commodity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[flows.csv_4645F0FF2EC141E6BE6DD93292854909]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>node_in</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[node_in]</local-name>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias>node_in</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[flows.csv_4645F0FF2EC141E6BE6DD93292854909]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>node_out</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[node_out]</local-name>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias>node_out</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[flows.csv_4645F0FF2EC141E6BE6DD93292854909]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resource_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[resource_id]</local-name>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias>resource_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[flows.csv_4645F0FF2EC141E6BE6DD93292854909]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>component_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[component_id]</local-name>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias>component_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[flows.csv_4645F0FF2EC141E6BE6DD93292854909]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resource_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[resource_type]</local-name>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias>resource_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[flows.csv_4645F0FF2EC141E6BE6DD93292854909]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>component_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[component_type]</local-name>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias>component_type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[flows.csv_4645F0FF2EC141E6BE6DD93292854909]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variable</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[variable]</local-name>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias>variable</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[flows.csv_4645F0FF2EC141E6BE6DD93292854909]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[time]</local-name>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias>time</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[flows.csv_4645F0FF2EC141E6BE6DD93292854909]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[flows.csv]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[flows.csv_4645F0FF2EC141E6BE6DD93292854909]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='V_co2transport' datatype='real' name='[Calculation_3159838117753704448]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [resource_type] = &quot;OneWayTransmissionLink{CO2Captured}&quot;&#13;&#10;THEN -[value]&#13;&#10;ELSE [value]&#13;&#10;END' />
+      </column>
+      <column caption='flows.csv' datatype='table' name='[__tableau_internal_object_id__].[flows.csv_4645F0FF2EC141E6BE6DD93292854909]' role='measure' type='quantitative' />
+      <column caption='Commodity' datatype='string' name='[commodity]' role='dimension' type='nominal' />
+      <column caption='Component Id' datatype='string' name='[component_id]' role='dimension' type='nominal' />
+      <column caption='Component Type' datatype='string' name='[component_type]' role='dimension' type='nominal' />
+      <column caption='Node In' datatype='string' name='[node_in]' role='dimension' type='nominal' />
+      <column caption='Node Out' datatype='string' name='[node_out]' role='dimension' type='nominal' />
+      <column caption='Resource Id' datatype='string' name='[resource_id]' role='dimension' type='nominal' />
+      <column caption='Resource Type' datatype='string' name='[resource_type]' role='dimension' type='nominal' />
+      <column caption='Time' datatype='integer' name='[time]' role='measure' type='quantitative' />
+      <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+      <column caption='Variable' datatype='string' name='[variable]' role='dimension' type='nominal' />
+      <column-instance column='[commodity]' derivation='None' name='[none:commodity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[node_in]' derivation='None' name='[none:node_in:nk]' pivot='key' type='nominal' />
+      <column-instance column='[resource_type]' derivation='None' name='[none:resource_type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:commodity:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Electricity&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Biomass_wood&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;RiceStraw&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Coal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SugarcaneStraw&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Gasoline&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ethanol&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Corn&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Uranium&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;NaturalGas&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Charcoal&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Soybean&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;JetFuel_SAF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;CornStover&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hydrogen&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;JetFuel&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Macauba&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Residue&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Flexfuel&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Diesel&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CO2&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sugar&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;JetFuel_Fossil&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Forestry_residue&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;CO2Captured&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sugarcane&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:resource_type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CO2Injection&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BECCSATJ&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ThermalPower{NaturalGas}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BECCSEthanol&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;HEFA&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;ElectricDAC&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BECCSHydrogen&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ThermalPower{Coal}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BECCSCharcoal&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ThermalPower{Uranium}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;ThermalHydrogen{NaturalGas}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BiomassTransformation&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;OneWayTransmissionLink{CO2Captured}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;SyntheticLiquidFuels&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ThermalHydrogenCCS{NaturalGas}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;ThermalPower{Hydrogen}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;FischerTropsch&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BiomassTransformation_coprod&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BECCSDiesel&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ThermalPowerCCS{NaturalGas}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;SyntheticNaturalGas&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;GeneralFuelsEndUse&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BECCSElectricity&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:node_in:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;BR_AC_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_AL_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_AM_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_ATJ_Diesel_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_CE_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_DF_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_ES_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_GO_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_MA_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_MG_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_MS_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_MT_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_PB_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_PE_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_PI_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_PR_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_RJ_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_RO_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_RR_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_RS_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_SC_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_SE_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BR_SP_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_AC_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_AL_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_AM_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_AP_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_BA_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_CE_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_Diesel_mandate_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_Flexfuel_gasoline_fossil_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_GO_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_MG_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_MS_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_MT_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_PA_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_PB_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_PI_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_PR_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_RJ_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_RN_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_RO_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_RR_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_SC_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_SE_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_SP_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BR_TO_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_AC_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_AL_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_AM_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_AP_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_BA_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_DF_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_ES_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_GO_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_Jetfuel_SAF_flex_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_MA_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_MG_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_MS_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_MT_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_PA_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_PE_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_PI_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_PR_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_RJ_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_RN_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_RO_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_RS_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_SC_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_SE_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_SP_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR_TO_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_AC_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_AL_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_AP_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_BA_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_CE_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_DF_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_ES_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_GO_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_MA_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_MG_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_MT_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_PA_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_PB_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_PE_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_PI_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_PR_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_RN_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_RO_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_RR_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_RS_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_SC_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_SE_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BR_TO_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_AC_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_AL_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_AM_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_BA_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_CE_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_DF_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_ES_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_GO_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_MA_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_MG_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_MS_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_PA_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_PB_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_PE_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_PI_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_PR_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_RJ_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_RO_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_RR_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_RS_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_SC_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_SE_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR_SP_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_AC_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_AL_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_AM_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_AP_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_BA_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_DF_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_ES_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_GO_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_Jetfuel_SAF_mandate_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_MA_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_MG_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_MS_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_MT_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_PA_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_PE_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_PI_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_PR_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_RJ_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_RN_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_RR_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_RS_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_SC_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_SE_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_SP_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BR_TO_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_AL_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_AM_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_AP_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_BA_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_CE_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_DF_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_Ethanol_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_GO_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_MG_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_MS_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_MT_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_PA_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_PB_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_PE_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_PR_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_RJ_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_RN_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_RO_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_RR_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_RS_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_SE_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_SP_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BR_TO_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_AC_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_AL_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_AM_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_AP_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_ATJ_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_BA_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_CE_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_ES_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_Flexfuel_gasoline_renewable_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_MA_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_MG_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_MS_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_MT_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_PA_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_PB_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_PI_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_PR_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_RJ_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_RN_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_RO_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_RR_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_SC_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_SE_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_SP_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BR_TO_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_AC_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_AM_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_AP_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_BA_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_CE_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_DF_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_ES_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_GO_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_MA_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_MS_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_MT_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_PA_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_PB_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_PE_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_PI_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_RJ_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_RN_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_RO_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_RR_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_RS_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_SE_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_SP_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BR_TO_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_AC_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_AL_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_AM_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_AP_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_CE_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_DF_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_ES_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_GO_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_MA_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_MG_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_MS_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_MT_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_PB_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_PE_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_PI_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_PR_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_RJ_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_RN_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_RR_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_RS_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_SC_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_SE_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_SP_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BR_TO_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_AC_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_AL_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_AP_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_BA_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_CE_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_DF_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_ES_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_GO_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_MA_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_MG_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_MT_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_PA_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_PB_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_PE_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_PI_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_PR_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_RN_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_RO_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_RR_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_RS_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_SC_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_SP_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BR_TO_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_AC_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_AM_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_AP_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_BA_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_CE_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_DF_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_ES_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_GO_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_MA_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_MG_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_MT_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_PA_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_PB_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_PE_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_PI_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_RJ_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_RN_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_RO_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_RR_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_RS_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_SC_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_SP_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BR_TO_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_AL_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_AM_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_AP_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_BA_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_CE_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_DF_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_ES_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_GO_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_MA_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_MS_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_MT_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_PA_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_PB_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_PE_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_PR_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_RJ_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_RN_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_RO_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_RR_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_RS_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_SE_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_SP_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BR_TO_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_AL_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_AM_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_AP_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_BA_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_CE_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_DF_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_Flexfuel_ethanol_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_GO_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_MG_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_MS_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_MT_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_PA_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_PB_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_PE_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_PR_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_RJ_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_RN_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_RO_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_RR_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_SC_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_SE_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_SP_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BR_TO_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_AC_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_AL_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_AM_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_BA_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_CE_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_DF_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_ES_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_GO_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_MA_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_MG_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_MS_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_PA_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_PB_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_PE_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_PI_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_PR_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_RJ_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_RO_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_RR_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_RS_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_SC_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_SE_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BR_TO_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_AC_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_AL_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_AM_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_AP_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_CE_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_DF_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_ES_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_GO_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_MA_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_MG_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_MS_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_MT_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_PB_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_PE_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_PI_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_PR_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_RJ_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_RN_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_RR_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_RS_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_SC_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_SE_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BR_SP_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_AC_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_AL_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_AM_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_AP_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_BA_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_CE_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_ES_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_Gasoline_fossil_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_Jetfuel_fossil_flex_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_MA_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_MG_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_MS_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_MT_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_PA_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_PB_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_PI_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_PR_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_RJ_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_RN_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_RO_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_RS_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_SC_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_SE_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_SP_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BR_TO_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_AC_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_AM_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_AP_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_BA_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_CE_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_DF_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_ES_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_GO_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_MA_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_MS_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_MT_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_PA_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_PB_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_PE_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_PI_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_RJ_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_RN_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_RO_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_RR_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_RS_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_SC_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_SP_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BR_TO_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_AC_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_AL_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_AP_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_BA_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_CE_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_DF_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_ES_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_GO_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_MA_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_MG_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_MS_Synthetic_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_PA_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_PB_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_PE_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_PI_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_PR_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_RN_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_RO_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_RR_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_RS_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_SC_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_SE_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BR_TO_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_AC_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_AL_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_AM_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_AP_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_BA_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_DF_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_ES_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_Gasoline_renewable_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_Jetfuel_fossil_mandate_Downstream_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_MA_BECCS_corn_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_MG_BECCS_Lignocellulosic_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_MS_gasoline_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_MT_greendiesel_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_PA_Macauba_FAME_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_PE_BECCS_1G2G_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_PI_BECCS_corn_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_PR_BECCS_sugarcane_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_RJ_gasoline_wood_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_RN_HEFA_macauba_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_RO_Soybean_Biodiesel_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_RS_BECCS_1G2G_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_SC_BECCS_Lignocellulosic_ethanol_CCS_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_SE_BECCS_sugarcane_ethanol_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_SP_greendiesel_residue_FT_transforms&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR_TO_HEFA_soybean_transforms&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='flows.csv' id='flows.csv_4645F0FF2EC141E6BE6DD93292854909'>
+            <properties context=''>
+              <relation connection='textscan.0ezss6x0chfcac1bvyyhs02ob1ds' name='flows.csv' table='[flows#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='commodity' ordinal='0' />
+                  <column datatype='string' name='node_in' ordinal='1' />
+                  <column datatype='string' name='node_out' ordinal='2' />
+                  <column datatype='string' name='resource_id' ordinal='3' />
+                  <column datatype='string' name='component_id' ordinal='4' />
+                  <column datatype='string' name='resource_type' ordinal='5' />
+                  <column datatype='string' name='component_type' ordinal='6' />
+                  <column datatype='string' name='variable' ordinal='7' />
+                  <column datatype='integer' name='time' ordinal='8' />
+                  <column datatype='real' name='value' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Flow'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flows' name='federated.0b4x5og1ud2jqd119sf1w1pef0jq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b4x5og1ud2jqd119sf1w1pef0jq'>
+            <column caption='V_co2transport' datatype='real' name='[Calculation_3159838117753704448]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [resource_type] = &quot;OneWayTransmissionLink{CO2Captured}&quot;&#13;&#10;THEN -[value]&#13;&#10;ELSE [value]&#13;&#10;END' />
+            </column>
+            <column caption='Commodity' datatype='string' name='[commodity]' role='dimension' type='nominal' />
+            <column-instance column='[commodity]' derivation='None' name='[none:commodity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[resource_type]' derivation='None' name='[none:resource_type:nk]' pivot='key' type='nominal' />
+            <column caption='Resource Type' datatype='string' name='[resource_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3159838117753704448]' derivation='Sum' name='[sum:Calculation_3159838117753704448:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]'>
+            <groupfilter function='member' level='[none:commodity:nk]' member='&quot;CO2Captured&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]' value='383' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:resource_type:nk]' />
+              <text column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:resource_type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[sum:Calculation_3159838117753704448:qk]</rows>
+        <cols>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]</cols>
+        <mark-labels>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[sum:Calculation_3159838117753704448:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]</field>
+                  <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:resource_type:nk]</field>
+                  <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[sum:Calculation_3159838117753704448:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;CO2Captured&quot;</value>
+                <value>&quot;ElectricDAC&quot;</value>
+                <value>544322.08427502715</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{43099850-AA91-42A2-8452-691EAA04C450}' />
+    </worksheet>
+    <worksheet name='Flow2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flows' name='federated.0b4x5og1ud2jqd119sf1w1pef0jq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b4x5og1ud2jqd119sf1w1pef0jq'>
+            <column caption='Node In' datatype='string' name='[node_in]' role='dimension' type='nominal' />
+            <column caption='Node Out' datatype='string' name='[node_out]' role='dimension' type='nominal' />
+            <column-instance column='[node_in]' derivation='None' name='[none:node_in:nk]' pivot='key' type='nominal' />
+            <column-instance column='[node_out]' derivation='None' name='[none:node_out:nk]' pivot='key' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_out:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:node_out:nk]' member='&quot;flexfuel_demand_BR&quot;' />
+              <groupfilter function='member' level='[none:node_out:nk]' member='&quot;gasoline_demand_BR&quot;' />
+              <groupfilter function='member' level='[none:node_out:nk]' member='&quot;jetfuel_flex_demand_BR&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_out:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[sum:value:qk]' value='15' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_out:nk]' value='30' />
+            <format attr='width' field='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_out:nk]' value='407' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_in:nk]' value='348' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_in:nk]' value='10' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_in:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_in:nk]' />
+              <text column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_in:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[sum:value:qk]</rows>
+        <cols>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_out:nk]</cols>
+        <percentages enabled='false' mode='column' />
+      </table>
+      <simple-id uuid='{F91BE0DE-B239-4FBD-901E-5B3F09E1A34E}' />
+    </worksheet>
+    <worksheet name='Flow3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flows' name='federated.0b4x5og1ud2jqd119sf1w1pef0jq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b4x5og1ud2jqd119sf1w1pef0jq'>
+            <column caption='Commodity' datatype='string' name='[commodity]' role='dimension' type='nominal' />
+            <column caption='Component Id' datatype='string' name='[component_id]' role='dimension' type='nominal' />
+            <column-instance column='[commodity]' derivation='None' name='[none:commodity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[component_id]' derivation='None' name='[none:component_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:commodity:nk]' member='&quot;Biomass_wood&quot;' />
+              <groupfilter function='member' level='[none:commodity:nk]' member='&quot;Corn&quot;' />
+              <groupfilter function='member' level='[none:commodity:nk]' member='&quot;CornStover&quot;' />
+              <groupfilter function='member' level='[none:commodity:nk]' member='&quot;Forestry_residue&quot;' />
+              <groupfilter function='member' level='[none:commodity:nk]' member='&quot;Macauba&quot;' />
+              <groupfilter function='member' level='[none:commodity:nk]' member='&quot;Residue&quot;' />
+              <groupfilter function='member' level='[none:commodity:nk]' member='&quot;Soybean&quot;' />
+              <groupfilter function='member' level='[none:commodity:nk]' member='&quot;Sugarcane&quot;' />
+              <groupfilter function='member' level='[none:commodity:nk]' member='&quot;SugarcaneStraw&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:component_id:nk]'>
+            <groupfilter expression='ISNULL([component_id]) OR (NOT(CONTAINS(LOWER([component_id]), LOWER(&apos;coproduct_edge&apos;))))' function='filter' user:ui-enumeration='exclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='coproduct_edge' user:ui-pattern_type='contains'>
+              <groupfilter function='level-members' level='[none:component_id:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]</column>
+            <column>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:component_id:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='265' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]' />
+              <text column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[sum:value:qk]</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[sum:value:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]</field>
+                  <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[sum:value:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Residue&quot;</value>
+                <value>37451.232985105482</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{4DD16CA2-6F54-4F13-A55B-CD864AE32EF0}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flows' name='federated.0b4x5og1ud2jqd119sf1w1pef0jq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b4x5og1ud2jqd119sf1w1pef0jq'>
+            <column caption='Commodity' datatype='string' name='[commodity]' role='dimension' type='nominal' />
+            <column caption='Component Id' datatype='string' name='[component_id]' role='dimension' type='nominal' />
+            <column-instance column='[commodity]' derivation='None' name='[none:commodity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[component_id]' derivation='None' name='[none:component_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]'>
+            <groupfilter function='member' level='[none:commodity:nk]' member='&quot;SugarcaneStraw&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:component_id:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[sum:value:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{AA20DAD8-231C-4C9F-9B5B-D2B6F86F6D14}' />
+    </worksheet>
+    <worksheet name='capacity'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='capacity' name='federated.0w2w5vu1e01qsn173ff2x0ak20ne' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w2w5vu1e01qsn173ff2x0ak20ne'>
+            <column-instance column='[resource_id]' derivation='None' name='[none:resource_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[resource_type]' derivation='None' name='[none:resource_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variable]' derivation='None' name='[none:variable:nk]' pivot='key' type='nominal' />
+            <column-instance column='[zone]' derivation='None' name='[none:zone:nk]' pivot='key' type='nominal' />
+            <column caption='Resource Id' datatype='string' name='[resource_id]' role='dimension' type='nominal' />
+            <column caption='Resource Type' datatype='string' name='[resource_type]' role='dimension' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Variable' datatype='string' name='[variable]' role='dimension' type='nominal' />
+            <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:resource_type:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:resource_type:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;Battery&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;BiomassTransformation&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;BiomassTransformation_coprod&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;CO2Injection&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;ElectricDAC&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;Electrolyzer&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;HydroRes&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;MustRun&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;OneWayTransmissionLink{CO2Captured}&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;OneWayTransmissionLink{Electricity}&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;ThermalHydrogen{NaturalGas}&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;ThermalHydrogenCCS{NaturalGas}&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;ThermalPower{Coal}&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;ThermalPower{Hydrogen}&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;ThermalPower{NaturalGas}&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;ThermalPower{Uranium}&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;ThermalPowerCCS{NaturalGas}&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;TransmissionLink{Electricity}&quot;' />
+                <groupfilter function='member' level='[none:resource_type:nk]' member='&quot;VRE&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[sum:value:qk]' included-values='in-range'>
+            <min>10.0</min>
+            <max>24207.000239375036</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:zone:nk]' direction='DESC' measure-to-sort-by='[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[sum:value:qk]' shelf='rows' />
+            <shelf-sort-v2 dimension-to-sort='[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:resource_id:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[sum:value:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:resource_type:nk]</column>
+            <column>[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[sum:value:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:zone:nk]' value='28' />
+            <format attr='height' field='[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:resource_id:nk]' value='29' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:resource_id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:variable:nk] / ([federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:zone:nk] / [federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:resource_id:nk]))</rows>
+        <cols>[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[sum:value:qk]</cols>
+      </table>
+      <simple-id uuid='{4812F1D7-C991-4B94-B11F-FBB65551F508}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='capacity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:resource_id:nk]</field>
+            <field>[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:resource_type:nk]</field>
+            <field>[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:variable:nk]</field>
+            <field>[federated.0w2w5vu1e01qsn173ff2x0ak20ne].[none:zone:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8765D486-148C-487F-BF06-D9EA954DED2A}' />
+    </window>
+    <window class='worksheet' name='Flow'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:resource_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]</field>
+            <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:resource_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2DA1FF76-B20A-4C43-AD17-DF798F47D04A}' />
+    </window>
+    <window class='worksheet' name='Flow2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_in:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_in:nk]</field>
+            <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:node_out:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{510A87CF-6FB9-45B6-8444-5E402246A060}' />
+    </window>
+    <window class='worksheet' name='Flow3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]</field>
+            <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:component_id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{818E5D33-5A26-494F-9EB4-E72D4B9A3F88}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:component_id:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:commodity:nk]</field>
+            <field>[federated.0b4x5og1ud2jqd119sf1w1pef0jq].[none:component_id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{30848C2D-A422-4826-8AF0-7AEBFC0208CA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Flow' width='192'>
+      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
+      ACLUJAAi1CQAItQkACLUJAAi1CQAItQkACLUJAAi1CQAItQkACLUJAAi1IILgDG0Wy00oH2X
+      tdUSrq9pN+u0XR8wNLY28Xwd2CaFuFOBBWB96Sov/uosbWBu+iJbzSoXL19n8fwZzi+uYTyX
+      X/ziOdar7aA2KcQdC6wsSu/QBKOVFgbY8hXHxw9w5vRpIokMul5ha9PFSfZhjJRGFO/dri2N
+      aFlvHUyM56G1hzY2YJNLWFy6WqZYzAFSGlG8d7u2NGJpaZb1rS06c0uMFnKcPXOOwtgkKXeL
+      RD5J29tkIGcTidtBbVKIOxZYAPqHx+kf3q7+jDHkhsYBhVLbJSyOHcoGtSkhAnN35gxKoe5K
+      w0IES64DiFCTAIhQkwCIUJMAiFCTAIhQkwCIUJMAiFCTAIhQkwCIUJMAiFCTAIhQkwCIUJMA
+      iFCTAIhQkwCIUJMAiFCTAIhQkwCIUJMAiFCTAIhQkwCIULsrVSHW56a5utGgf2AEZ3MZt2+M
+      ib40p195ifEj99GbDq6wkRB34q4EYK1UZWzyML2pFMula6yVyhRThtXSBkMTPiZlMMYAoHVw
+      xXJvtCn2LmNMoGPmrgSgUCywtDDPdS9CIZIkrposzTfIj4wCb32IID8IBBsmsTv5vsb3/cDa
+      uysBaNQ30b6Pp7fLIBYH0rx8vsyR4vbUx7IsLMvCGBNobVDblrKLe10kYgdbTzawlm4xcuAo
+      g57/tmK1n3xk7G5sSog7clcCoJSF48gCk9j9ZJSKUJMAiFCTAIhQ6x4Ao2l3XMDQabfRstQu
+      9pAuATDUFqf55nd+zOzsVX7wre+yGdwSrBA7rusq0PrKAkvXZzl3zmHsvg+TkaV2sYd0CYBi
+      /4mH+CO/j/s/fJKIkr/7IvaW27gOYLjwf//FG/PzHBjbz6lTxwnuOpwQO6vrSbCxo+w/MMaV
+      115ltdbGlpNgsYd0DYCurzPv9vO3X/kbIiuXqMpJsNhDugbASvYyGt/iG//8r3j9++UkWOwp
+      Xc8BlBXlvo88Qt9iieL+Q0TkPFjsId2nQK0y//7UD9mqV/nek9+nIbfciz2kawCUsvCam1yd
+      nWPp6jme/vmv8SUEYo/oPgWKZvjCl75MZ2uNk/c/yuT4EJZMg8Qe0TUAplnm+Zcv0F56AyuS
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Flow2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Flow3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAARm0lEQVR4nO3dyXsb93nA8e/MYDBYiIX7KnGRrMWWJUuW4thJnDTJ0/bUp5f20ksOvfXc
+      W0899NKn/0IPfR4/bfM0uaRp7DaOY9myJWujLJGiFlLiApEgCYAAiGX2HijRki2vkgBSv/fj
+      xw+EhcPB8sUMAAmvFoZhiBAK0jRN09u9EkK0kwQglCYBCKXtygCCICAIgnavhngO7NoA5LW7
+      eBp2ZQBCPC0SgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkS
+      gFCaBCCUJgEIpUkAQmltD8CzK0ye/ZiF9RphCKuLc6xXm/fPdZi7NUvN9tq6jjuB67q8/fbb
+      /Pa3v6VYLH7t5ZeWlqhWqwD4vs/Vq1fln5E+RnsDCBpcu3iN/hePsnb9IoWmy8rUFSYX7gHg
+      5G/z3qVpNipOW1dzJ7Btm7W1NU6cOMGvfvUr5ubm8H2fpaUlXNfdvky9XicMQ0zTxDAMPM+j
+      UqkwNTWF67r4vk8Yhts/UywWKZVKyv4T00g7f3lY36CW7GcgnSDeF2O+4hHLdBGvl6l4Ifnl
+      BuPDqa3LhuH2M1gQBLiui6ZpGIZBs9kkFovhui66rn/taY7jYBgGuq7jVUuwC+78Wq2G4dkk
+      8EjHouTnZzl/5jRdmRS/W1jitdde4+zZs/R2dXLo0CFuzt6hq6uTyclJRkeGyc3d5eM/voth
+      GIyP7uW90x9w9OhRrk5eRjcMXjhwgMMHDrT7an5zVgIjaqFpGo7jYFkWjuMQiUQeOc22bUzT
+      BLa2op8/ra0BEIbohoEG6LqP64TENIvhPp3Fexs4HmTi0e+0aE3TvvQ0TdO2//+X9/4J19/5
+      Wxin6XLpv6f4j//5N8zxGMOVPm6eu8vYgSFyd/N8XHmfwmyJoYk+zjqnmf10Ed3Q6ehOcM/t
+      5kb+LlfOfIKma3TPZblx/i6/vvifZLIdeK6PNxOw//iedl/Nb+yvvve3HBg68qXnP3xfPzh8
+      3J/bGoAWSxAW71F1hsgVAwZeNKjlINmzh7XJj4j0/IBoY3p7pQ3DALa2BrFYbPu4ZVmPHH6b
+      0+64eZxdEIDrethDIfG9Fks31nD7YcOqs9pZxczE2Yy7RHuS3F5axrnqEHgBWqhh1etU6zYr
+      Tolk2CR0Qsr1JqtumXjSwu4IiaUtjIjOnJtv99X8xgJLIx6PAxCLxYBH79dvelp7twBmlpcP
+      ZJm+PEmkY5gDySil4WE64im6U6N07c9ir44QT7R3NXcCPaKTHkrR0ZdAN3qxNx06RzPkLq0Q
+      TZh0jmYozpfRNOie6MRtuERiEQpzG9QLdRKdMdKDKfJTa9QKDVIDSXomOlm8uAxhSPe+LsyE
+      2e6r2XJa278cNwzZWgGNx+y1PJbneY9sEZ7EL97665ZvATRNY092FA3IlZfwgu/2LtfDd52m
+      advHH979+/xpD44nokn2ZPeytrlKqV6Eb3jb7xR//9N/4PjIySdaxs74ctzt/fF2r0jrHBs6
+      QcyMgabRmejiwd2gofHgkWhoBob2WeARPfLZPuz9/3RNR9M0TGPrmVvTdEzDvL+crZ+Jm/Ht
+      n0uYCSJGhLiZ4LXR16k0y3Qne4hHExwbfhUrEnt02fcPDT3y0Pp9dvj5P+9Gsm/RBrFIjE27
+      ymp1habb5PjIST69d5nB9DB+4KFpOqNd40DIncIsHVaKWCROJp7l3PxHHB06Tke0g5tr15no
+      eYFNu8pKZZnOeCcRwyRlpbi8dIHXx36E7dssluaJRWLEowlikRiz67cwjSiu73KnMEtnoovj
+      w6/SlehmcukCB/tfJGpEubE6zXBmD7qmU6itEzEirFbzjHfvo9qsULWrGLrBciXX7pv0O2v/
+      FkBB5xfP0WGleH38TUaye+lOdqNpOkmrgw4rzVjXBOfuniG3sYRpRFnbXCUZ7WBfzwsko0n6
+      UwNczl3ACzw27SpXcpfIV5dZq62SttLs7zlI3ExQc2rcXL1OJp7lhb5D1J0acTNBKpbmwsI5
+      Xhx4mTfG36TmbHI9P8Xp2T/QcOv0JHv5ZP4j1jZX2bSrpKw0h/pfIgxDhjIjmIZJb6qfwfQQ
+      /nfcfdspJIA20IDJ3EUmly4wlBnBv//5ho4GhGiaRjQSJW4msCIWx0dOcmnpE+aLd9DQKNTW
+      2bSrhGGIZWy9sxE34xwZPMa5hY/JlRfY2qe8/xohhIZTI19d4fzCWXLlRSp2hQ/m3mPTrpKJ
+      d6Jrn+3MrFSWaXpNRrJ7sSIWZ+c/xPFtCrV1BtKD1OxNXN8hE8+y0dho9c33VMkuUBuMd+9n
+      rGsCP/CZWrlCJpbltdHXSVlpruQusba5yg8n/gQNuLk2Q7mxwck93yduxnF8h0JtjTAMKdaL
+      jHUH/OzAn3JjdYa6U+O1va8T0U0cz6ZQX8f2bEqNIlW7wmujb2D7NtMrVzkyeAxd02k4dQq1
+      NbKxTn6y/+dcXPyEYr0AQLmxwXjXPk7u6WKjUaJqV3E8m+XKPdKxDG7cxfHt9t6YT6j97wJ9
+      B7v9XSD47MXjg/fAdM0gCH0Axrom0NAYyoxwbXmScrOMrukE4eP/Ls/D533V5TS07d/3uMs+
+      7me/annt9LTeBZItQJs8/EAEth/8APOlu2RiGXLlxe04v+pB+PB5X3W5L/7O4CuPf93yngcS
+      wA4UhgEbjVK7V0MJ8iJYKE35LcA/DxwkDNx2r4b4ljJW8qksR/kAeiMmBLv700wlPaW/xCC7
+      QEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQg
+      lCYBCKVJAEJpEoBQmgQglCYBCKW1PoAwpLK6Ss3f+iIoz65w5dxZFgtbUyLXlu48MiXyzu05
+      mRIpnpnWBhB45G5d5vS751lzPQgaTF28Ru+hI6xOX6LQdFm+Nsnk4mdTIv9wcUqmRIpnprVf
+      i6Lp9I0f5WRNw9a2pkRuJvs5mkmS6LNYqHhYmU7itTJVPyS/0mDsS6ZEPjwR5UkY7LrhKALw
+      g4DQe/I9g5ZsAezKGlcuXWShUMM0H2ruc1MibScELXZ/SmSZqgvZL5kSuQu/01fsQC3ZAljp
+      Xo6d6IUwxPc9/CDA9zxCK05QvMemO8y9YsDg4UenRBo9rxNtXAe+OCXyaX07tNidDF2HyJM/
+      fFu7CxS45O7cYrnRIJyZITp+mJcPZLh28RKRjiFe6IhSHB4mFU/R1bGH7v2dMiVSPFPtnw/Q
+      5imRvP+PsMvH/Cjp5b+BnoNPtIidMR9A2+1zBsVuJh+ECaVJAEJpEoBQmgQglCYBCKVJAEJp
+      EoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYB
+      CKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKW1PIAwDHBdB8/zCcOt445t4/kBYQi+
+      5+EHD76xPcRzPQKZBiOekdZ+Pbpvc+v6NJtugO3oHDhyGCd3nZmVGmYiy6lXXuTG++9g73uV
+      U2MDYOf59W8u8ubPfspAZ7ylqyrU0NItQKiZ7N3/Iq+8coLhhEZ5I8dcOcabP/wB40aNxZpD
+      1DTYKGzgE7J6J0ckY+F7sgUQz0ZLtgCeXadYqhBLd5GK6eRuTbJoxzkej5JPRDB0jUw6IFcO
+      yEQzDFsVlsoe5XrAcCYGbM0Fc10XYHta5IPjT8JCpkTuRo7rEjSbX3/Br9GaXaAwxPd9gsAj
+      NzNN3hjge8eHMe1VvEaJIAzZrIckBwA0OocGWJm/TkCWmLkGbA3Ji0a3JkY+1RFJYleKmibE
+      Yk+8nJbsAkViSQaHh0npNueuXOXerUne+d3/Mluz6A/ynPnkPJeWA8ayFpquE+/opj5/g/TE
+      PiK6/o1nhwnxbe2IIXmu66CbFoYMyRPf1PM0JM+MWu1eC6Eo+SBMKE0CEEqTAITSJAChNAlA
+      KE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITS
+      JAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEprbQBhSBj4uK6Lf38q
+      5NbUSBc/CAlDCHyf4KEpkb7n0+4RBuL51eIpkS5352YoVV0aDhw++hJObobr9yqYqS5OHXuR
+      G6ffxpl4lZOfmxLZL1MixTPQ2i2AYbJn4iWOnzhBj9GkVLrHbDnKj978IWP6/SmREYPSQ1Mi
+      9bSFJ1MixTPSki2A79QplqpY6U6Sfon3zlyE7AinrAiriSQRXSebDpi+PyVy6KEpkSNZmRIp
+      vmhXTYkMg639/IgfoCf7+MnPf87dTy+zVIniNSAIQ2qfmxKZX5ApkeLL7bIpkR0MjYyQNn0u
+      ffRHzl+cZDZfJp7tp8/fmhJ5cTlgNGuBppHo6KZ2Z4bUxD4MTZNnaPHMtHxKZBgGOLaDEbWI
+      6NrWlEjHQY/KlEjxLezWKZGapmM9vOnSNExLpkSK9pAPwoTSJAChNAlAKE0CEEqTAITSJACh
+      NAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqT
+      AITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChtNYHEIb4jSIztxZwghCnXuT8
+      B6eZy1cIwpDlOzdYKdfvX7bJzNQMm035/n7xbLQ8gDD0mZq8zp3ZazTdBtcu3WDs1e9TvnmZ
+      9abL+o1pPl1cBsBeuc2HU7coV51Wr6ZQRIsHZASUFqYJBw7T1TwP9Q0a6X56EiZWf5y5DY94
+      tpt0Y4MNLySft9k/kga2huT5vr+1lPtD8h4cPokIMiRvN/J8n/ApDElsSQB2ZY2Z2wt0dHcx
+      O32P8cMploolipUmmr41AyzEZ+vxHWVwMMrSUgHX00hb5vZyNE175FDXn9+XMEEQcvrqArm1
+      Ci8Md/HqwUGM5/j6flu6phE+hdujJQFY6V6OnejFtSsEmyPYtRq27eBEYuilJdarPdxbDxg6
+      alBZgmTXCPkLHxId/jGR6jWAR2aChWH43E+JXK/UmZlf5xd/foxitYHrBVQch0zSolhp0JmK
+      Uaw0sV0PyzRI3z/d8wN6s0k8P8DxfCzToNZ0sV2f3kyCWtOlYbvELZNsh8VyYZNK3SaTtBjs
+      TrGQL1NrukwMZok/9OSz0+i6Dk/h/m/pU4pppXnhpSMcOXKEN370Y8YGhzhyqJ/F27PovaP0
+      JaP0jY6SiqUY7DvIvvE0g0NjZDp27h3xrGSTMfwg4K3fXyUWjbBaqvHOJ7O4ns8v/zjNfL7M
+      rz+8TrHa4JfvT1OoNFhYrXBjscA752c5c22Rf3/3GnPLG/zX+9fJFzcp15rcWS6xXNjkrd9f
+      pVJz+NffTVKu2fzm41vMr5T58NoilbrNu5fu0OL5iW3R8iF5DwzsGQUg2jvK8d7R7dM7BwcB
+      2HPoAACpvqHWr9wOEDUN/u4vT7FS3OSt/7vKm8dGHzl/Y7PJ8f0DHJ3o5/r8OpWazc2lAg3b
+      w3Y9Du/t4c9O7aNUbXLq4BAnDw5hux4fXl2k1nSZzZXwfJ8j472cOjjE4mqZqburEIbUGg5B
+      uDW/2dCe71dIbQtAfLWG7XJmaomEFSERM4lGDAqVOhduLFOuNelKxXnv8l0atsdauU5uvUpH
+      PMpgd4rbS0UMXSdi6PR1Jnnn/CyuH9CfTbJervPK/gFu54pf+J0HRrr54OoCVjTCYHcK/Tl/
+      8EMb5gQ/DSrMCfb8gOm7a3h+QE82wWBXBzcWC4QhJGImg90d3FwsUGu63Foq8BdvHCRXqGLo
+      GtlkjETMJBaNYEZ05vNlyps2E0Od5EubuG6AYWjsG+qkUrPpSscpVBpkO2LczhWp2y6DXR0M
+      dqfafTN8uac0J1gC2KEBfJ3NhsOV2TxNx2NsIMvEYHb73TEl7NZB2eLp6IhH+cGRPe1ejV1P
+      3lgWSpMAhNIkAKE0CUAoTQIQSpMAhNIkAKG0/wdNP4fXYNmcxQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='141'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='capacity' width='192'>
+      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
+      T+8zesn8PwApTkqZlx1tAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
