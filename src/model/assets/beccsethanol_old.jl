@@ -1,12 +1,10 @@
-struct BECCSEthanol <: AbstractAsset
+struct BECCSEthanol_old <: AbstractAsset
     id::AssetId
     ethanol_transform::Transformation
     biomass_edge::Edge{<:Biomass}
-    coinput_edge::Edge{<:Biomass}
     ethanol_edge::Edge{<:LiquidFuels}
-    coproduct_edge::Edge{<:Commodity}
+    bagasse_edge::Edge{<:Biomass} 
     elec_consumption_edge::Edge{<:Electricity}
-    elec_production_edge::Edge{<:Electricity}
     co2_edge::Edge{<:CO2}
     co2_emission_edge::Edge{<:CO2}
     co2_captured_edge::Edge{<:CO2Captured}
@@ -29,10 +27,7 @@ function full_default_data(::Type{BECCSEthanol}, id=missing)
                 :BalanceConstraint => true
             ),
             :ethanol_production => 0.0,
-            :coproduct_production => 0.0,
-            # co-input consumed per unit of MAIN biomass input (e.g. woodchips for process heat).
-            # 0.0 => co-input flow is forced to zero by the balance.
-            :coinput_rate => 0.0,
+            :bagasse_production => 0.0,
             :electricity_consumption => 0.0,
             :electricity_production => 0.0,
             :co2_content => 0.0,
@@ -41,13 +36,11 @@ function full_default_data(::Type{BECCSEthanol}, id=missing)
         ),
         :edges => Dict{Symbol,Any}(
             :biomass_edge => @edge_data(:commodity => "Biomass", :has_capacity => true, :can_expand => true, :can_retire => true, :constraints => Dict{Symbol,Bool}(:CapacityConstraint => true)),
-            :coinput_edge => @edge_data(:commodity => "Biomass"),
             :ethanol_edge => @edge_data(:commodity => "LiquidFuels"),
-            :coproduct_edge => @edge_data(:commodity => "Biomass"),
+            :bagasse_edge => @edge_data(:commodity => "Biomass"),
             :co2_edge => @edge_data(:commodity => "CO2", :co2_sink => missing),
             :co2_emission_edge => @edge_data(:commodity => "CO2", :co2_sink => missing),
             :elec_consumption_edge => @edge_data(:commodity => "Electricity"),
-            :elec_production_edge => @edge_data(:commodity => "Electricity"),
             :co2_captured_edge => @edge_data(:commodity => "CO2Captured")
         )
     )
@@ -61,12 +54,10 @@ function simple_default_data(::Type{BECCSEthanol}, id=missing)
         :can_retire => true,
         :existing_capacity => 0.0,
         :ethanol_commodity => "LiquidFuels",
-        :coinput_commodity => "Biomass",
-        :coproduct_commodity => "Biomass",
+        :bagasse_commodity => "Biomass",
         :co2_sink => missing,
         :ethanol_production => 0.0,
-        :coproduct_production => 0.0,
-        :coinput_rate => 0.0,
+        :bagasse_production => 0.0,
         :electricity_consumption => 0.0,
         :electricity_production => 0.0,
         :co2_content => 0.0,
@@ -102,7 +93,7 @@ function make(asset_type::Type{BECCSEthanol}, data::AbstractDict{Symbol,Any}, sy
         constraints = transform_data[:constraints],
     )
 
-    # Biomass Edge (main feedstock; carries the capacity constraint)
+    # Biomass Edge
     biomass_edge_key = :biomass_edge
     @process_data(
         biomass_edge_data,
@@ -127,33 +118,6 @@ function make(asset_type::Type{BECCSEthanol}, data::AbstractDict{Symbol,Any}, sy
         system.time_data[Symbol(biomass_edge_data[:commodity])],
         biomass_commodity,
         biomass_start,
-        ethanol_transform,
-    )
-
-    # Co-Input Edge (secondary feedstock, e.g. woodchips for process heat)
-    coinput_edge_key = :coinput_edge
-    @process_data(
-        coinput_edge_data,
-        data[:edges][coinput_edge_key],
-        [
-            (data[:edges][coinput_edge_key], key),
-            (data[:edges][coinput_edge_key], Symbol("coinput_", key)),
-            (data, Symbol("coinput_", key)),
-        ]
-    )
-    coinput_commodity = commodity_types()[Symbol(coinput_edge_data[:commodity])]
-    @start_vertex(
-        coinput_start,
-        coinput_edge_data,
-        coinput_commodity,
-        [(coinput_edge_data, :start_vertex), (data, :location)],
-    )
-    coinput_edge = Edge(
-        Symbol(id, "_", coinput_edge_key),
-        coinput_edge_data,
-        system.time_data[Symbol(coinput_edge_data[:commodity])],
-        coinput_commodity,
-        coinput_start,
         ethanol_transform,
     )
 
@@ -184,31 +148,31 @@ function make(asset_type::Type{BECCSEthanol}, data::AbstractDict{Symbol,Any}, sy
         ethanol_end,
     )
 
-    # Co-Product Edge (was bagasse_edge)
-    coproduct_edge_key = :coproduct_edge
+    # Bagasse Edge
+    bagasse_edge_key = :bagasse_edge
     @process_data(
-        coproduct_edge_data,
-        data[:edges][coproduct_edge_key],
+        bagasse_edge_data,
+        data[:edges][bagasse_edge_key],
         [
-            (data[:edges][coproduct_edge_key], key),
-            (data[:edges][coproduct_edge_key], Symbol("coproduct_", key)),
-            (data, Symbol("coproduct_", key)),
+            (data[:edges][bagasse_edge_key], key),
+            (data[:edges][bagasse_edge_key], Symbol("bagasse_", key)),
+            (data, Symbol("bagasse_", key)),
         ]
     )
-    coproduct_commodity = commodity_types()[Symbol(coproduct_edge_data[:commodity])]
+    bagasse_commodity = commodity_types()[Symbol(bagasse_edge_data[:commodity])]
     @end_vertex(
-        coproduct_end,
-        coproduct_edge_data,
-        coproduct_commodity,
-        [(coproduct_edge_data, :end_vertex), (data, :location)],
+        bagasse_end,
+        bagasse_edge_data,
+        bagasse_commodity,
+        [(bagasse_edge_data, :end_vertex), (data, :location)],
     )
-    coproduct_edge = Edge(
-        Symbol(id, "_", coproduct_edge_key),
-        coproduct_edge_data,
-        system.time_data[Symbol(coproduct_edge_data[:commodity])],
-        coproduct_commodity,
+    bagasse_edge = Edge(
+        Symbol(id, "_", bagasse_edge_key),
+        bagasse_edge_data,
+        system.time_data[Symbol(bagasse_edge_data[:commodity])],
+        bagasse_commodity,
         ethanol_transform,
-        coproduct_end,
+        bagasse_end,
     )
 
     # Electricity Consumption Edge
@@ -218,9 +182,7 @@ function make(asset_type::Type{BECCSEthanol}, data::AbstractDict{Symbol,Any}, sy
         data[:edges][elec_edge_key],
         [
             (data[:edges][elec_edge_key], key),
-            (data[:edges][elec_edge_key], Symbol("elec_consumption_", key)),
             (data[:edges][elec_edge_key], Symbol("elec_", key)),
-            (data, Symbol("elec_consumption_", key)),
             (data, Symbol("elec_", key)),
         ]
     )
@@ -237,32 +199,6 @@ function make(asset_type::Type{BECCSEthanol}, data::AbstractDict{Symbol,Any}, sy
         Electricity,
         elec_start,
         ethanol_transform,
-    )
-
-    # Electricity Production Edge
-    elec_prod_edge_key = :elec_production_edge
-    @process_data(
-        elec_prod_edge_data,
-        data[:edges][elec_prod_edge_key],
-        [
-            (data[:edges][elec_prod_edge_key], key),
-            (data[:edges][elec_prod_edge_key], Symbol("elec_production_", key)),
-            (data, Symbol("elec_production_", key)),
-        ]
-    )
-    @end_vertex(
-        elec_prod_end,
-        elec_prod_edge_data,
-        Electricity,
-        [(elec_prod_edge_data, :end_vertex), (data, :location)],
-    )
-    elec_production_edge = Edge(
-        Symbol(id, "_", elec_prod_edge_key),
-        elec_prod_edge_data,
-        system.time_data[:Electricity],
-        Electricity,
-        ethanol_transform,
-        elec_prod_end,
     )
 
     # CO2 Emission Edge
@@ -344,33 +280,18 @@ function make(asset_type::Type{BECCSEthanol}, data::AbstractDict{Symbol,Any}, sy
     )
 
     # Balance Data
-    #
-    # Sign convention (BalanceConstraint already signs flows by edge direction:
-    # inflow +, outflow -). Both cases below resolve to
-    #     <edge flow> = <parameter> * <biomass_edge flow>
-    # with the parameter entered as a POSITIVE number in the input data:
-    #   - OUTFLOW edge (transform -> node): coefficient +1.0
-    #   - INFLOW  edge (node -> transform): coefficient -1.0
     ethanol_transform.balance_data = Dict(
         :ethanol_production => Dict(
             ethanol_edge.id => 1.0,
             biomass_edge.id => get(transform_data, :ethanol_production, 0.0),
         ),
-        :coproduct_production => Dict(
-            coproduct_edge.id => 1.0,
-            biomass_edge.id => get(transform_data, :coproduct_production, 0.0),
-        ),
-        :coinput_ratio => Dict(
-            coinput_edge.id => -1.0,
-            biomass_edge.id => get(transform_data, :coinput_rate, 0.0),
+        :bagasse_production => Dict(
+            bagasse_edge.id => 1.0,
+            biomass_edge.id => get(transform_data, :bagasse_production, 0.0),
         ),
         :elec_consumption => Dict(
             elec_consumption_edge.id => -1.0,
             biomass_edge.id => get(transform_data, :electricity_consumption, 0.0),
-        ),
-        :elec_production => Dict(
-            elec_production_edge.id => 1.0,
-            biomass_edge.id => get(transform_data, :electricity_production, 0.0),
         ),
         :negative_emissions => Dict(
             biomass_edge.id => get(transform_data, :co2_content, 0.0),
@@ -390,11 +311,9 @@ function make(asset_type::Type{BECCSEthanol}, data::AbstractDict{Symbol,Any}, sy
         id,
         ethanol_transform,
         biomass_edge,
-        coinput_edge,
         ethanol_edge,
-        coproduct_edge,
+        bagasse_edge,
         elec_consumption_edge,
-        elec_production_edge,
         co2_edge,
         co2_emission_edge,
         co2_captured_edge,
