@@ -3,5 +3,5 @@ using Gurobi
 
 (system, model) = run_case(@__DIR__; 
     optimizer=Gurobi.Optimizer,
-    optimizer_attributes=("Method" => 2, "Crossover" => 0, "Threads" => 24, "BarConvTol" => 1e-3, "BarHomogeneous" => 1) 
+    optimizer_attributes=("Method" => 2, "Crossover" => 0, "Threads" => 22, "BarConvTol" => 1e-3, "BarHomogeneous" => 1) 
 ); 

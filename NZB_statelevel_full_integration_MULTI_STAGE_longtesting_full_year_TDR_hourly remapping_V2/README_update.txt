@@ -8,9 +8,13 @@
 2. MACRO asset structure update
 : EthanolPlant asset : Add Woodchip input(biomass input), Delete Bagasse co-production edge  -- No longer consider bagasse as a separate output commodity
 
+
+: 1G2G의 경우 sugarcane straw input 필요
+
 : BiodieselPlant asset : Add Woodchip input(biomass input),  
 
 : Biomassharvest asset : biomass feedstock 에 연결시 residue가 proportional 하게 생산되도록 사용. e.g.,) Sugarcane supply curve--harvest -- sugarcane +sugarcane straw (20% production with collection/transport cost)  -- collect rate=0.096 dry straw/wet sugarcane, (recovery+transport) 48.7 2025$/dry straw 
+
 
 ** Collect rate = 0.12(coprod)*0.4(recovery factor)*2(sugar usage)
 

@@ -10,10 +10,10 @@
                     "MaxNonServedDemandPerSegmentConstraint": true
                 },
                 "max_nsd": [
-                    0.05
+                    1
                 ],
                 "price_nsd": [
-                    1000
+                    1000000
                 ]
             },
             "instance_data": [
@@ -3385,7 +3385,6 @@
       ]
     },
 
-
         {
             "type": "Soybean",
             "global_data": {
@@ -6354,6 +6353,7 @@
                     "id": "residue_BR_TO",
                     "location": "BR_TO"
                 },
+                
                 {
                     "id": "residue_disposal_BR",
                     "location": "BR",
