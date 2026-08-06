@@ -1034,37 +1034,14 @@
         {
           "type": "NaturalGas",
           "global_data": {
-            "time_interval": "NaturalGas",            
-            "constraints": {
-                "BalanceConstraint": true,
-                "MaxNonServedDemandConstraint": true,
-                "MaxNonServedDemandPerSegmentConstraint": true
-            },
-            "max_nsd": [
-                1
-            ],
-            "price_nsd": [
-                10000
-            ]
+            "time_interval": "NaturalGas"            
           },
           "instance_data": [
             {
               "id": "natgas_nonfossil_BR"
-            },
-            {
-              "id": "natgas_BR",
-              "location": "BR_AC",
-              "demand": {
-                  "timeseries": {
-                      "path": "system/natgas_demand_6.csv",
-                      "header": "natgas_BR"
-                  }
-              }
             }             
           ]
         },
-
-
         {
             "type": "Coal",
             "global_data": {
