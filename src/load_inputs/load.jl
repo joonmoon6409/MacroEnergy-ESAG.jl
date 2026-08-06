@@ -22,11 +22,9 @@ end
 # Load a single instance of an asset, location, etc. into a System
 function load!(system::System, data::AbstractDict{Symbol,Any})::Nothing
     if data_is_system_data(data)
-        # println("Loading system data")
         load_system_data!(system, data)
 
     elseif data_has_global_data(data)
-        # println("Expanding global data")
         load!(system, merge_global_data(data))
 
     # Check that data has only :type and :instance_data fields
@@ -42,8 +40,7 @@ function load!(system::System, data::AbstractDict{Symbol,Any})::Nothing
                 make_retrofit_options(system, data) # Make retrofitting assets for assets with retrofit_options
             end
 
-            asset_instance = Base.invokelatest(
-                make,
+            asset_instance = make(
                 data[:instance_data][:type],
                 data[:instance_data],
                 system,
@@ -57,12 +54,10 @@ function load!(system::System, data::AbstractDict{Symbol,Any})::Nothing
         end
 
     elseif data_is_filepath(data)
-        # println("Loading data from file")
         load!(system, data[:path])
 
     else
         for (key, value) in data
-            # println("Loading $key")
             load!(system, value)
         end
 
@@ -121,7 +116,7 @@ function check_and_convert_type(data::AbstractDict{Symbol,Any}, m::Module = Macr
         return commodity_types(m)[type]
     end
     validate_type_attribute(type, m)
-    return Base.invokelatest(getfield, m, type)
+    return getfield(m, type)
 end
 
 function data_has_only_instance_data(data::AbstractDict{Symbol,Any})::Bool

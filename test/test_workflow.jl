@@ -41,6 +41,7 @@ import MacroEnergy:
     compute_undiscounted_costs!,
     get_optimal_discounted_costs,
     get_optimal_undiscounted_costs,
+    solution_algorithm,
     write_capacity,
     write_costs,
     write_undiscounted_costs,
@@ -62,7 +63,7 @@ include("test_timedata.jl")
 const test_path = joinpath(@__DIR__, "test_inputs")
 const system_data_true_path = joinpath(@__DIR__, "test_inputs/system_data_true.json")
 const optim = is_gurobi_available() ? Gurobi.Optimizer : HiGHS.Optimizer
-const obj_true = 1.5512721762979626e11
+const obj_true = 1.551272176298086e11
 
 function test_configure_settings(data::NamedTuple, data_true::T) where {T<:JSON3.Object}
     @test data.ConstraintScaling == data_true.ConstraintScaling
@@ -238,7 +239,7 @@ function test_load(s_in::AbstractStorage{T}, s_true::S) where {T<:Commodity,S<:J
     @test s_in.can_retire == get(s_true, :can_retire, false)
     @test s_in.investment_cost == get(s_true, :investment_cost, 0.0)
     @test s_in.fixed_om_cost == get(s_true, :fixed_om_cost, 0.0)
-    @test s_in.min_storage_level == get(s_true, :min_storage_level, 0.0)
+    @test s_in.min_storage_level == get(s_true, :min_storage_level, [0.0])
     @test s_in.min_duration == get(s_true, :min_duration, 0.0)
     @test s_in.max_duration == get(s_true, :max_duration, 0.0)
     @test s_in.loss_fraction == Float64[]
@@ -283,7 +284,8 @@ function test_model_generation_and_optimization()
     case = load_case(test_path)
     @test case.settings.WriteFullTimeseries
     optimizer = create_optimizer(optim)
-    model = generate_model(case,optimizer)
+    alg = solution_algorithm(case)
+    model = generate_model(case,optimizer,alg)
     optimize!(model)
     postprocess!(case, model)
     macro_objval = objective_value(model)
@@ -300,29 +302,29 @@ function test_writing_outputs(case,model)
     settings = case.settings;
     @test !isempty(system.assets)
     first_asset = first(system.assets)
-    @test_nowarn get_optimal_capacity(system)
-    @test_nowarn get_optimal_new_capacity(system)
-    @test_nowarn get_optimal_retired_capacity(system)
-    @test_nowarn get_optimal_capacity(first_asset, scaling=1.0)
-    @test_nowarn get_optimal_new_capacity(first_asset)
-    @test_nowarn get_optimal_retired_capacity(first_asset)
-    @test_nowarn get_optimal_flow(system)
-    @test_nowarn get_optimal_flow(first_asset, scaling=1.0)
+    @test_nowarn get_optimal_capacity(system, 1.0)
+    @test_nowarn get_optimal_new_capacity(system, 1.0)
+    @test_nowarn get_optimal_retired_capacity(system, 1.0)
+    @test_nowarn get_optimal_capacity(first_asset, 1.0)
+    @test_nowarn get_optimal_new_capacity(first_asset, 1.0)
+    @test_nowarn get_optimal_retired_capacity(first_asset, 1.0)
+    @test_nowarn get_optimal_flow(system, 1.0)
+    @test_nowarn get_optimal_flow(first_asset, 1.0)
     @test_nowarn get_optimal_flow(first_asset.elec_edge, 1.0)
     @test_nowarn create_discounted_cost_expressions!(model,system,settings)
     @test_nowarn compute_undiscounted_costs!(model, system, settings)
-    @test_nowarn get_optimal_discounted_costs(model)
-    @test_nowarn get_optimal_discounted_costs(model,scaling=2.0)
-    @test_nowarn get_optimal_undiscounted_costs(model)
-    @test_nowarn get_optimal_undiscounted_costs(model, scaling=2.0)
-    @test_nowarn write_capacity("test_capacity.csv", system)
-    @test_nowarn write_costs("test_costs.csv", system, model)
-    @test_nowarn write_undiscounted_costs("test_undiscountedcosts.csv", system, model)
-    @test_nowarn write_flow("test_flow.csv", system)
-    @test_nowarn write_curtailment("test_curtailment.csv", system)
+    @test_nowarn get_optimal_discounted_costs(model, 1.0)
+    @test_nowarn get_optimal_discounted_costs(model, 2.0)
+    @test_nowarn get_optimal_undiscounted_costs(model, 1.0)
+    @test_nowarn get_optimal_undiscounted_costs(model, 2.0)
+    @test_nowarn write_capacity("test_capacity.csv", system, 1.0)
+    @test_nowarn write_costs("test_costs.csv", system, model, 1.0)
+    @test_nowarn write_undiscounted_costs("test_undiscountedcosts.csv", system, model, 1.0)
+    @test_nowarn write_flow("test_flow.csv", system, 1.0)
+    @test_nowarn write_curtailment("test_curtailment.csv", system, 1.0)
     # Detailed cost breakdown (monolithic)
-    @test_nowarn write_detailed_costs(".", system, model, settings)
-    costs_result = get_detailed_costs(system, settings)
+    @test_nowarn write_detailed_costs(".", system, model, settings, 1.0)
+    costs_result = get_detailed_costs(system, settings, 1.0)
     detailed_costs = costs_result.undiscounted
     @test detailed_costs isa DataFrame
     @test !isempty(detailed_costs)
@@ -364,11 +366,11 @@ function test_full_timeseries(case)
 
     # Create a temp directory, write rep-period + full timeseries files
     results_dir = abspath(mktempdir("."))
-    write_non_served_demand(joinpath(results_dir, "non_served_demand.csv"), system)
-    write_storage_level(joinpath(results_dir, "storage_level.csv"), system)
-    write_curtailment(joinpath(results_dir, "curtailment.csv"), system)
-    write_balance_duals(results_dir, system)
-    write_full_timeseries(results_dir, system; var_cost_discount=1.0)
+    write_non_served_demand(joinpath(results_dir, "non_served_demand.csv"), system, 1.0)
+    write_storage_level(joinpath(results_dir, "storage_level.csv"), system, 1.0)
+    write_curtailment(joinpath(results_dir, "curtailment.csv"), system, 1.0)
+    write_balance_duals(results_dir, system, 1.0, 1.0)
+    write_full_timeseries(results_dir, system, 1.0, 1.0)
 
     # Load period map and time data
     pmap_df = CSV.read(joinpath(test_path, "system", "Period_map.csv"), DataFrame)

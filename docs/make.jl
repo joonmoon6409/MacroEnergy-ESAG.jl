@@ -35,6 +35,7 @@ const pages = [
             "Adding Assets constraints" => "Guides/User Guide/user_asset_constraints.md",
             "Configuring Settings" => "Guides/User Guide/user_settings.md",
             "Running Models" => "Guides/User Guide/user_run_model.md",
+            "Solution Modes" => "Guides/User Guide/user_solution_modes.md",
             "Writing Results" => "Guides/User Guide/user_write_results.md",
             "Using Multi-Period Models" => "Guides/User Guide/user_multiperiod.md",
             "Exploring the Asset library" => "Guides/User Guide/user_using_asset_libary.md",
@@ -124,12 +125,15 @@ const pages = [
         "Multi-Period Accounting" => "Manual/Multi_period_accounting.md"
     ],
     "How to contribute" => "how_to_contribute.md",
+    hide("Maintainers guide" => "maintainers.md"),
+    "Changelog" => "changelog.md",
     "References" => [
         "Introduction" => "References/1_introduction.md",
         "Reading input data" => "References/2_reading_input.md",
         "Macro Objects" => "References/3_macro_objects.md",
         "Writing output data" => "References/4_writing_output.md",
         "Utilities" => "References/5_utilities.md",
+        "Constraint utilities" => "References/ref_constraints.md",
         "Downloading examples" => "References/ref_download_examples.md",
         "Running a Macro Model" => "References/ref_run_case.md",
         # "Asset Library" => "References/2_assets.md", TODO: think if we should include this
@@ -175,5 +179,3 @@ deploydocs(;
     devurl="dev",
     push_preview=true,
 )
-
-
