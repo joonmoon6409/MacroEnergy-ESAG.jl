@@ -683,6 +683,18 @@
                     "rhs_policy": {
                         "CO2CapConstraint": 500000000
                     }
+                },
+                {
+                    "id": "co2_source",
+                    "max_supply": [
+                        72478.4322235739
+                    ],
+                    "price_supply": [
+                        0
+                    ],
+                    "constraints": {
+                        "BalanceConstraint": true
+                    }
                 }
             ]
         },
