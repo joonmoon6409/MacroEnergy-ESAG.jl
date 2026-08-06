@@ -17,6 +17,8 @@ and this project follows Julia package versioning through `Project.toml` release
 - Added capacity_summary.csv for multi-period cases, combining per-period capacity outputs into a single long- or wide-format file.
 - Added optional StartYear input in case_settings.json to label periods by calendar year.
 - Added `capex.csv` output file to report per-component asset capital costs.
+- Added system-wide and per-location capacity constraints for a group of assets selected by type: `MaxCapacityConstraint` and `MinCapacityConstraint` bound the total capacity, and `MaxNewCapacityConstraint` bounds the total newly built capacity. Limits are configured via a `constraints` block in `system_data.json` (whole system) or per location in `locations.json`, keyed by asset type (e.g. `"VRE"`, `"VRE{Solar}"`, `"ThermalPower{NaturalGas}"`, or the `"VRE*"` wildcard). The limit values are scaled with `ParameterScaling` like other capacity inputs.
+- Added `VRE` as a parametric, technology-tagged asset (`VRE{T}`, e.g. `VRE{:Solar}`), so sub-technologies can be defined from input data alone (via a `technology` field) without new Julia code; omitting the tag yields `VRE{:Generic}`.
 
 ### Changed
 
@@ -27,6 +29,8 @@ and this project follows Julia package versioning through `Project.toml` release
 - Asset balance definitions have been migrated away from legacy raw `balance_data = Dict(...)` patterns toward `@add_balance`, `@add_to_storage_balance`, and `@add_stoichiometric_balance`.
 - Updated MacroEnergySolvers.jl version to 0.2.2.
 - Updated MacroEnergyScaling.jl compatibility to 0.4. Constraint scaling now updates constraints in place, so existing JuMP `ConstraintRef`s remain valid instead of being invalidated by constraint replacement. This version also allows for objective scaling in the future.
+- A constraint entry in a `constraints` block may now be an inline configuration object (carrying its settings) instead of only the boolean `true`/`false` toggle, enabling data-driven constraint parameterization.
+- Location entries in `locations.json` may now be objects carrying a `constraints` block (bare id strings still work), allowing location-specific constraints to be loaded from input data.
 
 ### Fixed
 
