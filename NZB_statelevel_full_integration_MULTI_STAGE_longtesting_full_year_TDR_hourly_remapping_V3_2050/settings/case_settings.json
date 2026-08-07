@@ -3,6 +3,7 @@
   "DiscountRate": 0.045,
   "SolutionAlgorithm": "Myopic",
   "WriteFullTimeseries": true,
+  "ParameterScaling": true,
   
     "Not_use_MyopicSettings": {
     "Restart": {
@@ -12,34 +13,5 @@
     },
     "StopAfterPeriod": 3
     },
-    "Myopic_note" : "Bring the proper period setting" ,
-
-    "MyopicSettings1": {
-      "Restart": {
-      "enabled": false,
-        "folder": "results_001",
-        "from_period": 2
-      },
-      "StopAfterPeriod": 1
-    },
-
-      "MyopicSettings2": {
-      "Restart": {
-      "enabled": true,
-      "folder": "results_001",
-      "from_period": 2
-      },
-      "StopAfterPeriod": 2
-    },
-
-
-    "MyopicSettings3": {
-    "Restart": {
-      "enabled": true,
-      "folder": "results_001",
-      "from_period": 3
-    },
-    "StopAfterPeriod": 3
-  }
-
+    "Myopic_note" : "To use this, remove 'Not_use_' part --> MyopicSettings"
 }
