@@ -40,6 +40,8 @@ function load!(system::System, data::AbstractDict{Symbol,Any})::Nothing
                 make_retrofit_options(system, data) # Make retrofitting assets for assets with retrofit_options
             end
 
+            @info "Loading asset: $(get(data, :type, missing)) / $(get(data, :id, missing))"
+
             asset_instance = make(
                 data[:instance_data][:type],
                 data[:instance_data],

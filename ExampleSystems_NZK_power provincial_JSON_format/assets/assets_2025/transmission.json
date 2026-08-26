@@ -1,0 +1,935 @@
+{
+  "transmission": {
+    "type": "OneWayTransmissionLink",
+    "global_data": {
+      "transforms": {},
+      "edges": {
+        "transmission_edge": {
+          "unidirectional": true,
+          "has_capacity": true,
+          "commodity": "Electricity"
+        }
+      }
+    },
+    "instance_data": [
+      {
+        "id": "SEL_to_INC",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_SEL",
+            "end_vertex": "elec_INC",
+            "loss_fraction": 0.001,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "INC_to_SEL",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_INC",
+            "end_vertex": "elec_SEL",
+            "loss_fraction": 0.001,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "SEL_to_GGI",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_SEL",
+            "end_vertex": "elec_GGI",
+            "loss_fraction": 0.002,
+            "existing_capacity": 5000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GGI_to_SEL",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GGI",
+            "end_vertex": "elec_SEL",
+            "loss_fraction": 0.002,
+            "existing_capacity": 5000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "INC_to_GGI",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_INC",
+            "end_vertex": "elec_GGI",
+            "loss_fraction": 0.001,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GGI_to_INC",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GGI",
+            "end_vertex": "elec_INC",
+            "loss_fraction": 0.001,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GGI_to_GWN",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GGI",
+            "end_vertex": "elec_GWN",
+            "loss_fraction": 0.005,
+            "existing_capacity": 2500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GWN_to_GGI",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GWN",
+            "end_vertex": "elec_GGI",
+            "loss_fraction": 0.005,
+            "existing_capacity": 2500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GGI_to_CNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GGI",
+            "end_vertex": "elec_CNB",
+            "loss_fraction": 0.004,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "CNB_to_GGI",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_CNB",
+            "end_vertex": "elec_GGI",
+            "loss_fraction": 0.004,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GGI_to_CNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GGI",
+            "end_vertex": "elec_CNA",
+            "loss_fraction": 0.004,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "CNA_to_GGI",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_CNA",
+            "end_vertex": "elec_GGI",
+            "loss_fraction": 0.004,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GWN_to_GNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GWN",
+            "end_vertex": "elec_GNB",
+            "loss_fraction": 0.007,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNB_to_GWN",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNB",
+            "end_vertex": "elec_GWN",
+            "loss_fraction": 0.007,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "CNB_to_GNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_CNB",
+            "end_vertex": "elec_GNB",
+            "loss_fraction": 0.006,
+            "existing_capacity": 2500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNB_to_CNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNB",
+            "end_vertex": "elec_CNB",
+            "loss_fraction": 0.006,
+            "existing_capacity": 2500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "CNB_to_JNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_CNB",
+            "end_vertex": "elec_JNB",
+            "loss_fraction": 0.005,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "JNB_to_CNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_JNB",
+            "end_vertex": "elec_CNB",
+            "loss_fraction": 0.005,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "CNB_to_DJJ",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_CNB",
+            "end_vertex": "elec_DJJ",
+            "loss_fraction": 0.002,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "DJJ_to_CNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_DJJ",
+            "end_vertex": "elec_CNB",
+            "loss_fraction": 0.002,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "CNA_to_DJJ",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_CNA",
+            "end_vertex": "elec_DJJ",
+            "loss_fraction": 0.002,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "DJJ_to_CNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_DJJ",
+            "end_vertex": "elec_CNA",
+            "loss_fraction": 0.002,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "CNA_to_JNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_CNA",
+            "end_vertex": "elec_JNB",
+            "loss_fraction": 0.005,
+            "existing_capacity": 1500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "JNB_to_CNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_JNB",
+            "end_vertex": "elec_CNA",
+            "loss_fraction": 0.005,
+            "existing_capacity": 1500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "SJG_to_CNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_SJG",
+            "end_vertex": "elec_CNB",
+            "loss_fraction": 0.002,
+            "existing_capacity": 1000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "CNB_to_SJG",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_CNB",
+            "end_vertex": "elec_SJG",
+            "loss_fraction": 0.002,
+            "existing_capacity": 1000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "SJG_to_CNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_SJG",
+            "end_vertex": "elec_CNA",
+            "loss_fraction": 0.002,
+            "existing_capacity": 1000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "CNA_to_SJG",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_CNA",
+            "end_vertex": "elec_SJG",
+            "loss_fraction": 0.002,
+            "existing_capacity": 1000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "SJG_to_DJJ",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_SJG",
+            "end_vertex": "elec_DJJ",
+            "loss_fraction": 0.001,
+            "existing_capacity": 800,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "DJJ_to_SJG",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_DJJ",
+            "end_vertex": "elec_SJG",
+            "loss_fraction": 0.001,
+            "existing_capacity": 800,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNB_to_TAE",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNB",
+            "end_vertex": "elec_TAE",
+            "loss_fraction": 0.003,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "TAE_to_GNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_TAE",
+            "end_vertex": "elec_GNB",
+            "loss_fraction": 0.003,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNB_to_USN",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNB",
+            "end_vertex": "elec_USN",
+            "loss_fraction": 0.005,
+            "existing_capacity": 2500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "USN_to_GNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_USN",
+            "end_vertex": "elec_GNB",
+            "loss_fraction": 0.005,
+            "existing_capacity": 2500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNB_to_GNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNB",
+            "end_vertex": "elec_GNA",
+            "loss_fraction": 0.005,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNA_to_GNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNA",
+            "end_vertex": "elec_GNB",
+            "loss_fraction": 0.005,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "TAE_to_GNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_TAE",
+            "end_vertex": "elec_GNA",
+            "loss_fraction": 0.003,
+            "existing_capacity": 2500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNA_to_TAE",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNA",
+            "end_vertex": "elec_TAE",
+            "loss_fraction": 0.003,
+            "existing_capacity": 2500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "USN_to_GNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_USN",
+            "end_vertex": "elec_GNA",
+            "loss_fraction": 0.003,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNA_to_USN",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNA",
+            "end_vertex": "elec_USN",
+            "loss_fraction": 0.003,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "USN_to_PUS",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_USN",
+            "end_vertex": "elec_PUS",
+            "loss_fraction": 0.002,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "PUS_to_USN",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_PUS",
+            "end_vertex": "elec_USN",
+            "loss_fraction": 0.002,
+            "existing_capacity": 3000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNA_to_PUS",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNA",
+            "end_vertex": "elec_PUS",
+            "loss_fraction": 0.002,
+            "existing_capacity": 4000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "PUS_to_GNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_PUS",
+            "end_vertex": "elec_GNA",
+            "loss_fraction": 0.002,
+            "existing_capacity": 4000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "JNB_to_JNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_JNB",
+            "end_vertex": "elec_JNA",
+            "loss_fraction": 0.004,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "JNA_to_JNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_JNA",
+            "end_vertex": "elec_JNB",
+            "loss_fraction": 0.004,
+            "existing_capacity": 2000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "JNB_to_GNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_JNB",
+            "end_vertex": "elec_GNA",
+            "loss_fraction": 0.007,
+            "existing_capacity": 1500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNA_to_JNB",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNA",
+            "end_vertex": "elec_JNB",
+            "loss_fraction": 0.007,
+            "existing_capacity": 1500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "JNA_to_KWJ",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_JNA",
+            "end_vertex": "elec_KWJ",
+            "loss_fraction": 0.002,
+            "existing_capacity": 1500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "KWJ_to_JNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_KWJ",
+            "end_vertex": "elec_JNA",
+            "loss_fraction": 0.002,
+            "existing_capacity": 1500,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "JNA_to_GNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_JNA",
+            "end_vertex": "elec_GNA",
+            "loss_fraction": 0.006,
+            "existing_capacity": 1000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "GNA_to_JNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_GNA",
+            "end_vertex": "elec_JNA",
+            "loss_fraction": 0.006,
+            "existing_capacity": 1000,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "JEJ_to_JNA",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_JEJ",
+            "end_vertex": "elec_JNA",
+            "loss_fraction": 0.015,
+            "existing_capacity": 400,
+            "investment_cost": 12060
+          }
+        }
+      },
+      {
+        "id": "JNA_to_JEJ",
+        "edges": {
+          "transmission_edge": {
+            "can_retire": false,
+            "can_expand": true,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "start_vertex": "elec_JNA",
+            "end_vertex": "elec_JEJ",
+            "loss_fraction": 0.015,
+            "existing_capacity": 400,
+            "investment_cost": 12060
+          }
+        }
+      }
+    ]
+  }
+}

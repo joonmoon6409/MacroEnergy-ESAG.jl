@@ -1,0 +1,82 @@
+{
+    "new_vre": [
+        {
+            "type": "VRE",
+            "global_data": {
+                "transforms": {
+                    "timedata": "Electricity"
+                },
+                "edges": {
+                    "edge": {
+                        "commodity": "Electricity",
+                        "unidirectional": true,
+                        "can_expand": false,
+                        "can_retire": false,
+                        "lifetime": 30, 
+                        "has_capacity": true,
+                        "constraints": {
+                            "CapacityConstraint": true,
+                            "MaxCapacityConstraint": true
+                        }
+                    }
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "KR_utility_pv",
+                    "edges": {
+                        "edge": {
+                            "fixed_om_cost": 19800.19684,
+                            "investment_cost": 884000,
+                            "max_capacity": 288617,
+                            "existing_capacity": 23582,
+                            "end_vertex": "elec_KR",
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "KR_utilitypv"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "KR_onshore_wind",
+                    "edges": {
+                        "edge": {
+                            "fixed_om_cost": 26256.10757,
+                            "investment_cost": 1988000,
+                            "max_capacity": 5000,
+                            "existing_capacity": 1962,
+                            "end_vertex": "elec_KR",
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "onwind"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "KR_offshore_wind",
+                    "edges": {
+                        "edge": {
+                            "fixed_om_cost": 26256.10757,
+                            "investment_cost": 4842000,
+                            "max_capacity": 1384,
+                            "existing_capacity": 0,
+                            "end_vertex": "elec_KR",
+                            "availability": {
+                                "timeseries": {
+                                    "path": "system/availability.csv",
+                                    "header": "offwind-dc"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

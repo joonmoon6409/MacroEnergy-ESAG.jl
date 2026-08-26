@@ -1,0 +1,74 @@
+{
+    "NaturalGasPower": [
+        {"type": "ThermalPower",
+            "global_data": {
+            "nodes": {},
+            "transforms": {
+                "timedata": "NaturalGas",
+                "constraints": {
+                        "BalanceConstraint": true
+                }
+            },
+            "edges" : {
+                "elec_edge":{
+                            "commodity": "Electricity",
+                            "unidirectional": true,
+                            "has_capacity": true,
+                            "uc": true,
+                            "integer_decisions": false,
+                            "lifetime": 30,
+                            "constraints": {
+                                "CapacityConstraint": true,
+                                "RampingLimitConstraint": true,
+                                "MinFlowConstraint": true,
+                                "MinUpTimeConstraint": true,
+                                "MinDownTimeConstraint": true
+                            }
+                        },
+                "fuel_edge": {
+                            "commodity": "NaturalGas",
+                            "unidirectional": true,
+                            "has_capacity": false
+                        },
+                "co2_edge": {
+                        "commodity": "CO2",
+                        "unidirectional": true,
+                        "has_capacity": false,
+                        "end_vertex": "co2_sink_KR"
+                    }
+                }
+            },
+            "instance_data": [
+                {
+                    "id": "KR_natgas_CCGT",
+                    "transforms":{
+                        "emission_rate": 0.18104,
+                        "fuel_consumption": 2.0696
+                    },
+                    "edges":{
+                        "elec_edge": {
+                            "end_vertex": "elec_KR",
+                            "can_retire": false,
+                            "can_expand": false,
+                            "existing_capacity": 45046.9341,
+                            "investment_cost": 796000.0,
+                            "fixed_om_cost": 15274,
+                            "variable_om_cost": 1.82,
+                            "capacity_size": 125.825,
+                            "startup_cost": 69.34,
+                            "startup_fuel_consumption": 0.58614214,                            
+                            "min_up_time": 6,
+                            "min_down_time": 6,
+                            "ramp_up_fraction": 0.64,
+                            "ramp_down_fraction": 0.64,
+                            "min_flow_fraction":0.5
+                        },
+                        "fuel_edge": {
+                            "start_vertex": "natgas_source"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

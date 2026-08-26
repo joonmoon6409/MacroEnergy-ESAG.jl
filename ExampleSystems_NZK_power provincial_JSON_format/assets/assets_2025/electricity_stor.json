@@ -1,0 +1,470 @@
+{
+  "elec_stor": [
+    {
+      "type": "Battery",
+      "global_data": {
+        "nodes": {},
+        "transforms": {},
+        "edges": {
+          "discharge_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": true,
+            "can_expand": true,
+            "can_retire": false,
+            "lifetime": 30,
+            "constraints": {
+              "CapacityConstraint": true,
+              "StorageDischargeLimitConstraint": true
+            }
+          },
+          "charge_edge": {
+            "commodity": "Electricity",
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        },
+        "storage": {
+          "commodity": "Electricity",
+          "can_expand": true,
+          "can_retire": false,
+          "lifetime": 30,
+          "constraints": {
+            "StorageCapacityConstraint": true,
+            "StorageSymmetricCapacityConstraint": true,
+            "StorageMinDurationConstraint": true,
+            "StorageMaxDurationConstraint": true,
+            "BalanceConstraint": true
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_SEL"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_SEL"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_SEL"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_PUS"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_PUS"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_PUS"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_TAE"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_TAE"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_TAE"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_INC"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_INC"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_INC"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_KWJ"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_KWJ"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_KWJ"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_DJJ"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_DJJ"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_DJJ"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_USN"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_USN"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_USN"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_SJG"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_SJG"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_SJG"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_GGI"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_GGI"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_GGI"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_GWN"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_GWN"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_GWN"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_CNB"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_CNB"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_CNB"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_CNA"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_CNA"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_CNA"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_JNB"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_JNB"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_JNB"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_JNA"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_JNA"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_JNA"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_GNB"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_GNB"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_GNB"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_GNA"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_GNA"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_GNA"
+        },
+        {
+          "edges": {
+            "discharge_edge": {
+              "existing_capacity": 0,
+              "fixed_om_cost": 15075.764437,
+              "investment_cost": 2688600.40679,
+              "variable_om_cost": 1,
+              "efficiency": 0.92,
+              "end_vertex": "elec_JEJ"
+            },
+            "charge_edge": {
+              "efficiency": 0.92,
+              "variable_om_cost": 1,
+              "start_vertex": "elec_JEJ"
+            }
+          },
+          "storage": {
+            "existing_capacity": 0,
+            "fixed_om_cost": 9477.587766,
+            "investment_cost": 1701300.88552,
+            "max_duration": 10,
+            "min_duration": 1
+          },
+          "id": "battery_JEJ"
+        }
+      ]
+    }
+  ]
+}

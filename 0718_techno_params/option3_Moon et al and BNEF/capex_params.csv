@@ -1,0 +1,235 @@
+Technology,Year,OCC_$/MW (2021 real),FOM_$/MW-yr,VOM_$/MWh,Source
+Coal,2025,1564878.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2026,1586537.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2027,1608495.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2028,1630757.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2029,1653328.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2030,1676210.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2031,1699410.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2032,1722930.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2033,1746776.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2034,1770952.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2035,1795463.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2036,1824550.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2037,1854107.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2038,1884144.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2039,1914667.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2040,1945684.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2041,1977205.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2042,2009235.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2043,2041785.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2044,2074862.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2045,2108475.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2046,2142632.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2047,2177342.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2048,2212615.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2049,2248460.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal,2050,2284885.0,15816,1.55,Moon et al. 2025 (2021 real)
+Coal_CCS,2025,2509255.25,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2026,2487873.59,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2027,2466491.94,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2028,2445110.28,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2029,2423728.63,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2030,2402346.97,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2031,2327639.46,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2032,2252931.95,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2033,2178224.45,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2034,2103516.94,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2035,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2036,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2037,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2038,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2039,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2040,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2041,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2042,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2043,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2044,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2045,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2046,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2047,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2048,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2049,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Coal_CCS,2050,2028809.43,53714.13,19.135,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCGT,2025,1171911.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2026,1188138.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2027,1204590.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2028,1221269.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2029,1238180.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2030,1255324.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2031,1272706.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2032,1290329.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2033,1308196.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2034,1326310.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2035,1344675.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2036,1366459.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2037,1388595.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2038,1411091.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2039,1433950.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2040,1457180.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2041,1480787.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2042,1504775.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2043,1529153.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2044,1553925.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2045,1579099.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2046,1604680.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2047,1630676.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2048,1657093.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2049,1683938.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCGT,2050,1711217.0,15274,1.82,Moon et al. 2025 (2021 real)
+Gas_CCS,2025,1718027.8,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2026,1616127.33,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2027,1514226.86,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2028,1412326.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2029,1310425.91,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2030,1208525.44,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2031,1203411.03,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2032,1198296.62,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2033,1193182.2,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2034,1188067.79,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2035,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2036,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2037,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2038,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2039,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2040,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2041,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2042,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2043,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2044,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2045,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2046,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2047,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2048,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2049,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Gas_CCS,2050,1182953.38,17597,8.58,"BNEF (2024 real → 2021 real, GDP deflator 0.870)"
+Nuclear,2025,3195903.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2026,3265631.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2027,3336881.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2028,3409684.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2029,3484077.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2030,3560092.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2031,3637766.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2032,3717134.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2033,3798235.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2034,3881104.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2035,3965782.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2036,4066909.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2037,4170616.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2038,4276966.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2039,4386029.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2040,4497873.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2041,4612568.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2042,4730189.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2043,4850809.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2044,4974504.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2045,5101354.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2046,5231439.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2047,5364840.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2048,5501644.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2049,5641936.0,199087,10.34,Moon et al. 2025 (2021 real)
+Nuclear,2050,5785805.0,199087,10.34,Moon et al. 2025 (2021 real)
+Offshore_Wind,2025,4165878.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2026,4022694.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2027,3884431.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2028,3750920.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2029,3621999.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2030,3497508.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2031,3377296.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2032,3261216.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2033,3149126.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2034,3040888.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2035,2936371.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2036,2868834.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2037,2802851.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2038,2738386.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2039,2675403.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2040,2613869.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2041,2553750.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2042,2495013.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2043,2437628.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2044,2381563.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2045,2326787.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2046,2273271.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2047,2220985.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2048,2169903.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2049,2119995.0,63000,0,Moon et al. 2025 (2021 real)
+Offshore_Wind,2050,2071235.0,63000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2025,1790514.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2026,1747531.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2027,1705580.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2028,1664636.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2029,1624675.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2030,1585674.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2031,1547608.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2032,1510457.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2033,1474197.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2034,1438808.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2035,1404268.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2036,1378991.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2037,1354169.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2038,1329794.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2039,1305858.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2040,1282353.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2041,1259270.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2042,1236603.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2043,1214344.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2044,1192486.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2045,1171022.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2046,1149943.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2047,1129244.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2048,1108918.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2049,1088957.0,40000,0,Moon et al. 2025 (2021 real)
+Onshore_Wind,2050,1069356.0,40000,0,Moon et al. 2025 (2021 real)
+Solar_PV,2025,975640.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2026,943092.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2027,911631.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2028,881219.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2029,851822.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2030,823405.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2031,795937.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2032,769384.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2033,743718.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2034,718908.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2035,694925.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2036,675467.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2037,656554.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2038,638171.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2039,620302.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2040,602933.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2041,586051.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2042,569642.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2043,553692.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2044,538188.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2045,523119.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2046,508472.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2047,494235.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2048,480396.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2049,466945.0,19800,0,Moon et al. 2025 (2021 real)
+Solar_PV,2050,453870.0,19800,0,Moon et al. 2025 (2021 real)
+Battery,2025,2310449.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2026,2059525.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2027,1835852.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2028,1636471.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2029,1458743.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2030,1300318.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2031,1159098.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2032,1033215.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2033,921004.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2034,820979.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2035,731817.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2036,695226.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2037,660465.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2038,627442.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2039,596070.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2040,566266.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2041,537953.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2042,511055.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2043,485502.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2044,461227.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2045,438166.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2046,416258.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2047,395445.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2048,375672.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2049,356889.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"
+Battery,2050,339044.0,20000,0,"BNEF NEO 2024 (2021 real, 4h system)"

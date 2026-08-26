@@ -1,0 +1,863 @@
+{
+  "Coalpower": [
+    {
+      "type": "ThermalPower",
+      "global_data": {
+        "transforms": {
+          "constraints": {
+            "BalanceConstraint": true
+          }
+        },
+        "edges": {
+          "co2_edge": {
+            "unidirectional": true,
+            "has_capacity": false
+          },
+          "elec_edge": {
+            "unidirectional": true,
+            "has_capacity": true
+          },
+          "fuel_edge": {
+            "unidirectional": true,
+            "has_capacity": false
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_SEL",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_SEL"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_PUS",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_PUS"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_TAE",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_TAE"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_INC",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_INC"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_KWJ",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_KWJ"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_DJJ",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_DJJ"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_USN",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_USN"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_SJG",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_SJG"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_GGI",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_GGI"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_GWN",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_GWN"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_CNB",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_CNB"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_CNA",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_CNA"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_JNB",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_JNB"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_JNA",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_JNA"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_GNB",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_GNB"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_GNA",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_GNA"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        },
+        {
+          "transforms": {
+            "timedata": "Coal",
+            "fuel_consumption": 3.825456676,
+            "emission_rate": 0.340559997
+          },
+          "id": "Coal_power_plant_JEJ",
+          "edges": {
+            "co2_edge": {
+              "commodity": "CO2",
+              "end_vertex": "co2_sink_KR"
+            },
+            "elec_edge": {
+              "investment_cost": 1683000,
+              "variable_om_cost": 1.55,
+              "fixed_om_cost": 15816.5,
+              "lifetime": 30,
+              "can_retire": false,
+              "min_up_time": 6,
+              "can_expand": false,
+              "min_flow_fraction": 0.5,
+              "constraints": {
+                "MinFlowConstraint": true,
+                "RampingLimitConstraint": true,
+                "CapacityConstraint": true,
+                "MinDownTimeConstraint": true,
+                "MinUpTimeConstraint": true
+              },
+              "min_capacity": 0,
+              "commodity": "Electricity",
+              "uc": true,
+              "ramp_up_fraction": 0.6,
+              "startup_cost": 150,
+              "startup_fuel_consumption": 0,
+              "min_down_time": 6,
+              "capacity_size": 200,
+              "availability": [
+                1
+              ],
+              "existing_capacity": 36622.59299,
+              "ramp_down_fraction": 0.6,
+              "end_vertex": "elec_JEJ"
+            },
+            "fuel_edge": {
+              "start_vertex": "coal_source",
+              "commodity": "Coal"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
