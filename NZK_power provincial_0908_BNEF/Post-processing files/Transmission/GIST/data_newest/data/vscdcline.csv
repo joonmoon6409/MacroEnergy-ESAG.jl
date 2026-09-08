@@ -1,0 +1,2 @@
+﻿name,in_service,rdc_ohm,ac_from_bus,ac_to_bus,ac_ckt,c1_bus,c1_ctrl,c1_dcset,c1_ac_mode,c1_acset,c1_aloss_kw,c1_bloss_kw_a,c1_minloss_kw,c1_smax_mva,c1_qmax_mvar,c1_qmin_mvar,c1_filter_q_mvar,c2_bus,c2_ctrl,c2_dcset,c2_ac_mode,c2_acset,c2_aloss_kw,c2_bloss_kw_a,c2_minloss_kw,c2_smax_mva,c2_qmax_mvar,c2_qmin_mvar,c2_filter_q_mvar,cond_mm2,n_circuit,rdc_ohm_per_km,length_km,pole
+HVDC_제주-본토_완도#3,1,3.381,40908,40907,1,40907,2,8.722,v,1.0,120.0,0.1,20.0,220.0,100.0,-100.0,0.0,40908,1,300.0,q,0.0,120.0,0.1,20.0,220.0,100.0,-100.0,0.0,1000,1,0.0345,98,0
